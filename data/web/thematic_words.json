@@ -1,0 +1,180 @@
+[
+  {
+    "word": "relationship",
+    "tier": 1,
+    "frequency": 351,
+    "spread": 51,
+    "examples": [
+      "If you were involved in a serious relationship, that creates a problem",
+      "Rest assured, that relationship ended two years ago"
+    ]
+  },
+  {
+    "word": "date",
+    "tier": 1,
+    "frequency": 524,
+    "spread": 106,
+    "examples": [
+      "You'll have a life, you'll date-- no, i won't",
+      "Have you dated anyone who's been divorced three times"
+    ]
+  },
+  {
+    "word": "breakup",
+    "tier": 3,
+    "frequency": 22,
+    "spread": 8,
+    "examples": [
+      "I have never had such a healthy breakup",
+      "Weii, when you get over this breakup, we need to go shopping"
+    ]
+  },
+  {
+    "word": "awkward",
+    "tier": 2,
+    "frequency": 94,
+    "spread": 27,
+    "examples": [
+      "Listen, i just want to say, last night-- dinner was a little awkward",
+      "...this is really awkward"
+    ]
+  },
+  {
+    "word": "nervous",
+    "tier": 2,
+    "frequency": 87,
+    "spread": 39,
+    "examples": [
+      "Look, i was nervous",
+      "I was really nervous, and the accent"
+    ]
+  },
+  {
+    "word": "brilliant",
+    "tier": 3,
+    "frequency": 53,
+    "spread": 8,
+    "examples": [
+      "Gosh, this is brilliant",
+      "God, you're brilliant"
+    ]
+  },
+  {
+    "word": "genius",
+    "tier": 2,
+    "frequency": 65,
+    "spread": 12,
+    "examples": [
+      "Yeah, but only a genius would swallow a sonic blaster gun",
+      "How's my favorite genius and his robot buddy"
+    ]
+  },
+  {
+    "word": "physics",
+    "tier": 3,
+    "frequency": 115,
+    "spread": 1,
+    "examples": [
+      "Ah-ah-ah, he’s a geologist, and i have more physics jokes"
+    ]
+  },
+  {
+    "word": "quantum",
+    "tier": 3,
+    "frequency": 57,
+    "spread": 1,
+    "examples": [
+      "Not ’til you tell me about your latest paper on quantum loop theory"
+    ]
+  },
+  {
+    "word": "theory",
+    "tier": 2,
+    "frequency": 102,
+    "spread": 7,
+    "examples": [
+      "Renyard's theory of species variegation",
+      "But you can't actually test this theory"
+    ]
+  },
+  {
+    "word": "roommate",
+    "tier": 2,
+    "frequency": 182,
+    "spread": 38,
+    "examples": [
+      "He's a terrible roommate",
+      "He's the best roommate"
+    ]
+  },
+  {
+    "word": "wedding",
+    "tier": 1,
+    "frequency": 377,
+    "spread": 57,
+    "examples": [
+      "How about you flew to london to stop my wedding",
+      ".and we wouldn't have our wedding dinner at pizza hut"
+    ]
+  },
+  {
+    "word": "hilarious",
+    "tier": 3,
+    "frequency": 15,
+    "spread": 4,
+    "examples": [
+      "Man, this is hilarious",
+      "Oh, that's hilarious"
+    ]
+  },
+  {
+    "word": "pregnant",
+    "tier": 2,
+    "frequency": 170,
+    "spread": 47,
+    "examples": [
+      "But if you were pregnant, what would you name it",
+      "There's a pregnant woman in ohio, and she picked us"
+    ]
+  },
+  {
+    "word": "divorce",
+    "tier": 2,
+    "frequency": 63,
+    "spread": 32,
+    "examples": [
+      "Well, i guess we find a divorce lawyer",
+      ".because we don't need to get divorced"
+    ]
+  },
+  {
+    "word": "crush",
+    "tier": 3,
+    "frequency": 43,
+    "spread": 24,
+    "examples": [
+      "\"on the 19th, a secret crush announces itself.\" hey, guys",
+      "You have a crush on him, why wouid you hire him"
+    ]
+  },
+  {
+    "word": "jealous",
+    "tier": 2,
+    "frequency": 84,
+    "spread": 26,
+    "examples": [
+      "If mom and dad don't see us on tv after we made them jealous",
+      "Why are you so jealous of me"
+    ]
+  },
+  {
+    "word": "argument",
+    "tier": 3,
+    "frequency": 25,
+    "spread": 6,
+    "examples": [
+      "Well, just for argument's sake, you know, hypothetically..",
+      "That was gonna be my next argument"
+    ]
+  }
+]

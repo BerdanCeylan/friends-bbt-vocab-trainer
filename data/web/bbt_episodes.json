@@ -1,0 +1,1642 @@
+{
+  "total_episodes": 231,
+  "seasons": {
+    "1": [
+      {
+        "season": 1,
+        "episode": 1,
+        "title": "Pilot Episode",
+        "filename": "series-1-episode-1-pilot-episode.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-1-pilot-episode.txt"
+      },
+      {
+        "season": 1,
+        "episode": 2,
+        "title": "The Big Bran Hypothesis",
+        "filename": "series-1-episode-2-the-big-bran-hypothesis.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-2-the-big-bran-hypothesis.txt"
+      },
+      {
+        "season": 1,
+        "episode": 3,
+        "title": "The Fuzzy Boots Corollary",
+        "filename": "series-1-episode-3-the-fuzzy-boots-corollary.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-3-the-fuzzy-boots-corollary.txt"
+      },
+      {
+        "season": 1,
+        "episode": 4,
+        "title": "The Luminous Fish Effect",
+        "filename": "series-1-episode-4-the-luminous-fish-effect.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-4-the-luminous-fish-effect.txt"
+      },
+      {
+        "season": 1,
+        "episode": 5,
+        "title": "The Hamburger Postulate",
+        "filename": "series-1-episode-5-the-hamburger-postulate.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-5-the-hamburger-postulate.txt"
+      },
+      {
+        "season": 1,
+        "episode": 6,
+        "title": "The Middle Earth Paradigm",
+        "filename": "series-1-episode-6-the-middle-earth-paradigm.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-6-the-middle-earth-paradigm.txt"
+      },
+      {
+        "season": 1,
+        "episode": 7,
+        "title": "The Dumpling Paradox",
+        "filename": "series-1-episode-7-the-dumpling-paradox.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-7-the-dumpling-paradox.txt"
+      },
+      {
+        "season": 1,
+        "episode": 8,
+        "title": "The Grasshopper Experiment",
+        "filename": "series-1-episode-8-the-grasshopper-experiment.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-8-the-grasshopper-experiment.txt"
+      },
+      {
+        "season": 1,
+        "episode": 8,
+        "title": "The Lizard Spock Expansion",
+        "filename": "series-1-episode-08-the-lizard-spock-expansion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-08-the-lizard-spock-expansion.txt"
+      },
+      {
+        "season": 1,
+        "episode": 9,
+        "title": "The Cooper Hofstadter Polarization",
+        "filename": "series-1-episode-9-the-cooper-hofstadter-polarization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-9-the-cooper-hofstadter-polarization.txt"
+      },
+      {
+        "season": 1,
+        "episode": 10,
+        "title": "The Loobenfeld Decay",
+        "filename": "series-1-episode-10-the-loobenfeld-decay.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-10-the-loobenfeld-decay.txt"
+      },
+      {
+        "season": 1,
+        "episode": 11,
+        "title": "The Pancake Batter Anomaly",
+        "filename": "series-1-episode-11-the-pancake-batter-anomaly.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-11-the-pancake-batter-anomaly.txt"
+      },
+      {
+        "season": 1,
+        "episode": 12,
+        "title": "The Jerusalem Duality",
+        "filename": "series-1-episode-12-the-jerusalem-duality.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-12-the-jerusalem-duality.txt"
+      },
+      {
+        "season": 1,
+        "episode": 13,
+        "title": "The Bat Jar Conjecture",
+        "filename": "series-1-episode-13-the-bat-jar-conjecture.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-13-the-bat-jar-conjecture.txt"
+      },
+      {
+        "season": 1,
+        "episode": 14,
+        "title": "The Nerdvana Annihilation",
+        "filename": "series-1-episode-14-the-nerdvana-annihilation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-14-the-nerdvana-annihilation.txt"
+      },
+      {
+        "season": 1,
+        "episode": 15,
+        "title": "The Porkchop Indeterminacy",
+        "filename": "series-1-episode-15-the-porkchop-indeterminacy.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-15-the-porkchop-indeterminacy.txt"
+      },
+      {
+        "season": 1,
+        "episode": 16,
+        "title": "The Peanut Reaction",
+        "filename": "series-1-episode-16-the-peanut-reaction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-16-the-peanut-reaction.txt"
+      },
+      {
+        "season": 1,
+        "episode": 17,
+        "title": "The Tangerine Factor",
+        "filename": "series-1-episode-17-the-tangerine-factor.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-1-episode-17-the-tangerine-factor.txt"
+      }
+    ],
+    "2": [
+      {
+        "season": 2,
+        "episode": 1,
+        "title": "The Bad Fish Paradigm",
+        "filename": "series-2-episode-01-the-bad-fish-paradigm.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-01-the-bad-fish-paradigm.txt"
+      },
+      {
+        "season": 2,
+        "episode": 2,
+        "title": "The Codpiece Topology",
+        "filename": "series-2-episode-02-the-codpiece-topology.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-02-the-codpiece-topology.txt"
+      },
+      {
+        "season": 2,
+        "episode": 3,
+        "title": "The Barbarian Sublimation",
+        "filename": "series-2-episode-03-the-barbarian-sublimation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-03-the-barbarian-sublimation.txt"
+      },
+      {
+        "season": 2,
+        "episode": 4,
+        "title": "The Griffin Equivalency",
+        "filename": "series-2-episode-04-the-griffin-equivalency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-04-the-griffin-equivalency.txt"
+      },
+      {
+        "season": 2,
+        "episode": 5,
+        "title": "The Euclid Alternative",
+        "filename": "series-2-episode-5-the-euclid-alternative.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-5-the-euclid-alternative.txt"
+      },
+      {
+        "season": 2,
+        "episode": 6,
+        "title": "The Cooper Nowitzki Theorem 2",
+        "filename": "series-2-episode-06-the-cooper-nowitzki-theorem-2.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-06-the-cooper-nowitzki-theorem-2.txt"
+      },
+      {
+        "season": 2,
+        "episode": 7,
+        "title": "The Panty Pinata Polarization",
+        "filename": "series-2-episode-07-the-panty-pinata-polarization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-07-the-panty-pinata-polarization.txt"
+      },
+      {
+        "season": 2,
+        "episode": 9,
+        "title": "The White Asparagus Triangulation",
+        "filename": "series-2-episode-09-the-white-asparagus-triangulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-09-the-white-asparagus-triangulation.txt"
+      },
+      {
+        "season": 2,
+        "episode": 11,
+        "title": "The Vartabedian Conundrum",
+        "filename": "series-2-episode-11-the-vartabedian-conundrum.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-11-the-vartabedian-conundrum.txt"
+      },
+      {
+        "season": 2,
+        "episode": 11,
+        "title": "The Bath Item Gift Hypothesis",
+        "filename": "series-2-episode-11-the-bath-item-gift-hypothesis.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-11-the-bath-item-gift-hypothesis.txt"
+      },
+      {
+        "season": 2,
+        "episode": 12,
+        "title": "The Killer Robot Instability",
+        "filename": "series-2-episode-12-the-killer-robot-instability.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-12-the-killer-robot-instability.txt"
+      },
+      {
+        "season": 2,
+        "episode": 13,
+        "title": "The Friendship Algorithm",
+        "filename": "series-2-episode-13-the-friendship-algorithm.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-13-the-friendship-algorithm.txt"
+      },
+      {
+        "season": 2,
+        "episode": 14,
+        "title": "The Financial Permeability 2",
+        "filename": "series-2-episode-14-the-financial-permeability-2.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-14-the-financial-permeability-2.txt"
+      },
+      {
+        "season": 2,
+        "episode": 15,
+        "title": "The Maternal Capacitance",
+        "filename": "series-2-episode-15-the-maternal-capacitance.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-15-the-maternal-capacitance.txt"
+      },
+      {
+        "season": 2,
+        "episode": 16,
+        "title": "The Cushion Saturation 3",
+        "filename": "series-2-episode-16-the-cushion-saturation-3.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-16-the-cushion-saturation-3.txt"
+      },
+      {
+        "season": 2,
+        "episode": 17,
+        "title": "The Terminator Decoupling",
+        "filename": "series-2-episode-17-the-terminator-decoupling.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-17-the-terminator-decoupling.txt"
+      },
+      {
+        "season": 2,
+        "episode": 18,
+        "title": "The Work Song Nanocluster",
+        "filename": "series-2-episode-18-the-work-song-nanocluster.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-18-the-work-song-nanocluster.txt"
+      },
+      {
+        "season": 2,
+        "episode": 19,
+        "title": "The Dead Hooker Juxtaposition",
+        "filename": "series-2-episode-19-the-dead-hooker-juxtaposition.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-19-the-dead-hooker-juxtaposition.txt"
+      },
+      {
+        "season": 2,
+        "episode": 20,
+        "title": "The Hofstadter Isotope",
+        "filename": "series-2-episode-20-the-hofstadter-isotope.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-20-the-hofstadter-isotope.txt"
+      },
+      {
+        "season": 2,
+        "episode": 21,
+        "title": "The Vegas Renormalization",
+        "filename": "series-2-episode-21-the-vegas-renormalization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-21-the-vegas-renormalization.txt"
+      },
+      {
+        "season": 2,
+        "episode": 22,
+        "title": "The Classified Materials Turbulence",
+        "filename": "series-2-episode-22-the-classified-materials-turbulence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-22-the-classified-materials-turbulence.txt"
+      },
+      {
+        "season": 2,
+        "episode": 23,
+        "title": "The Monopolar Expedition",
+        "filename": "series-2-episode-23-the-monopolar-expedition.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-2-episode-23-the-monopolar-expedition.txt"
+      }
+    ],
+    "3": [
+      {
+        "season": 3,
+        "episode": 1,
+        "title": "The Electric Can Opener Fluctuation",
+        "filename": "series-3-episode-01-the-electric-can-opener-fluctuation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-01-the-electric-can-opener-fluctuation.txt"
+      },
+      {
+        "season": 3,
+        "episode": 2,
+        "title": "The Jiminy Conjecture",
+        "filename": "series-3-episode-02-the-jiminy-conjecture.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-02-the-jiminy-conjecture.txt"
+      },
+      {
+        "season": 3,
+        "episode": 3,
+        "title": "The Gothowitz Deviation",
+        "filename": "series-3-episode-03-the-gothowitz-deviation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-03-the-gothowitz-deviation.txt"
+      },
+      {
+        "season": 3,
+        "episode": 4,
+        "title": "The Pirate Solution",
+        "filename": "series-3-episode-04-the-pirate-solution.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-04-the-pirate-solution.txt"
+      },
+      {
+        "season": 3,
+        "episode": 5,
+        "title": "The Creepy Candy Coating Corollary",
+        "filename": "series-3-episode-05-the-creepy-candy-coating-corollary.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-05-the-creepy-candy-coating-corollary.txt"
+      },
+      {
+        "season": 3,
+        "episode": 6,
+        "title": "The Cornhusker Vortex",
+        "filename": "series-3-episode-06-the-cornhusker-vortex.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-06-the-cornhusker-vortex.txt"
+      },
+      {
+        "season": 3,
+        "episode": 7,
+        "title": "The Guitarist Amplification",
+        "filename": "series-3-episode-07-the-guitarist-amplification.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-07-the-guitarist-amplification.txt"
+      },
+      {
+        "season": 3,
+        "episode": 8,
+        "title": "The Adhesive Duck Deficiency",
+        "filename": "series-3-episode-08-the-adhesive-duck-deficiency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-08-the-adhesive-duck-deficiency.txt"
+      },
+      {
+        "season": 3,
+        "episode": 9,
+        "title": "The Vengeance Formulation",
+        "filename": "series-3-episode-09-the-vengeance-formulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-09-the-vengeance-formulation.txt"
+      },
+      {
+        "season": 3,
+        "episode": 10,
+        "title": "The Gorilla Experiment",
+        "filename": "series-3-episode-10-the-gorilla-experiment.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-10-the-gorilla-experiment.txt"
+      },
+      {
+        "season": 3,
+        "episode": 11,
+        "title": "The Maternal Congruence",
+        "filename": "series-3-episode-11-the-maternal-congruence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-11-the-maternal-congruence.txt"
+      },
+      {
+        "season": 3,
+        "episode": 12,
+        "title": "The Psychic Vortex",
+        "filename": "series-3-episode-12-the-psychic-vortex.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-12-the-psychic-vortex.txt"
+      },
+      {
+        "season": 3,
+        "episode": 13,
+        "title": "The Bozeman Reaction",
+        "filename": "series-3-episode-13-the-bozeman-reaction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-13-the-bozeman-reaction.txt"
+      },
+      {
+        "season": 3,
+        "episode": 14,
+        "title": "The Einstein Approximation",
+        "filename": "series-3-episode-14-the-einstein-approximation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-14-the-einstein-approximation.txt"
+      },
+      {
+        "season": 3,
+        "episode": 15,
+        "title": "The Large Hadron Collision",
+        "filename": "series-3-episode-15-the-large-hadron-collision.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-15-the-large-hadron-collision.txt"
+      },
+      {
+        "season": 3,
+        "episode": 16,
+        "title": "The Excelsior Acquisition",
+        "filename": "series-3-episode-16-the-excelsior-acquisition.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-16-the-excelsior-acquisition.txt"
+      },
+      {
+        "season": 3,
+        "episode": 17,
+        "title": "The Precious Fragmentation",
+        "filename": "series-3-episode-17-the-precious-fragmentation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-17-the-precious-fragmentation.txt"
+      },
+      {
+        "season": 3,
+        "episode": 18,
+        "title": "The Pants Alternative",
+        "filename": "series-3-episode-18-the-pants-alternative.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-18-the-pants-alternative.txt"
+      },
+      {
+        "season": 3,
+        "episode": 19,
+        "title": "The Wheaton Recurrence",
+        "filename": "series-3-episode-19-the-wheaton-recurrence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-19-the-wheaton-recurrence.txt"
+      },
+      {
+        "season": 3,
+        "episode": 20,
+        "title": "The Spaghetti Catalyst",
+        "filename": "series-3-episode-20-the-spaghetti-catalyst.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-20-the-spaghetti-catalyst.txt"
+      },
+      {
+        "season": 3,
+        "episode": 21,
+        "title": "The Plimpton Stimulation",
+        "filename": "series-3-episode-21-the-plimpton-stimulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-21-the-plimpton-stimulation.txt"
+      },
+      {
+        "season": 3,
+        "episode": 22,
+        "title": "The Staircase Implementation",
+        "filename": "series-3-episode-22-the-staircase-implementation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-22-the-staircase-implementation.txt"
+      },
+      {
+        "season": 3,
+        "episode": 23,
+        "title": "The Lunar Excitation",
+        "filename": "series-3-episode-23-the-lunar-excitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-3-episode-23-the-lunar-excitation.txt"
+      }
+    ],
+    "4": [
+      {
+        "season": 4,
+        "episode": 1,
+        "title": "The Robotic Manipulation",
+        "filename": "series-4-episode-01-the-robotic-manipulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-01-the-robotic-manipulation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 2,
+        "title": "The Cruciferous Vegetable Amplification",
+        "filename": "series-4-episode-02-the-cruciferous-vegetable-amplification.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-02-the-cruciferous-vegetable-amplification.txt"
+      },
+      {
+        "season": 4,
+        "episode": 3,
+        "title": "The Zazzy Substitution",
+        "filename": "series-4-episode-03-the-zazzy-substitution.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-03-the-zazzy-substitution.txt"
+      },
+      {
+        "season": 4,
+        "episode": 4,
+        "title": "The Hot Troll Deviation",
+        "filename": "series-4-episode-04-the-hot-troll-deviation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-04-the-hot-troll-deviation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 5,
+        "title": "The Desperation Emanation",
+        "filename": "series-4-episode-05-the-desperation-emanation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-05-the-desperation-emanation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 6,
+        "title": "The Irish Pub Formulation",
+        "filename": "series-4-episode-06-the-irish-pub-formulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-06-the-irish-pub-formulation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 7,
+        "title": "The Apology Insufficiency",
+        "filename": "series-4-episode-07-the-apology-insufficiency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-07-the-apology-insufficiency.txt"
+      },
+      {
+        "season": 4,
+        "episode": 8,
+        "title": "The 21 Second Excitation",
+        "filename": "series-4-episode-08-the-21-second-excitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-08-the-21-second-excitation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 9,
+        "title": "The Boyfriend Complexity",
+        "filename": "series-4-episode-09-the-boyfriend-complexity.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-09-the-boyfriend-complexity.txt"
+      },
+      {
+        "season": 4,
+        "episode": 10,
+        "title": "The Alien Parasite Hypothesis",
+        "filename": "series-4-episode-10-the-alien-parasite-hypothesis.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-10-the-alien-parasite-hypothesis.txt"
+      },
+      {
+        "season": 4,
+        "episode": 11,
+        "title": "The Justice League Recombination",
+        "filename": "series-4-episode-11-the-justice-league-recombination.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-11-the-justice-league-recombination.txt"
+      },
+      {
+        "season": 4,
+        "episode": 12,
+        "title": "The Bus Pants Utilization",
+        "filename": "series-4-episode-12-the-bus-pants-utilization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-12-the-bus-pants-utilization.txt"
+      },
+      {
+        "season": 4,
+        "episode": 13,
+        "title": "The Love Car Displacement",
+        "filename": "series-4-episode-13-the-love-car-displacement.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-13-the-love-car-displacement.txt"
+      },
+      {
+        "season": 4,
+        "episode": 14,
+        "title": "The Thespian Catalyst",
+        "filename": "series-4-episode-14-the-thespian-catalyst.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-14-the-thespian-catalyst.txt"
+      },
+      {
+        "season": 4,
+        "episode": 15,
+        "title": "The Benefactor Factor",
+        "filename": "series-4-episode-15-the-benefactor-factor.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-15-the-benefactor-factor.txt"
+      },
+      {
+        "season": 4,
+        "episode": 16,
+        "title": "The Cohabitation Formulation",
+        "filename": "series-4-episode-16-the-cohabitation-formulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-16-the-cohabitation-formulation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 17,
+        "title": "The Toast Derivation",
+        "filename": "series-4-episode-17-the-toast-derivation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-17-the-toast-derivation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 18,
+        "title": "The Prestidigitation Approximation",
+        "filename": "series-4-episode-18-the-prestidigitation-approximation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-18-the-prestidigitation-approximation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 19,
+        "title": "The Zarnecki Incursion",
+        "filename": "series-4-episode-19-the-zarnecki-incursion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-19-the-zarnecki-incursion.txt"
+      },
+      {
+        "season": 4,
+        "episode": 20,
+        "title": "The Herb Garden Germination",
+        "filename": "series-4-episode-20-the-herb-garden-germination.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-20-the-herb-garden-germination.txt"
+      },
+      {
+        "season": 4,
+        "episode": 21,
+        "title": "The Agreement Dissection",
+        "filename": "series-4-episode-21-the-agreement-dissection.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-21-the-agreement-dissection.txt"
+      },
+      {
+        "season": 4,
+        "episode": 22,
+        "title": "The Wildebeest Implementation",
+        "filename": "series-4-episode-22-the-wildebeest-implementation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-22-the-wildebeest-implementation.txt"
+      },
+      {
+        "season": 4,
+        "episode": 23,
+        "title": "The Engagement Reaction",
+        "filename": "series-4-episode-23-the-engagement-reaction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-23-the-engagement-reaction.txt"
+      },
+      {
+        "season": 4,
+        "episode": 24,
+        "title": "The Roommate Transmogrification",
+        "filename": "series-4-episode-24-the-roommate-transmogrification.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-4-episode-24-the-roommate-transmogrification.txt"
+      }
+    ],
+    "5": [
+      {
+        "season": 5,
+        "episode": 1,
+        "title": "The Skank Reflex Analysis",
+        "filename": "series-5-episode-01-the-skank-reflex-analysis.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-01-the-skank-reflex-analysis.txt"
+      },
+      {
+        "season": 5,
+        "episode": 2,
+        "title": "The Infestation Hypothesis",
+        "filename": "series-5-episode-02-the-infestation-hypothesis.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-02-the-infestation-hypothesis.txt"
+      },
+      {
+        "season": 5,
+        "episode": 3,
+        "title": "The Pulled Groin Extrapolation",
+        "filename": "series-5-episode-03-the-pulled-groin-extrapolation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-03-the-pulled-groin-extrapolation.txt"
+      },
+      {
+        "season": 5,
+        "episode": 4,
+        "title": "The Wiggly Finger Catalyst",
+        "filename": "series-5-episode-04-the-wiggly-finger-catalyst.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-04-the-wiggly-finger-catalyst.txt"
+      },
+      {
+        "season": 5,
+        "episode": 5,
+        "title": "The Russian Rocket Reaction",
+        "filename": "series-5-episode-05-the-russian-rocket-reaction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-05-the-russian-rocket-reaction.txt"
+      },
+      {
+        "season": 5,
+        "episode": 6,
+        "title": "The Rhinitis Revelation",
+        "filename": "series-5-episode-06-the-rhinitis-revelation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-06-the-rhinitis-revelation.txt"
+      },
+      {
+        "season": 5,
+        "episode": 7,
+        "title": "The Good Guy Fluctuation",
+        "filename": "series-5-episode-07-the-good-guy-fluctuation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-07-the-good-guy-fluctuation.txt"
+      },
+      {
+        "season": 5,
+        "episode": 8,
+        "title": "The Isolation Permutation",
+        "filename": "series-5-episode-08-the-isolation-permutation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-08-the-isolation-permutation.txt"
+      },
+      {
+        "season": 5,
+        "episode": 9,
+        "title": "The Ornithophobia Diffusion",
+        "filename": "series-5-episode-09-the-ornithophobia-diffusion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-09-the-ornithophobia-diffusion.txt"
+      },
+      {
+        "season": 5,
+        "episode": 10,
+        "title": "The Flaming Spittoon Acquisition",
+        "filename": "series-5-episode-10-the-flaming-spittoon-acquisition.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-10-the-flaming-spittoon-acquisition.txt"
+      },
+      {
+        "season": 5,
+        "episode": 11,
+        "title": "The Speckerman Recurrence",
+        "filename": "series-5-episode-11-the-speckerman-recurrence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-11-the-speckerman-recurrence.txt"
+      },
+      {
+        "season": 5,
+        "episode": 12,
+        "title": "The Shiny Trinket Maneouvre",
+        "filename": "series-5-episode-12-the-shiny-trinket-maneouvre.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-12-the-shiny-trinket-maneouvre.txt"
+      },
+      {
+        "season": 5,
+        "episode": 13,
+        "title": "The Recombination Hypothesis",
+        "filename": "series-5-episode-13-the-recombination-hypothesis.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-13-the-recombination-hypothesis.txt"
+      },
+      {
+        "season": 5,
+        "episode": 14,
+        "title": "The Beta Test Initiation",
+        "filename": "series-5-episode-14-the-beta-test-initiation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-14-the-beta-test-initiation.txt"
+      },
+      {
+        "season": 5,
+        "episode": 15,
+        "title": "The Friendship Contraction",
+        "filename": "series-5-episode-15-the-friendship-contraction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-15-the-friendship-contraction.txt"
+      },
+      {
+        "season": 5,
+        "episode": 16,
+        "title": "The Vacation Solution",
+        "filename": "series-5-episode-16-the-vacation-solution.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-16-the-vacation-solution.txt"
+      },
+      {
+        "season": 5,
+        "episode": 17,
+        "title": "The Rothman Disintegration",
+        "filename": "series-5-episode-17-the-rothman-disintegration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-17-the-rothman-disintegration.txt"
+      },
+      {
+        "season": 5,
+        "episode": 18,
+        "title": "The Werewolf Transformation",
+        "filename": "series-5-episode-18-the-werewolf-transformation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-18-the-werewolf-transformation.txt"
+      },
+      {
+        "season": 5,
+        "episode": 19,
+        "title": "The Weekend Vortex",
+        "filename": "series-5-episode-19-the-weekend-vortex.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-19-the-weekend-vortex.txt"
+      },
+      {
+        "season": 5,
+        "episode": 20,
+        "title": "The Transporter Malfunction",
+        "filename": "series-5-episode-20-the-transporter-malfunction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-20-the-transporter-malfunction.txt"
+      },
+      {
+        "season": 5,
+        "episode": 21,
+        "title": "The Hawking Excitation",
+        "filename": "series-5-episode-21-the-hawking-excitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-21-the-hawking-excitation.txt"
+      },
+      {
+        "season": 5,
+        "episode": 22,
+        "title": "The Stag Convergence",
+        "filename": "series-5-episode-22-the-stag-convergence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-22-the-stag-convergence.txt"
+      },
+      {
+        "season": 5,
+        "episode": 23,
+        "title": "The Launch Acceleration",
+        "filename": "series-5-episode-23-the-launch-acceleration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-23-the-launch-acceleration.txt"
+      },
+      {
+        "season": 5,
+        "episode": 24,
+        "title": "The Countdown Reflection",
+        "filename": "series-5-episode-24-the-countdown-reflection.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-5-episode-24-the-countdown-reflection.txt"
+      }
+    ],
+    "6": [
+      {
+        "season": 6,
+        "episode": 1,
+        "title": "The Date Night Variable",
+        "filename": "series-6-episode-01-the-date-night-variable.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-01-the-date-night-variable.txt"
+      },
+      {
+        "season": 6,
+        "episode": 2,
+        "title": "The Decoupling Fluctuation",
+        "filename": "series-6-episode-02-the-decoupling-fluctuation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-02-the-decoupling-fluctuation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 3,
+        "title": "The Higgs Boson Observation",
+        "filename": "series-6-episode-03-the-higgs-boson-observation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-03-the-higgs-boson-observation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 4,
+        "title": "The Re Entry Minimization",
+        "filename": "series-6-episode-04-the-re-entry-minimization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-04-the-re-entry-minimization.txt"
+      },
+      {
+        "season": 6,
+        "episode": 5,
+        "title": "The Holographic Excitation",
+        "filename": "series-6-episode-05-the-holographic-excitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-05-the-holographic-excitation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 6,
+        "title": "The Extract Obliteration",
+        "filename": "series-6-episode-06-the-extract-obliteration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-06-the-extract-obliteration.txt"
+      },
+      {
+        "season": 6,
+        "episode": 7,
+        "title": "The Habitation Configuration",
+        "filename": "series-6-episode-07-the-habitation-configuration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-07-the-habitation-configuration.txt"
+      },
+      {
+        "season": 6,
+        "episode": 8,
+        "title": "The 43 Peculiarity",
+        "filename": "series-6-episode-08-the-43-peculiarity.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-08-the-43-peculiarity.txt"
+      },
+      {
+        "season": 6,
+        "episode": 9,
+        "title": "The Parking Spot Escalation",
+        "filename": "series-6-episode-09-the-parking-spot-escalation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-09-the-parking-spot-escalation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 10,
+        "title": "The Fish Guts Displacement",
+        "filename": "series-6-episode-10-the-fish-guts-displacement.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-10-the-fish-guts-displacement.txt"
+      },
+      {
+        "season": 6,
+        "episode": 11,
+        "title": "The Santa Simulation",
+        "filename": "series-6-episode-11-the-santa-simulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-11-the-santa-simulation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 12,
+        "title": "The Egg Salad Equivalency",
+        "filename": "series-6-episode-12-the-egg-salad-equivalency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-12-the-egg-salad-equivalency.txt"
+      },
+      {
+        "season": 6,
+        "episode": 13,
+        "title": "The Bakersfield Expedition",
+        "filename": "series-6-episode-13-the-bakersfield-expedition.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-13-the-bakersfield-expedition.txt"
+      },
+      {
+        "season": 6,
+        "episode": 14,
+        "title": "The Cooperkripke Inversion",
+        "filename": "series-6-episode-14-the-cooperkripke-inversion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-14-the-cooperkripke-inversion.txt"
+      },
+      {
+        "season": 6,
+        "episode": 15,
+        "title": "The Spoiler Alert Segmentation",
+        "filename": "series-6-episode-15-the-spoiler-alert-segmentation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-15-the-spoiler-alert-segmentation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 16,
+        "title": "The Tangible Affection Proof",
+        "filename": "series-6-episode-16-the-tangible-affection-proof.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-16-the-tangible-affection-proof.txt"
+      },
+      {
+        "season": 6,
+        "episode": 17,
+        "title": "The Monster Isolation",
+        "filename": "series-6-episode-17-the-monster-isolation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-17-the-monster-isolation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 18,
+        "title": "The Contractual Obligation Implementation",
+        "filename": "series-6-episode-18-the-contractual-obligation-implementation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-18-the-contractual-obligation-implementation.txt"
+      },
+      {
+        "season": 6,
+        "episode": 19,
+        "title": "The Closet Reconfiguration",
+        "filename": "series-6-episode-19-the-closet-reconfiguration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-19-the-closet-reconfiguration.txt"
+      },
+      {
+        "season": 6,
+        "episode": 20,
+        "title": "The Tenure Turbulence",
+        "filename": "series-6-episode-20-the-tenure-turbulence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-20-the-tenure-turbulence.txt"
+      },
+      {
+        "season": 6,
+        "episode": 21,
+        "title": "The Closure Alternative",
+        "filename": "series-6-episode-21-the-closure-alternative.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-21-the-closure-alternative.txt"
+      },
+      {
+        "season": 6,
+        "episode": 22,
+        "title": "The Proton Resurgence",
+        "filename": "series-6-episode-22-the-proton-resurgence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-6-episode-22-the-proton-resurgence.txt"
+      },
+      {
+        "season": 6,
+        "episode": 23,
+        "title": "The Love Spell Potential",
+        "filename": "series-06-episode-23-the-love-spell-potential.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-06-episode-23-the-love-spell-potential.txt"
+      },
+      {
+        "season": 6,
+        "episode": 24,
+        "title": "The Bon Voyage Reaction",
+        "filename": "series-06-episode-24-the-bon-voyage-reaction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-06-episode-24-the-bon-voyage-reaction.txt"
+      }
+    ],
+    "7": [
+      {
+        "season": 7,
+        "episode": 1,
+        "title": "The Hofstadter Insufficiency",
+        "filename": "series-7-episode-01-the-hofstadter-insufficiency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-01-the-hofstadter-insufficiency.txt"
+      },
+      {
+        "season": 7,
+        "episode": 2,
+        "title": "The Deception Verification",
+        "filename": "series-7-episode-02-the-deception-verification.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-02-the-deception-verification.txt"
+      },
+      {
+        "season": 7,
+        "episode": 3,
+        "title": "The Scavenger Vortex",
+        "filename": "series-7-episode-03-the-scavenger-vortex.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-03-the-scavenger-vortex.txt"
+      },
+      {
+        "season": 7,
+        "episode": 4,
+        "title": "The Raiders Minimization",
+        "filename": "series-7-episode-04-the-raiders-minimization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-04-the-raiders-minimization.txt"
+      },
+      {
+        "season": 7,
+        "episode": 5,
+        "title": "The Focus Attenuation",
+        "filename": "series-7-episode-05-the-focus-attenuation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-05-the-focus-attenuation.txt"
+      },
+      {
+        "season": 7,
+        "episode": 5,
+        "title": "The Workplace Proximity",
+        "filename": "series-7-episode-05-the-workplace-proximity.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-05-the-workplace-proximity.txt"
+      },
+      {
+        "season": 7,
+        "episode": 6,
+        "title": "The Romance Resonance",
+        "filename": "series-7-episode-06-the-romance-resonance.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-06-the-romance-resonance.txt"
+      },
+      {
+        "season": 7,
+        "episode": 7,
+        "title": "The Proton Displacement",
+        "filename": "series-7-episode-07-the-proton-displacement.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-07-the-proton-displacement.txt"
+      },
+      {
+        "season": 7,
+        "episode": 8,
+        "title": "The Itchy Brain Simulation",
+        "filename": "series-7-episode-08-the-itchy-brain-simulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-08-the-itchy-brain-simulation.txt"
+      },
+      {
+        "season": 7,
+        "episode": 9,
+        "title": "The Thanksgiving Decoupling",
+        "filename": "series-7-episode-09-the-thanksgiving-decoupling.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-09-the-thanksgiving-decoupling.txt"
+      },
+      {
+        "season": 7,
+        "episode": 10,
+        "title": "The Discovery Dissipation",
+        "filename": "series-7-episode-10-the-discovery-dissipation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-10-the-discovery-dissipation.txt"
+      },
+      {
+        "season": 7,
+        "episode": 11,
+        "title": "The Cooper Extraction",
+        "filename": "series-7-episode-11-the-cooper-extraction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-11-the-cooper-extraction.txt"
+      },
+      {
+        "season": 7,
+        "episode": 12,
+        "title": "The Hesitation Ramification",
+        "filename": "series-7-episode-12-the-hesitation-ramification.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-12-the-hesitation-ramification.txt"
+      },
+      {
+        "season": 7,
+        "episode": 13,
+        "title": "The Occupation Recalibration",
+        "filename": "series-7-episode-13-the-occupation-recalibration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-13-the-occupation-recalibration.txt"
+      },
+      {
+        "season": 7,
+        "episode": 14,
+        "title": "The Convention Conundrum",
+        "filename": "series-7-episode-14-the-convention-conundrum.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-14-the-convention-conundrum.txt"
+      },
+      {
+        "season": 7,
+        "episode": 15,
+        "title": "The Locomotive Manipulation",
+        "filename": "series-7-episode-15-the-locomotive-manipulation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-15-the-locomotive-manipulation.txt"
+      },
+      {
+        "season": 7,
+        "episode": 16,
+        "title": "The Table Polarisation",
+        "filename": "series-7-episode-16-the-table-polarisation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-16-the-table-polarisation.txt"
+      },
+      {
+        "season": 7,
+        "episode": 17,
+        "title": "The Friendship Turbulence",
+        "filename": "series-7-episode-17-the-friendship-turbulence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-17-the-friendship-turbulence.txt"
+      },
+      {
+        "season": 7,
+        "episode": 18,
+        "title": "The Mommy Observation",
+        "filename": "series-7-episode-18-the-mommy-observation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-18-the-mommy-observation.txt"
+      },
+      {
+        "season": 7,
+        "episode": 19,
+        "title": "The Indecision Amalgamation",
+        "filename": "series-7-episode-19-the-indecision-amalgamation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-19-the-indecision-amalgamation.txt"
+      },
+      {
+        "season": 7,
+        "episode": 20,
+        "title": "The Relationship Diremption",
+        "filename": "series-7-episode-20-the-relationship-diremption.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-20-the-relationship-diremption.txt"
+      },
+      {
+        "season": 7,
+        "episode": 21,
+        "title": "The Anything Can Happen Recurrence",
+        "filename": "series-7-episode-21-the-anything-can-happen-recurrence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-21-the-anything-can-happen-recurrence.txt"
+      },
+      {
+        "season": 7,
+        "episode": 22,
+        "title": "The Proton Transmogrification",
+        "filename": "series-7-episode-22-the-proton-transmogrification.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-22-the-proton-transmogrification.txt"
+      },
+      {
+        "season": 7,
+        "episode": 23,
+        "title": "The Gorilla Dissolution",
+        "filename": "series-7-episode-23-the-gorilla-dissolution.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-23-the-gorilla-dissolution.txt"
+      },
+      {
+        "season": 7,
+        "episode": 24,
+        "title": "The Status Quo Combustion",
+        "filename": "series-7-episode-24-the-status-quo-combustion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-7-episode-24-the-status-quo-combustion.txt"
+      }
+    ],
+    "8": [
+      {
+        "season": 8,
+        "episode": 1,
+        "title": "The Locomotion Interruption",
+        "filename": "series-8-episode-01-the-locomotion-interruption.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-01-the-locomotion-interruption.txt"
+      },
+      {
+        "season": 8,
+        "episode": 2,
+        "title": "The Junior Professor Solution",
+        "filename": "series-8-episode-02-the-junior-professor-solution.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-02-the-junior-professor-solution.txt"
+      },
+      {
+        "season": 8,
+        "episode": 3,
+        "title": "The First Pitch Insufficiency",
+        "filename": "series-8-episode-03-the-first-pitch-insufficiency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-03-the-first-pitch-insufficiency.txt"
+      },
+      {
+        "season": 8,
+        "episode": 4,
+        "title": "The Hook Up Reverbration",
+        "filename": "series-8-episode-04-the-hook-up-reverbration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-04-the-hook-up-reverbration.txt"
+      },
+      {
+        "season": 8,
+        "episode": 6,
+        "title": "The Expedition Approximation",
+        "filename": "series-8-episode-06-the-expedition-approximation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-06-the-expedition-approximation.txt"
+      },
+      {
+        "season": 8,
+        "episode": 7,
+        "title": "The Misinterpretation Agitation",
+        "filename": "series-8-episode-07-the-misinterpretation-agitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-07-the-misinterpretation-agitation.txt"
+      },
+      {
+        "season": 8,
+        "episode": 8,
+        "title": "The Prom Equivalency",
+        "filename": "series-8-episode-08-the-prom-equivalency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-08-the-prom-equivalency.txt"
+      },
+      {
+        "season": 8,
+        "episode": 9,
+        "title": "The Septum Deviation",
+        "filename": "series-8-episode-09-the-septum-deviation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-09-the-septum-deviation.txt"
+      },
+      {
+        "season": 8,
+        "episode": 10,
+        "title": "The Champagne Reflection",
+        "filename": "series-8-episode-10-the-champagne-reflection.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-10-the-champagne-reflection.txt"
+      },
+      {
+        "season": 8,
+        "episode": 11,
+        "title": "The Clean Room Infiltration",
+        "filename": "series-8-episode-11-the-clean-room-infiltration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-11-the-clean-room-infiltration.txt"
+      },
+      {
+        "season": 8,
+        "episode": 12,
+        "title": "The Space Probe Disintegration",
+        "filename": "series-8-episode-12-the-space-probe-disintegration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-12-the-space-probe-disintegration.txt"
+      },
+      {
+        "season": 8,
+        "episode": 13,
+        "title": "The Anxiety Optimisation",
+        "filename": "series-8-episode-13-the-anxiety-optimisation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-13-the-anxiety-optimisation.txt"
+      },
+      {
+        "season": 8,
+        "episode": 14,
+        "title": "The Troll Manifestation",
+        "filename": "series-8-episode-14-the-troll-manifestation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-14-the-troll-manifestation.txt"
+      },
+      {
+        "season": 8,
+        "episode": 15,
+        "title": "The Comic Book Store Regeneration",
+        "filename": "series-8-episode-15-the-comic-book-store-regeneration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-15-the-comic-book-store-regeneration.txt"
+      },
+      {
+        "season": 8,
+        "episode": 16,
+        "title": "The Intimacy Acceleration",
+        "filename": "series-8-episode-16-the-intimacy-acceleration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-16-the-intimacy-acceleration.txt"
+      },
+      {
+        "season": 8,
+        "episode": 17,
+        "title": "The Colonization Application",
+        "filename": "series-8-episode-17-the-colonization-application.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-17-the-colonization-application.txt"
+      },
+      {
+        "season": 8,
+        "episode": 18,
+        "title": "The Leftover Thermalization",
+        "filename": "series-8-episode-18-the-leftover-thermalization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-18-the-leftover-thermalization.txt"
+      },
+      {
+        "season": 8,
+        "episode": 19,
+        "title": "The Skywalker Incursion",
+        "filename": "series-8-episode-19-the-skywalker-incursion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-19-the-skywalker-incursion.txt"
+      },
+      {
+        "season": 8,
+        "episode": 20,
+        "title": "The Fortification Implementation",
+        "filename": "series-8-episode-20-the-fortification-implementation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-20-the-fortification-implementation.txt"
+      },
+      {
+        "season": 8,
+        "episode": 21,
+        "title": "The Communication Deterioration",
+        "filename": "series-8-episode-21-the-communication-deterioration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-21-the-communication-deterioration.txt"
+      },
+      {
+        "season": 8,
+        "episode": 22,
+        "title": "The Graduation Transmission",
+        "filename": "series-8-episode-22-the-graduation-transmission.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-22-the-graduation-transmission.txt"
+      },
+      {
+        "season": 8,
+        "episode": 23,
+        "title": "The Maternal Combustion",
+        "filename": "series-8-episode-23-the-maternal-combustion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-23-the-maternal-combustion.txt"
+      },
+      {
+        "season": 8,
+        "episode": 24,
+        "title": "The Commitment Determination",
+        "filename": "series-8-episode-24-the-commitment-determination.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-8-episode-24-the-commitment-determination.txt"
+      }
+    ],
+    "9": [
+      {
+        "season": 9,
+        "episode": 1,
+        "title": "The Matrimonial Momentum",
+        "filename": "series-9-episode-01-the-matrimonial-momentum.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-01-the-matrimonial-momentum.txt"
+      },
+      {
+        "season": 9,
+        "episode": 2,
+        "title": "The Separation Oscillation",
+        "filename": "series-9-episode-02-the-separation-oscillation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-02-the-separation-oscillation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 3,
+        "title": "The Batchelor Party Corrosion",
+        "filename": "series-9-episode-03-the-batchelor-party-corrosion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-03-the-batchelor-party-corrosion.txt"
+      },
+      {
+        "season": 9,
+        "episode": 4,
+        "title": "The 2003 Approximation",
+        "filename": "series-9-episode-04-the-2003-approximation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-04-the-2003-approximation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 5,
+        "title": "The Perspiration Implementation",
+        "filename": "series-9-episode-05-the-perspiration-implementation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-05-the-perspiration-implementation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 6,
+        "title": "The Helium Insufficiency",
+        "filename": "series-9-episode-06-the-helium-insufficiency.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-06-the-helium-insufficiency.txt"
+      },
+      {
+        "season": 9,
+        "episode": 7,
+        "title": "The Spock Resonance",
+        "filename": "series-9-episode-07-the-spock-resonance.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-07-the-spock-resonance.txt"
+      },
+      {
+        "season": 9,
+        "episode": 8,
+        "title": "The Mystery Date Observation",
+        "filename": "series-9-episode-08-the-mystery-date-observation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-08-the-mystery-date-observation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 9,
+        "title": "The Platonic Permutation",
+        "filename": "series-9-episode-09-the-platonic-permutation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-09-the-platonic-permutation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 10,
+        "title": "The Earworm Reverberation",
+        "filename": "series-9-episode-10-the-earworm-reverberation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-10-the-earworm-reverberation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 11,
+        "title": "The Opening Night Excitation",
+        "filename": "series-9-episode-11-the-opening-night-excitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-11-the-opening-night-excitation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 12,
+        "title": "The Sales Call Sublimation",
+        "filename": "series-9-episode-12-the-sales-call-sublimation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-12-the-sales-call-sublimation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 13,
+        "title": "The Empathy Optimisation",
+        "filename": "series-9-episode-13-the-empathy-optimisation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-13-the-empathy-optimisation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 14,
+        "title": "The Meemaw Materialisation",
+        "filename": "series-9-episode-14-the-meemaw-materialisation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-14-the-meemaw-materialisation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 15,
+        "title": "The Valentino Submergence",
+        "filename": "series-9-episode-15-the-valentino-submergence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-15-the-valentino-submergence.txt"
+      },
+      {
+        "season": 9,
+        "episode": 16,
+        "title": "The Positive Negative Reaction",
+        "filename": "series-9-episode-16-the-positive-negative-reaction.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-16-the-positive-negative-reaction.txt"
+      },
+      {
+        "season": 9,
+        "episode": 17,
+        "title": "The Celebration Experimentation",
+        "filename": "series-9-episode-17-the-celebration-experimentation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-17-the-celebration-experimentation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 18,
+        "title": "The Application Deterioration",
+        "filename": "series-9-episode-18-the-application-deterioration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-18-the-application-deterioration.txt"
+      },
+      {
+        "season": 9,
+        "episode": 19,
+        "title": "The Solder Excursion Diversion",
+        "filename": "series-9-episode-19-the-solder-excursion-diversion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-19-the-solder-excursion-diversion.txt"
+      },
+      {
+        "season": 9,
+        "episode": 20,
+        "title": "The Big Bear Precipitation",
+        "filename": "series-9-episode-20-the-big-bear-precipitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-20-the-big-bear-precipitation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 21,
+        "title": "The Viewing Party Combustion",
+        "filename": "series-9-episode-21-the-viewing-party-combustion.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-21-the-viewing-party-combustion.txt"
+      },
+      {
+        "season": 9,
+        "episode": 22,
+        "title": "The Fermentation Bifurcation",
+        "filename": "series-9-episode-22-the-fermentation-bifurcation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-22-the-fermentation-bifurcation.txt"
+      },
+      {
+        "season": 9,
+        "episode": 23,
+        "title": "The Line Substitution Solution",
+        "filename": "series-9-episode-23-the-line-substitution-solution.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-23-the-line-substitution-solution.txt"
+      },
+      {
+        "season": 9,
+        "episode": 24,
+        "title": "The Convergence Convergence",
+        "filename": "series-9-episode-24-the-convergence-convergence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-9-episode-24-the-convergence-convergence.txt"
+      }
+    ],
+    "10": [
+      {
+        "season": 10,
+        "episode": 1,
+        "title": "The Conjugal Conjecture",
+        "filename": "series-10-episode-01-the-conjugal-conjecture.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-01-the-conjugal-conjecture.txt"
+      },
+      {
+        "season": 10,
+        "episode": 2,
+        "title": "The Military Miniturization",
+        "filename": "series-10-episode-02-the-military-miniturization.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-02-the-military-miniturization.txt"
+      },
+      {
+        "season": 10,
+        "episode": 3,
+        "title": "The Dependence Transcendence",
+        "filename": "series-10-episode-03-the-dependence-transcendence.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-03-the-dependence-transcendence.txt"
+      },
+      {
+        "season": 10,
+        "episode": 4,
+        "title": "The Cohabitation Experimentation",
+        "filename": "series-10-episode-04-the-cohabitation-experimentation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-04-the-cohabitation-experimentation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 5,
+        "title": "The Hot Tub Contamination",
+        "filename": "series-10-episode-05-the-hot-tub-contamination.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-05-the-hot-tub-contamination.txt"
+      },
+      {
+        "season": 10,
+        "episode": 6,
+        "title": "The Foetal Kick Catalyst",
+        "filename": "series-10-episode-06-the-foetal-kick-catalyst.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-06-the-foetal-kick-catalyst.txt"
+      },
+      {
+        "season": 10,
+        "episode": 7,
+        "title": "The Veracity Elasticity",
+        "filename": "series-10-episode-07-the-veracity-elasticity.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-07-the-veracity-elasticity.txt"
+      },
+      {
+        "season": 10,
+        "episode": 8,
+        "title": "The Brain Bowl Incubation",
+        "filename": "series-10-episode-08-the-brain-bowl-incubation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-08-the-brain-bowl-incubation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 9,
+        "title": "The Geology Elevation",
+        "filename": "series-10-episode-09-the-geology-elevation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-09-the-geology-elevation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 10,
+        "title": "The Property Division Collision",
+        "filename": "series-10-episode-10-the-property-division-collision.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-10-the-property-division-collision.txt"
+      },
+      {
+        "season": 10,
+        "episode": 11,
+        "title": "The Birthday Synchronicity",
+        "filename": "series-10-episode-11-the-birthday-synchronicity.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-11-the-birthday-synchronicity.txt"
+      },
+      {
+        "season": 10,
+        "episode": 12,
+        "title": "The Holiday Summation",
+        "filename": "series-10-episode-12-the-holiday-summation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-12-the-holiday-summation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 13,
+        "title": "The Romance Recalibration",
+        "filename": "series-10-episode-13-the-romance-recalibration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-13-the-romance-recalibration.txt"
+      },
+      {
+        "season": 10,
+        "episode": 14,
+        "title": "The Emotion Detection Automation",
+        "filename": "series-10-episode-14-the-emotion-detection-automation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-14-the-emotion-detection-automation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 15,
+        "title": "The Locomotion Reverberation",
+        "filename": "series-10-episode-15-the-locomotion-reverberation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-15-the-locomotion-reverberation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 16,
+        "title": "The Allowance Evaporation",
+        "filename": "series-10-episode-16-the-allowance-evaporation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-16-the-allowance-evaporation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 17,
+        "title": "The Comic Con Conundrum",
+        "filename": "series-10-episode-17-the-comic-con-conundrum.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-17-the-comic-con-conundrum.txt"
+      },
+      {
+        "season": 10,
+        "episode": 18,
+        "title": "The Escape Hatch Identification",
+        "filename": "series-10-episode-18-the-escape-hatch-identification.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-18-the-escape-hatch-identification.txt"
+      },
+      {
+        "season": 10,
+        "episode": 19,
+        "title": "The Collaboration Fluctuation",
+        "filename": "series-10-episode-19-the-collaboration-fluctuation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-19-the-collaboration-fluctuation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 20,
+        "title": "The Recollection Dissipation",
+        "filename": "series-10-episode-20-the-recollection-dissipation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-20-the-recollection-dissipation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 21,
+        "title": "The Separation Agitation",
+        "filename": "series-10-episode-21-the-separation-agitation.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-21-the-separation-agitation.txt"
+      },
+      {
+        "season": 10,
+        "episode": 22,
+        "title": "The Cognition Regeneration",
+        "filename": "series-10-episode-22-the-cognition-regeneration.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-22-the-cognition-regeneration.txt"
+      },
+      {
+        "season": 10,
+        "episode": 23,
+        "title": "The Gyroscopic Collapse",
+        "filename": "series-10-episode-23-the-gyroscopic-collapse.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-23-the-gyroscopic-collapse.txt"
+      },
+      {
+        "season": 10,
+        "episode": 24,
+        "title": "The Long Distance Dissonance",
+        "filename": "series-10-episode-24-the-long-distance-dissonance.txt",
+        "filepath": "data/subtitles/bigbangtheory/episodes/series-10-episode-24-the-long-distance-dissonance.txt"
+      }
+    ]
+  }
+}

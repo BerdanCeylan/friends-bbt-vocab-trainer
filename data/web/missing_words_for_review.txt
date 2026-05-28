@@ -1,0 +1,136 @@
+# Toplam 132 kelime
+# Bu listeden çıkarmak istediğin kelimelerin NUMARASINI veya KELİMEYİ yaz.
+# Örnek: 5, 12, 47 veya wheaton spock batman
+
+  1.   5349  →  going
+  2.   2652  →  something
+  3.   2522  →  doing
+  4.   1828  →  kind
+  5.   1308  →  together
+  6.   1210  →  having
+  7.   1158  →  wrong
+  8.   1114  →  find
+  9.   1103  →  around
+ 10.   1044  →  he's
+ 11.    950  →  trying
+ 12.    909  →  saying
+ 13.    886  →  she's
+ 14.    872  →  coming
+ 15.    856  →  mind
+ 16.    839  →  what's
+ 17.    799  →  making
+ 18.    737  →  there's
+ 19.    631  →  found
+ 20.    557  →  taking
+ 21.    532  →  living
+ 22.    523  →  end
+ 23.    481  →  they're
+ 24.    454  →  moving
+ 25.    375  →  dating
+ 26.    370  →  ring
+ 27.    342  →  seeing
+ 28.    341  →  sometimes
+ 29.    321  →  spend
+ 30.    320  →  brain
+ 31.    319  →  asking
+ 32.    312  →  giving
+ 33.    310  →  behind
+ 34.    278  →  using
+ 35.    254  →  who's
+ 36.    247  →  trek
+ 37.    247  →  young
+ 38.    242  →  along
+ 39.    241  →  lunch
+ 40.    241  →  eating
+ 41.    240  →  wheaton
+ 42.    225  →  steph
+ 43.    223  →  couch
+ 44.    222  →  page
+ 45.    222  →  lesley
+ 46.    221  →  hawking
+ 47.    219  →  alex
+ 48.    214  →  spock
+ 49.    212  →  mmm
+ 50.    212  →  gentlemen
+ 51.    206  →  catch
+ 52.    205  →  hoping
+ 53.    205  →  india
+ 54.    200  →  social
+ 55.    199  →  batman
+ 56.    199  →  lee
+ 57.    198  →  song
+ 58.    195  →  weren
+ 59.    194  →  lord
+ 60.    193  →  universe
+ 61.    189  →  soup
+ 62.    188  →  yep
+ 63.    187  →  touch
+ 64.    187  →  con
+ 65.    187  →  shouldn
+ 66.    186  →  english
+ 67.    185  →  agree
+ 68.    184  →  uncomfortable
+ 69.    183  →  nope
+ 70.    181  →  favourite
+ 71.    180  →  black
+ 72.    179  →  giant
+ 73.    178  →  online
+ 74.    177  →  department
+ 75.    177  →  terrific
+ 76.    177  →  gablehouser
+ 77.    176  →  neither
+ 78.    176  →  join
+ 79.    176  →  texas
+ 80.    174  →  notice
+ 81.    174  →  silly
+ 82.    174  →  bitch
+ 83.    173  →  grown
+ 84.    172  →  magic
+ 85.    172  →  summer
+ 86.    172  →  toilet
+ 87.    171  →  saturday
+ 88.    171  →  bunch
+ 89.    171  →  alicia
+ 90.    171  →  wiii
+ 91.    170  →  acting
+ 92.    170  →  support
+ 93.    170  →  david
+ 94.    169  →  computer
+ 95.    168  →  clock
+ 96.    168  →  information
+ 97.    168  →  possible
+ 98.    168  →  tree
+ 99.    168  →  field
+100.    166  →  hungry
+101.    165  →  simple
+102.    165  →  rules
+103.    165  →  station
+104.    165  →  breakfast
+105.    164  →  dave
+106.    164  →  action
+107.    161  →  force
+108.    161  →  cousin
+109.    161  →  string
+110.    160  →  correct
+111.    159  →  shall
+112.    159  →  till
+113.    159  →  offer
+114.    157  →  excellent
+115.    157  →  honest
+116.    156  →  games
+117.    156  →  state
+118.    156  →  scene
+119.    156  →  north
+120.    156  →  assistant
+121.    155  →  strong
+122.    155  →  moon
+123.    155  →  safe
+124.    154  →  difference
+125.    154  →  lying
+126.    154  →  zero
+127.    154  →  cheesecake
+128.    153  →  regular
+129.    153  →  dirty
+130.    153  →  power
+131.    152  →  kitchen
+132.    152  →  waste

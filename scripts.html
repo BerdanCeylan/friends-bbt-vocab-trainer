@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senaryolar • TV English</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #22c55e;
+      --text: #e2e8f0;
+      --muted: #64748b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .top-nav {
+      background: #1e293b;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid #334155;
+      flex-shrink: 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      line-height: 1.1;
+    }
+    .nav-brand strong {
+      font-size: 1.25rem;
+      color: #f1f5f9;
+    }
+    .nav-brand .nav-subtitle {
+      font-size: 0.7rem;
+      color: #64748b;
+      font-weight: 400;
+    }
+    .mode-switcher {
+      display: flex;
+      background: #0f172a;
+      border-radius: 999px;
+      padding: 4px;
+      border: 1px solid #334155;
+      margin-left: auto;
+    }
+    .mode-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #94a3b8;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .mode-btn:hover {
+      background: #1e293b;
+      color: #e2e8f0;
+    }
+    .mode-btn.active {
+      background: #22c55e;
+      color: #0f172a;
+      box-shadow: 0 2px 8px rgba(34, 197, 94, 0.3);
+    }
+    .mode-btn.active:hover {
+      background: #16a34a;
+      color: #0f172a;
+    }
+    .nav-hint {
+      font-size: 0.72rem;
+      color: #64748b;
+      margin-left: 12px;
+      opacity: 0.85;
+    }
+
+    /* === Floating Action Button - Kelime Havuzuna Hızlı Dön === */
+    .fab-back {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #3b82f6;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 12px 18px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 999;
+      transition: all 0.2s ease;
+    }
+    .fab-back:hover {
+      background: #2563eb;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 25px rgba(59, 130, 246, 0.35);
+    }
+
+    /* Basit toast bildirimi */
+    .mini-toast {
+      position: fixed;
+      bottom: 90px;
+      right: 24px;
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #475569;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      animation: toastIn 0.2s ease;
+    }
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === Episode Stats Box (sağ tarafta) === */
+    .episode-stats {
+      width: 240px;
+      background: #1e293b;
+      border-left: 1px solid #334155;
+      padding: 16px;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+    }
+    .episode-stats .stat-title {
+      font-size: 0.75rem;
+      color: #64748b;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+    .episode-stats .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+    }
+    .episode-stats .progress-bar {
+      height: 6px;
+      background: #334155;
+      border-radius: 999px;
+      margin: 10px 0 8px;
+      overflow: hidden;
+    }
+    .episode-stats .progress-fill {
+      height: 100%;
+      background: linear-gradient(to right, #22c55e, #16a34a);
+      transition: width 0.3s ease;
+    }
+    .episode-stats .stat-row.big {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+    .episode-stats .stat-row.big strong {
+      font-size: 1.15rem;
+    }
+
+    /* === Zengin Kelime Kartı Modal === */
+    .vocab-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    .vocab-modal.open {
+      display: flex;
+    }
+    .vocab-card {
+      background: #1e293b;
+      border: 1px solid #475569;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 620px;
+      max-height: 85vh;
+      overflow: auto;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    }
+    .vocab-card-header {
+      padding: 18px 22px 12px;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .vocab-lemma {
+      font-size: 1.85rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+    .tier-badge {
+      font-size: 0.7rem;
+      padding: 2px 9px;
+      border-radius: 999px;
+      font-weight: 700;
+      display: inline-block;
+    }
+    .tier-1 { background: #22c55e22; color: #22c55e; }
+    .tier-2 { background: #3b82f622; color: #3b82f6; }
+    .tier-3 { background: #f59e0b22; color: #f59e0b; }
+    .vocab-card-body {
+      padding: 18px 22px;
+    }
+    .variants {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    .variant-chip {
+      background: #334155;
+      padding: 2px 9px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #cbd5e1;
+    }
+    .examples {
+      background: #0f172a;
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 10px;
+    }
+    .examples h4 {
+      margin: 0 0 8px;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+    .example-item {
+      font-size: 0.95rem;
+      margin: 6px 0;
+      line-height: 1.4;
+      padding-left: 4px;
+      border-left: 3px solid #475569;
+    }
+    .vocab-actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .vocab-actions button {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn-known-big { background: #22c55e; color: #0f172a; }
+    .btn-unknown-big { background: #ef4444; color: white; }
+    .main-container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+    .sidebar {
+      width: 310px;
+      background: #1e293b;
+      border-right: 1px solid #334155;
+      overflow-y: auto;
+      padding: 16px 12px;
+      flex-shrink: 0;
+    }
+    .source-header {
+      font-size: 0.8rem;
+      color: #64748b;
+      font-weight: 700;
+      padding: 8px 12px 4px;
+      letter-spacing: 0.5px;
+    }
+    .season {
+      margin-bottom: 4px;
+    }
+    .season-header {
+      padding: 9px 12px;
+      background: #334155;
+      border-radius: 7px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .episodes {
+      display: none;
+      padding-left: 8px;
+    }
+    .episode {
+      padding: 6px 10px;
+      margin: 2px 0;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      color: #cbd5e1;
+    }
+    .episode:hover {
+      background: #475569;
+    }
+    .episode.active {
+      background: #22c55e22;
+      color: #22c55e;
+      font-weight: 600;
+    }
+    .content-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .episode-header {
+      padding: 14px 24px;
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+      font-size: 1.1rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .script-text {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px 36px;
+      font-size: 1.05rem;
+      line-height: 1.72;
+      background: #0f172a;
+    }
+    .script-content-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .script-text p {
+      margin: 7px 0;
+    }
+    .word {
+      cursor: pointer;
+      padding: 1px 3px;
+      border-radius: 3px;
+    }
+    .word:hover {
+      background: #22c55e22;
+    }
+    .word.known {
+      background: #22c55e33;
+      color: #22c55e;
+    }
+    .word.unknown {
+      background: #ef444433;
+      color: #ef4444;
+    }
+
+    /* === Geliştirilmiş Okuma Deneyimi: Satır bazlı tarama === */
+    .script-text {
+      font-size: 1.08rem;
+      line-height: 1.75;
+      padding: 24px 40px;
+    }
+    .script-content-inner {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .dialogue-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 6px 8px;
+      margin: 3px 0;
+      border-radius: 8px;
+      transition: background 0.15s ease;
+    }
+    .dialogue-line:hover {
+      background: #1e293b;
+    }
+    .dialogue-line:hover .line-actions {
+      opacity: 1;
+    }
+    .line-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .line-content p {
+      margin: 0;
+    }
+    .line-actions {
+      opacity: 0.25;
+      transition: opacity 0.15s ease;
+      flex-shrink: 0;
+      padding-top: 2px;
+    }
+    .mark-line-btn {
+      background: #166534;
+      color: #86efac;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+    }
+    .mark-line-btn:hover {
+      background: #22c55e;
+      color: #0f172a;
+    }
+    /* Daha az yorucu known stili (okuma akışı için) */
+    .word.known {
+      background: transparent;
+      color: #4ade80;
+      border-bottom: 1px dotted #4ade80;
+      padding-bottom: 1px;
+    }
+    .word.known:hover {
+      background: #22c55e22;
+    }
+
+    /* Eşleşmeyen / sisteme kayıtlı olmayan kelimeler (dikkat çekici ama okunabilir) */
+    .unlinked-word {
+      color: #fbbf24;
+      border-bottom: 1px dashed #f59e0b;
+      background: #451a0333;   /* çok hafif amber arka plan */
+      padding: 0 1px;
+      border-radius: 2px;
+    }
+    .unlinked-word:hover {
+      background: #451a0355;
+      color: #fcd34d;
+    }
+
+    /* Function Words — mavi ton, ayrı kategori */
+    .function-word {
+      color: #60a5fa;
+      border-bottom: 1px dotted #3b82f6;
+      background: #1e3a8a22;
+      padding: 0 1px;
+      border-radius: 2px;
+    }
+    .function-word:hover {
+      background: #1e40af33;
+      color: #93c5fd;
+    }
+
+    /* Karakter İsimleri — mor/eflatun ton, dikkat çekici */
+    .character-name {
+      color: #c026d3;
+      border-bottom: 1px dashed #a21caf;
+      background: #581c8722;
+      padding: 0 1px;
+      border-radius: 2px;
+      font-weight: 500;
+    }
+    .character-name:hover {
+      background: #6b21a833;
+      color: #e879f9;
+    }
+    .mark-panel {
+      width: 280px;
+      background: #1e293b;
+      border-left: 1px solid #334155;
+      padding: 20px;
+      flex-shrink: 0;
+      overflow-y: auto;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      cursor: pointer;
+    }
+    .btn-known { background: #22c55e; color: #0f172a; font-weight: 600; }
+    .btn-unknown { background: #ef4444; color: white; }
+    .empty-state {
+      color: #64748b;
+      text-align: center;
+      padding-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Navigasyon - Kolay Mod Geçişi -->
+  <div class="top-nav">
+    <div class="nav-brand" onclick="location.href='index.html'">
+      <strong>TV English</strong>
+      <span class="nav-subtitle">Friends + Big Bang Theory</span>
+    </div>
+
+    <!-- Büyük, belirgin mod geçiş butonları -->
+    <div class="mode-switcher">
+      <a href="index.html" class="mode-btn">
+        📚 <span>Kelime Havuzu</span>
+      </a>
+      <a href="scripts.html" class="mode-btn active">
+        📖 <span>Senaryoları İncele</span>
+      </a>
+      <a href="review.html" class="mode-btn">
+        📝 <span>Çalışma Odası</span>
+      </a>
+    </div>
+
+    <div class="nav-hint">Kelimeye tıklayıp işaretle • Kalıcı olarak kaydedilir</div>
+
+    <button onclick="showSuspectWordsPanel()" 
+            style="margin-left:auto; background:#f59e0b; color:white; border:none; padding:6px 12px; border-radius:6px; font-size:0.85rem; cursor:pointer; white-space:nowrap;">
+      ⚠️ Şüpheli Kelimeler
+    </button>
+  </div>
+
+  <div class="main-container">
+
+    <!-- Sol Menü -->
+    <div class="sidebar">
+      <div class="source-header">FRIENDS</div>
+      <div id="friends-seasons"></div>
+
+      <div class="source-header" style="margin-top: 16px;">THE BIG BANG THEORY</div>
+      <div id="bbt-seasons"></div>
+    </div>
+
+    <!-- Ana İçerik -->
+    <div class="content-area">
+      <div class="episode-header">
+        <span id="current-episode">Bölüm Seçin</span>
+      </div>
+
+      <div style="display: flex; flex: 1; overflow: hidden;">
+        <div class="script-text" id="script-text">
+          <div class="empty-state">
+            Soldan bir bölüm seçin.<br>
+            Metin içindeki kelimelere tıklayarak işaretleyebilirsiniz.
+          </div>
+        </div>
+
+        <!-- Episode Stats Box - Zengin versiyon -->
+        <div class="episode-stats" id="episode-stats" style="display:none;">
+          <div class="stat-title">Bu Bölüm — Kelime Durumu</div>
+
+          <div class="stat-row big">
+            <span>Toplam eşsiz kelime</span>
+            <strong id="stat-total">—</strong>
+          </div>
+
+          <div class="stat-row">
+            <span style="color:#22c55e">→ Kartla eşleşen</span>
+            <strong id="stat-linked" style="color:#22c55e">—</strong>
+          </div>
+
+          <div class="stat-row">
+            <span style="color:#f59e0b">→ Eşleşmeyen (turuncu)</span>
+            <strong id="stat-unlinked" style="color:#f59e0b">—</strong>
+          </div>
+
+          <div class="stat-row">
+            <span style="color:#60a5fa">→ Function Words</span>
+            <strong id="stat-function" style="color:#60a5fa">—</strong>
+          </div>
+
+          <div class="stat-row">
+            <span style="color:#c026d3">→ Karakter İsimleri</span>
+            <strong id="stat-characters" style="color:#c026d3">—</strong>
+          </div>
+
+          <div style="height:1px; background:#334155; margin:8px 0;"></div>
+
+          <div class="stat-row">
+            <span>İşaretlenen</span>
+            <strong id="stat-marked">—</strong>
+          </div>
+          <div class="stat-row">
+            <span style="color:#22c55e">Biliyorum</span>
+            <strong id="stat-known" style="color:#22c55e">—</strong>
+          </div>
+          <div class="stat-row">
+            <span style="color:#ef4444">Bilmiyorum</span>
+            <strong id="stat-unknown" style="color:#ef4444">—</strong>
+          </div>
+
+          <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+
+          <small style="color:#64748b; line-height:1.3; display:block; margin-top:4px;">
+            Turuncu/sarı kelimeler sisteme kayıtlı değil.<br>
+            Bunların kart karşılığı henüz yok.
+          </small>
+        </div>
+
+        <!-- Sağ panel: Bölüm istatistikleri (kelime kartı için modal kullanılır) -->
+        <!-- Eski basit panel kaldırıldı, artık zengin modal var -->
+      </div>
+    </div>
+
+  </div>
+
+<script>
+let marks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+let currentEpisode = null;
+
+// Çalışma Odası FAB'ını güncelle (kaç bilmiyorum var?)
+function updateStudyFab() {
+  const fab = document.getElementById('fab-study');
+  if (!fab) return;
+
+  let unknownCount = 0;
+  try {
+    const stored = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+    unknownCount = Object.values(stored).filter(m => m && m.is_known === 0).length;
+  } catch (e) {}
+
+  if (unknownCount > 0) {
+    fab.innerHTML = `📝 Çalışma Odası <span style="background:#0f172a; color:#22c55e; padding:1px 7px; border-radius:999px; font-size:0.75rem; font-weight:700; margin-left:4px;">${unknownCount}</span>`;
+    fab.title = `${unknownCount} kelime çalışman var — hemen git`;
+  } else {
+    fab.innerHTML = `📝 Çalışma Odası`;
+    fab.title = "Bilmediğin kelimelerle çalış";
+  }
+}
+
+// Başka sekmeden / sayfadan işaretleme olursa sayacı güncelle
+window.addEventListener('storage', (e) => {
+  if (e.key === 'wordMarks_v2') {
+    marks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+    updateStudyFab();
+  }
+});
+
+function showMiniToast(message, linkText, linkHref) {
+  // Eski toast varsa kaldır
+  document.querySelectorAll('.mini-toast').forEach(el => el.remove());
+
+  const toast = document.createElement('div');
+  toast.className = 'mini-toast';
+  toast.innerHTML = `
+    <span>${message}</span>
+    <a href="${linkHref}" style="background:#22c55e; color:#0f172a; padding:4px 12px; border-radius:999px; font-weight:700; text-decoration:none; font-size:0.85rem;">${linkText}</a>
+    <button onclick="this.closest('.mini-toast').remove()" style="background:none; border:none; color:#64748b; font-size:1.1rem; line-height:1; cursor:pointer; margin-left:4px;">×</button>
+  `;
+  document.body.appendChild(toast);
+
+  // 6 saniye sonra otomatik kaybolsun
+  setTimeout(() => {
+    toast.style.transition = 'all 0.25s ease';
+    toast.style.opacity = '0';
+    setTimeout(() => toast.remove(), 200);
+  }, 6200);
+}
+
+// === Zengin kelime kartı için yeni değişkenler ===
+let allLemmas = [];                     // lemmas.json içeriği
+let variantToLemma = {};                // "gonna" → full lemma objesi
+let lemmaToData = {};                   // "go" → full lemma objesi
+let currentModalLemma = null;           // modal açıkken hangi lemma
+let currentEpisodeAllUniqueWords = new Set();     // Bu bölümdeki TÜM eşsiz kelimeler (ham)
+let currentEpisodeLinkedLemmas = new Set();       // Bunlardan bizim sistemimizde olanlar (lemma bazlı)
+let currentEpisodeUnlinkedWords = new Set();      // Eşleşmeyen kelimeler
+let currentEpisodeFunctionWords = new Set();      // Function words (ayrı kategori)
+let currentEpisodeCharacterNames = new Set();     // Bu bölümde geçen karakter isimleri
+
+let functionWordsSet = new Set();                 // Yüklenen function words listesi
+let characterNamesSet = new Set();                // Karakter isimleri (ayrı kategori)
+
+// Erken kullanılabilecek basit quote stripper (cleanWord tam tanımlanmadan önce)
+function stripOuterQuotesEarly(s) {
+  if (!s) return '';
+  return String(s).replace(/^['"‘’“”«»]+|['"‘’“”«»]+$/g, '');
+}
+
+// Vocabulary yükleme durumunu promise ile takip ediyoruz (race condition önlemek için)
+let vocabularyReady = null;
+
+// Kelimeyi normalize etmek için ortak fonksiyon
+// Tırnak ('' " ' “ ” ‘ ’ « ») ve benzeri dış karakterleri baştan ve sondan temizler.
+// Bu sayede SRT dosyalarındaki quote pollution (''Grab, hero'', ''look vs.) temiz lemma'ya map'lenir.
+function cleanWord(str) {
+  if (!str) return '';
+  let s = String(str);
+
+  // 1. Baştaki ve sondaki quote / apostrophe varyasyonlarını temizle (en sık karşılaşılanlar)
+  // '' " ' “ ” ‘ ’ « » “ ”
+  s = s.replace(/^['"‘’“”«»]+|['"‘’“”«»]+$/g, '');
+
+  // 2. Kalan metinden sadece harf + iç apostrof bırak (contractions için)
+  s = s.replace(/[^a-zA-ZçğıöşüÇĞİÖŞÜ']/g, '');
+
+  return s.toLowerCase();
+}
+
+// lemmas.json + lookup map yükle
+async function loadVocabularyData() {
+  try {
+    const res = await fetch('data/web/lemmas.json');
+    allLemmas = await res.json();
+
+    variantToLemma = {};
+    lemmaToData = {};
+
+    allLemmas.forEach(lem => {
+      lemmaToData[lem.lemma] = lem;
+      // ana lemma (temizlenmiş haliyle de kaydet)
+      const cleanLemma = cleanWord(lem.lemma) || stripOuterQuotesEarly(lem.lemma).toLowerCase();
+      variantToLemma[cleanLemma] = lem;
+      variantToLemma[lem.lemma] = lem;
+
+      // varyasyonlar — tırnak kirliliğini de temizleyerek map'le
+      (lem.variants || []).forEach(v => {
+        const rawSurf = v.surface.toLowerCase();
+        const surf = cleanWord(rawSurf) || stripOuterQuotesEarly(rawSurf).toLowerCase();
+        if (surf && !variantToLemma[surf]) {
+          variantToLemma[surf] = lem;
+        }
+        // Orijinal hali de tut (geriye uyumluluk)
+        if (rawSurf && !variantToLemma[rawSurf]) {
+          variantToLemma[rawSurf] = lem;
+        }
+      });
+    });
+
+    // Geçici düzeltme: bilinen bozuk veriler için (örneğin noth → nothing)
+    // Bu, hard refresh yapmadan da çalışsın diye
+    if (variantToLemma["noth"] && !variantToLemma["nothing"]) {
+      variantToLemma["nothing"] = variantToLemma["noth"];
+      lemmaToData["nothing"] = variantToLemma["noth"];
+    }
+    if (variantToLemma["noth"]) {
+      variantToLemma["noth"] = variantToLemma["nothing"] || variantToLemma["noth"];
+    }
+
+    console.log(`[Vocab] ${allLemmas.length} lemma yüklendi, lookup hazır.`);
+  } catch (e) {
+    console.warn('lemmas.json yüklenemedi, basit modda çalışılacak', e);
+  }
+}
+
+// Sayfa açılır açılmaz vocabulary + function words + karakter isimleri yüklemeye başla
+vocabularyReady = Promise.all([
+  loadVocabularyData(),
+  loadFunctionWords(),
+  loadCharacterNames()
+]);
+
+// Function words listesini yükle (ana havuzu kirletmeden ayrı kategori)
+async function loadFunctionWords() {
+  try {
+    const res = await fetch('data/web/function_words.json');
+    const list = await res.json();
+    functionWordsSet = new Set(list.map(w => w.toLowerCase()));
+    console.log(`[Vocab] ${functionWordsSet.size} function word yüklendi.`);
+  } catch (e) {
+    console.warn('function_words.json yüklenemedi');
+  }
+}
+
+// Karakter isimlerini yükle (ayrı renk ve kategori için)
+async function loadCharacterNames() {
+  try {
+    const res = await fetch('data/web/character_names.json');
+    const list = await res.json();
+    characterNamesSet = new Set(list.map(w => w.toLowerCase()));
+    console.log(`[Vocab] ${characterNamesSet.size} karakter ismi yüklendi.`);
+  } catch (e) {
+    console.warn('character_names.json yüklenemedi');
+  }
+}
+
+// --- SRT / Transcript parser -------------------------------------------------
+function parseScript(rawText, isSrt) {
+  if (!isSrt) {
+    // BBT .txt files are already clean "Character: dialogue" lines
+    return rawText
+      .split('\n')
+      .map(l => l.trim())
+      .filter(l => l.length > 0 && !l.startsWith('<<<<<<<') && !l.startsWith('=======')); // drop git conflict junk
+  }
+
+  // Proper SRT parser: skip sequence numbers and timestamp lines
+  const lines = rawText.split(/\r?\n/);
+  const dialogue = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i].trim();
+
+    // Skip empty
+    if (!line) { i++; continue; }
+
+    // Skip standalone numbers (sequence)
+    if (/^\d+$/.test(line)) { i++; continue; }
+
+    // Skip timestamp lines (contain --> )
+    if (line.includes('-->')) { i++; continue; }
+
+    // This is dialogue text (may be multi-line until blank)
+    let block = line;
+    i++;
+    while (i < lines.length && lines[i].trim() && !/^\d+$/.test(lines[i].trim()) && !lines[i].includes('-->')) {
+      block += ' ' + lines[i].trim();
+      i++;
+    }
+    if (block.trim()) dialogue.push(block.trim());
+  }
+  return dialogue;
+}
+
+// Turn a line into clickable HTML (words get spans, punctuation stays visible)
+function makeClickableLine(line) {
+  // Split into words (letters + apostrophes) vs everything else, keeping spaces & punctuation
+  // Works reasonably for English + Turkish characters
+  const regex = /([\p{L}\p{N}']+)|([^\p{L}\p{N}'\s]+)|(\s+)/gu;
+  let result = '';
+  let match;
+
+  // Fallback for older browsers without unicode classes
+  const simpleSplit = line.split(/(\s+)/);
+
+  for (const token of simpleSplit) {
+    if (!token) continue;
+
+    const clean = cleanWord(token);
+
+    if (clean.length >= 1) {   // "I", "a" gibi tek harfli önemli kelimeleri de dahil et
+      const mark = marks[clean];
+      const cls = mark ? (mark.is_known ? 'known' : 'unknown') : '';
+
+      let extraClass = '';
+      if (characterNamesSet.has(clean)) {
+        extraClass = 'character-name';
+      } else if (functionWordsSet.has(clean)) {
+        extraClass = 'function-word';
+      } else if (!variantToLemma[clean]) {
+        extraClass = 'unlinked-word';
+      }
+
+      const finalCls = `${cls} ${extraClass}`.trim();
+
+      result += `<span class="word ${finalCls}" data-lemma="${clean}" onclick="selectWord('${clean.replace(/'/g, "\\'")}', this)">${token}</span>`;
+    } else {
+      result += token;
+    }
+  }
+  return result;
+}
+
+// --- Rendering ---------------------------------------------------------------
+function renderSeasons(data, containerId, source) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+
+  const seasonKeys = Object.keys(data.seasons).map(Number).sort((a, b) => a - b);
+
+  seasonKeys.forEach(seasonNum => {
+    const seasonDiv = document.createElement('div');
+    seasonDiv.style.marginBottom = '4px';
+
+    const epsInSeason = data.seasons[seasonNum];
+    const header = document.createElement('div');
+    header.className = 'season-header';
+    header.innerHTML = `
+      <span>Sezon ${seasonNum} <span style="color:#64748b; font-size:0.75rem;">(${epsInSeason.length})</span></span>
+      <span style="font-size:0.8rem; opacity:0.7;">▼</span>
+    `;
+
+    const episodesDiv = document.createElement('div');
+    episodesDiv.style.display = 'none';
+    episodesDiv.style.paddingLeft = '6px';
+
+    // Already sorted in the JSON, but defensive sort
+    const episodes = [...epsInSeason].sort((a, b) => a.episode - b.episode);
+
+    episodes.forEach(ep => {
+      const epDiv = document.createElement('div');
+      epDiv.className = 'episode';
+      const label = `S${ep.season}E${String(ep.episode).padStart(2, '0')} — ${ep.title}`;
+      epDiv.textContent = label.length > 46 ? label.substring(0, 43) + '...' : label;
+      epDiv.title = label;
+      epDiv.onclick = () => loadEpisode(ep, source);
+      episodesDiv.appendChild(epDiv);
+    });
+
+    header.onclick = () => {
+      episodesDiv.style.display = (episodesDiv.style.display === 'none') ? 'block' : 'none';
+    };
+
+    seasonDiv.appendChild(header);
+    seasonDiv.appendChild(episodesDiv);
+    container.appendChild(seasonDiv);
+  });
+}
+
+async function loadEpisode(episode, source) {
+  const contentEl = document.getElementById('script-text');
+  const headerEl = document.getElementById('current-episode');
+  const statsBox = document.getElementById('episode-stats');
+
+  // Vocabulary + function words'in yüklendiğinden emin ol (güvenli guard)
+  if (!allLemmas.length) {
+    await loadVocabularyData();
+  }
+  if (functionWordsSet.size === 0) {
+    await loadFunctionWords();
+  }
+
+  const showName = source === 'friends' ? 'Friends' : 'The Big Bang Theory';
+  headerEl.textContent = `${showName} • S${episode.season}E${String(episode.episode).padStart(2, '0')} — ${episode.title}`;
+
+  try {
+    const res = await fetch(episode.filepath);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const raw = await res.text();
+
+    const isSrt = episode.filepath.toLowerCase().endsWith('.srt');
+    const dialogueLines = parseScript(raw, isSrt);
+
+    let html = '<div class="script-content-inner">';
+    dialogueLines.forEach((line, idx) => {
+      const clickable = makeClickableLine(line);
+      html += `
+        <div class="dialogue-line" data-line-index="${idx}">
+          <div class="line-content">
+            <p>${clickable}</p>
+          </div>
+          <div class="line-actions">
+            <button class="mark-line-btn" 
+                    title="Bu satırdaki kelimeleri 'Biliyorum' olarak işaretle"
+                    onclick="markLineAsKnown(this)">✓</button>
+          </div>
+        </div>`;
+    });
+    html += '</div>';
+
+    contentEl.innerHTML = html;
+
+    currentEpisode = episode;  // Düzeltilmiş
+    window.currentEpisode = episode; // Geriye uyumluluk için de window'a yaz
+    statsBox.style.display = 'block';
+
+    console.log('[loadEpisode] currentEpisode set edildi, statsBox bulundu:', !!statsBox);
+
+    // Bölümdeki tüm kelimeleri detaylı analiz et (linked + unlinked)
+    analyzeEpisodeWords(dialogueLines);
+
+    // Debug - açık metin olarak logla ki kolay görülsün
+    console.log(
+      `[Episode Stats] total=${currentEpisodeAllUniqueWords.size} | linked=${currentEpisodeLinkedLemmas.size} | characters=${currentEpisodeCharacterNames.size} | function=${currentEpisodeFunctionWords.size} | unlinked=${currentEpisodeUnlinkedWords.size}`
+    );
+
+    // İşaretli kelimelerin stillerini tekrar uygula (güvenlik)
+    applyMarksToVisibleWords();
+
+    // İstatistikleri güncelle
+    updateEpisodeStats();
+
+  } catch (e) {
+    console.error(e);
+    contentEl.innerHTML = `
+      <div style="color:#f87171; padding:40px 20px; text-align:center;">
+        Bölüm yüklenemedi.<br>
+        <small style="opacity:0.7;">${episode.filepath}</small>
+      </div>`;
+    if (statsBox) statsBox.style.display = 'none';
+  }
+}
+
+// Bu bölümdeki kelimeleri analiz edip istatistik kutusunu doldurur
+function updateEpisodeStats() {
+  const statsBox = document.getElementById('episode-stats');
+  if (!statsBox || !currentEpisode) {
+    console.warn('[Stats] statsBox veya currentEpisode yok');
+    return;
+  }
+
+  const totalAll = currentEpisodeAllUniqueWords.size;
+  const totalLinked = currentEpisodeLinkedLemmas.size;
+  const totalUnlinked = currentEpisodeUnlinkedWords.size;
+  const totalFunction = currentEpisodeFunctionWords.size;
+
+  const get = (id) => document.getElementById(id);
+
+  console.log(`[Stats Update] totalAll=${totalAll} linked=${totalLinked} unlinked=${totalUnlinked} function=${totalFunction}`);
+
+  if (totalAll === 0) {
+    console.warn('[Stats] totalAll === 0 → erken return');
+    if (get('stat-total')) get('stat-total').textContent = '—';
+    if (get('stat-linked')) get('stat-linked').textContent = '0';
+    if (get('stat-unlinked')) get('stat-unlinked').textContent = '0';
+    if (get('stat-function')) get('stat-function').textContent = '0';
+    if (get('stat-characters')) get('stat-characters').textContent = '0';
+    if (get('stat-marked')) get('stat-marked').textContent = '0 / 0';
+    if (get('stat-known')) get('stat-known').textContent = '0';
+    if (get('stat-unknown')) get('stat-unknown').textContent = '0';
+    if (get('progress-fill')) get('progress-fill').style.width = '0%';
+    return;
+  }
+
+  // Linked kelimeler arasından kaçı işaretlenmiş?
+  let known = 0;
+  let unknown = 0;
+
+  currentEpisodeLinkedLemmas.forEach(lem => {
+    const m = marks[lem];
+    if (m) {
+      if (m.is_known === 1) known++;
+      else unknown++;
+    }
+  });
+
+  const marked = known + unknown;
+
+  // UI güncelle (güvenli)
+  if (get('stat-total')) get('stat-total').textContent = totalAll;
+  if (get('stat-linked')) get('stat-linked').textContent = totalLinked;
+  if (get('stat-unlinked')) get('stat-unlinked').textContent = totalUnlinked;
+  if (get('stat-function')) get('stat-function').textContent = totalFunction;
+  if (get('stat-characters')) get('stat-characters').textContent = currentEpisodeCharacterNames.size;
+
+  if (get('stat-marked')) get('stat-marked').textContent = `${marked} / ${totalLinked}`;
+  if (get('stat-known')) get('stat-known').textContent = known;
+  if (get('stat-unknown')) get('stat-unknown').textContent = unknown;
+
+  const pct = totalLinked > 0 ? Math.round((marked / totalLinked) * 100) : 0;
+  if (get('progress-fill')) get('progress-fill').style.width = pct + '%';
+
+  console.log('[Stats Update] DOM güncellendi');
+}
+
+// Bölüm yüklendikten sonra bir kere çalıştır: Tüm kelimeleri analiz et
+function analyzeEpisodeWords(dialogueLines) {
+  currentEpisodeAllUniqueWords = new Set();
+  currentEpisodeLinkedLemmas = new Set();
+  currentEpisodeUnlinkedWords = new Set();
+  currentEpisodeFunctionWords = new Set();
+  currentEpisodeCharacterNames = new Set();
+
+  const fullText = dialogueLines.join(' ').toLowerCase();
+  const rawWords = fullText.match(/[a-zA-ZçğıöşüÇĞİÖŞÜ0-9']+/g) || [];
+
+  console.log(`[Analyze] dialogueLines=${dialogueLines.length} rawWords=${rawWords.length}`);
+
+  rawWords.forEach(w => {
+    const clean = cleanWord(w);
+    if (clean.length < 1) return;
+
+    currentEpisodeAllUniqueWords.add(clean);
+
+    // Öncelik sırası: Karakter ismi > Function word > Normal kelime
+    if (characterNamesSet.has(clean)) {
+      currentEpisodeCharacterNames.add(clean);
+      return;
+    }
+
+    if (functionWordsSet.has(clean)) {
+      currentEpisodeFunctionWords.add(clean);
+      return;
+    }
+
+    const lemmaData = variantToLemma[clean];
+    if (lemmaData) {
+      currentEpisodeLinkedLemmas.add(lemmaData.lemma);
+    } else {
+      currentEpisodeUnlinkedWords.add(clean);
+    }
+  });
+}
+
+// --- Zengin Kelime Kartı (Modal) + İşaretleme --------------------------------
+function selectWord(surfaceWord, element) {
+  // En iyi eşleşen lemma'yı bul
+  const clean = cleanWord(surfaceWord);
+  let lemmaData = variantToLemma[clean] || lemmaToData[clean];
+
+  if (!lemmaData) {
+    // Hiçbir şey bulamazsak basit fallback
+    lemmaData = {
+      lemma: clean,
+      tier: 4,
+      total_frequency: 0,
+      variants: [{ surface: clean }],
+      examples: []
+    };
+  }
+
+  showVocabCard(lemmaData, clean, element);
+}
+
+function showVocabCard(lemmaData, surfaceUsed, clickedElement) {
+  currentModalLemma = { data: lemmaData, surface: surfaceUsed, element: clickedElement };
+
+  // Başlık
+  document.getElementById('modal-lemma').textContent = lemmaData.lemma;
+
+  // Tier
+  const tierEl = document.getElementById('modal-tier');
+  const tier = lemmaData.tier || 3;
+  tierEl.innerHTML = `<span class="tier-badge tier-${tier}">Tier ${tier}</span>`;
+
+  // Varyasyonlar
+  const varContainer = document.getElementById('modal-variants');
+  varContainer.innerHTML = '';
+  (lemmaData.variants || []).slice(0, 8).forEach(v => {
+    const chip = document.createElement('span');
+    chip.className = 'variant-chip';
+    chip.textContent = v.surface;
+    varContainer.appendChild(chip);
+  });
+
+  // Frekans
+  document.getElementById('modal-freq').textContent = (lemmaData.total_frequency || 0).toLocaleString('tr-TR');
+
+  // Örnek cümleler (en fazla 5)
+  const exContainer = document.getElementById('modal-examples');
+  exContainer.innerHTML = '';
+  const examples = (lemmaData.examples || []).slice(0, 5);
+  document.getElementById('modal-examples-count').textContent = examples.length;
+
+  if (examples.length === 0) {
+    exContainer.innerHTML = '<div style="color:#64748b; font-size:0.85rem">Bu kelime için henüz örnek cümle yok.</div>';
+  } else {
+    examples.forEach(ex => {
+      const div = document.createElement('div');
+      div.className = 'example-item';
+      div.textContent = ex.text;
+      exContainer.appendChild(div);
+    });
+  }
+
+  // Not
+  document.getElementById('modal-note').value = marks[lemmaData.lemma]?.note || '';
+
+  // Modal aç
+  document.getElementById('vocab-modal').classList.add('open');
+}
+
+function closeVocabModal() {
+  document.getElementById('vocab-modal').classList.remove('open');
+  currentModalLemma = null;
+}
+
+function markFromModal(isKnown) {
+  if (!currentModalLemma) return;
+  const { data, surface, element } = currentModalLemma;
+  const lemma = data.lemma;
+
+  marks[lemma] = {
+    is_known: isKnown ? 1 : 0,
+    note: document.getElementById('modal-note').value.trim(),
+    marked_at: new Date().toISOString()
+  };
+  localStorage.setItem('wordMarks_v2', JSON.stringify(marks));
+
+  // FAB sayacını hemen güncelle
+  updateStudyFab();
+
+  // "Bilmiyorum" dediyse nazik bir toast ile Çalışma Odası'na yönlendir
+  if (!isKnown) {
+    setTimeout(() => {
+      showMiniToast(
+        "Kelime çalışma listene eklendi.",
+        "Şimdi çalış →",
+        "review.html"
+      );
+    }, 420);
+  }
+
+  // Eğer sayfada tıklanan element varsa rengini güncelle
+  // AMA eğer kelime turuncu (unlinked) ise renk değiştirmiyoruz.
+  // Kullanıcı sadece not bırakmak istiyor, hep turuncu kalsın.
+  if (element) {
+    const isUnlinked = element.classList.contains('unlinked-word');
+    if (!isUnlinked) {
+      element.classList.remove('known', 'unknown');
+      element.classList.add(isKnown ? 'known' : 'unknown');
+    }
+  }
+
+  // Stats'i güncelle (eğer bölüm açıksa)
+  if (currentEpisode) updateEpisodeStats();
+
+  // Modal'ı kapat (artık tekrar açmıyoruz)
+  closeVocabModal();
+}
+
+// --- Şüpheli Kelimeler Yönetimi (Geliştirilmiş Kullanıcı Geri Bildirimi) ---
+
+function getSuspectWords() {
+  try {
+    const data = localStorage.getItem('suspectWords');
+    if (!data) return {};
+    const parsed = JSON.parse(data);
+    // Eski format desteği (sadece array ise)
+    if (Array.isArray(parsed)) {
+      const obj = {};
+      parsed.forEach(w => obj[w] = "");
+      return obj;
+    }
+    return parsed || {};
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveSuspectWords(obj) {
+  localStorage.setItem('suspectWords', JSON.stringify(obj));
+}
+
+function markAsSuspicious() {
+  if (!currentModalLemma || !currentModalLemma.data) {
+    alert("Kelime bilgisi alınamadı.");
+    return;
+  }
+
+  const lemma = currentModalLemma.data.lemma;
+  const noteFromModal = document.getElementById('modal-note')?.value.trim() || "";
+
+  const suspects = getSuspectWords();
+
+  if (suspects[lemma] !== undefined) {
+    // Zaten varsa notu güncelle
+    if (noteFromModal) {
+      suspects[lemma] = noteFromModal;
+      saveSuspectWords(suspects);
+      alert(`"${lemma}" şüpheli listesinde zaten var. Not güncellendi.`);
+    } else {
+      alert(`"${lemma}" zaten şüpheli listesinde.`);
+    }
+  } else {
+    suspects[lemma] = noteFromModal;
+    saveSuspectWords(suspects);
+    const msg = noteFromModal 
+      ? `"${lemma}" şüpheli kelimeler listesine notuyla birlikte eklendi.`
+      : `"${lemma}" şüpheli kelimeler listesine eklendi.`;
+    alert(msg);
+  }
+}
+
+function showSuspectWordsPanel() {
+  const suspects = getSuspectWords();
+  const entries = Object.entries(suspects);
+
+  if (entries.length === 0) {
+    alert("Şüpheli kelime listesi boş.");
+    return;
+  }
+
+  let html = `<div style="max-height:68vh; overflow:auto; padding-right:4px;">`;
+  html += `<h3 style="margin-top:0; margin-bottom:4px;">Şüpheli Kelimeler <span style="color:#f59e0b;">(${entries.length})</span></h3>`;
+  html += `<p style="font-size:0.82rem; color:#64748b; margin-bottom:12px;">Bu kelimeleri inceledikten sonra notlarla birlikte JSON olarak indirebilirsin.</p>`;
+
+  entries.forEach(([word, note]) => {
+    html += `
+      <div style="border:1px solid #334155; border-radius:8px; padding:10px; margin-bottom:8px; background:#0f172a;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
+          <strong style="color:#f1f5f9; font-size:1.02rem; word-break:break-word;">${word}</strong>
+          <button onclick="removeSuspectWord('${word}', this)" 
+                  style="background:#ef4444; color:white; border:none; padding:3px 7px; border-radius:4px; font-size:0.72rem; cursor:pointer; flex-shrink:0;">
+            Sil
+          </button>
+        </div>
+        <textarea data-word="${word}" style="width:100%; margin-top:6px; background:#1e293b; color:#e2e8f0; border:1px solid #475569; border-radius:6px; padding:6px; font-size:0.9rem; min-height:48px; resize:vertical; line-height:1.35;">${note || ""}</textarea>
+      </div>
+    `;
+  });
+
+  html += `
+    <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap;">
+      <button onclick="saveAllSuspectNotes(this)" 
+              style="background:#22c55e; color:#0f172a; border:none; padding:7px 13px; border-radius:6px; font-weight:600; cursor:pointer; font-size:0.88rem;">
+        Notları Kaydet
+      </button>
+      <button onclick="exportSuspectWords()" 
+              style="background:#3b82f6; color:white; border:none; padding:7px 13px; border-radius:6px; font-weight:600; cursor:pointer; font-size:0.88rem;">
+        JSON İndir
+      </button>
+      <button onclick="clearAllSuspects()" 
+              style="background:#64748b; color:white; border:none; padding:7px 13px; border-radius:6px; font-weight:600; cursor:pointer; font-size:0.88rem;">
+        Hepsini Temizle
+      </button>
+    </div>
+  `;
+  html += `</div>`;
+
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed; inset:0; background:rgba(15,23,42,0.88); z-index:2000; display:flex; align-items:center; justify-content:center; padding:16px;';
+  overlay.innerHTML = `
+    <div style="background:#1e293b; color:#e2e8f0; max-width:680px; width:100%; border-radius:14px; padding:18px 20px; box-shadow:0 25px 70px rgba(0,0,0,0.55);">
+      ${html}
+      <div style="text-align:right; margin-top:10px;">
+        <button onclick="this.closest('.overlay-suspect').remove()" 
+                style="background:#334155; color:#cbd5e1; border:none; padding:7px 15px; border-radius:6px; font-size:0.9rem; cursor:pointer;">
+          Kapat
+        </button>
+      </div>
+    </div>
+  `;
+  overlay.className = 'overlay-suspect';
+  document.body.appendChild(overlay);
+}
+
+function removeSuspectWord(word, btnElement) {
+  if (!confirm(`"${word}" şüpheli listeden silinsin mi?`)) return;
+
+  const suspects = getSuspectWords();
+  delete suspects[word];
+  saveSuspectWords(suspects);
+
+  // Paneli yenile
+  btnElement.closest('.overlay-suspect')?.remove();
+  showSuspectWordsPanel();
+}
+
+function saveAllSuspectNotes(btnElement) {
+  const overlay = btnElement.closest('.overlay-suspect');
+  if (!overlay) return;
+
+  const suspects = getSuspectWords();
+  let updated = false;
+
+  overlay.querySelectorAll('textarea[data-word]').forEach(textarea => {
+    const word = textarea.dataset.word;
+    const newNote = textarea.value.trim();
+    if (suspects[word] !== undefined) {
+      suspects[word] = newNote;
+      updated = true;
+    }
+  });
+
+  if (updated) {
+    saveSuspectWords(suspects);
+    alert("Notlar kaydedildi.");
+  }
+}
+
+function exportSuspectWords() {
+  const suspects = getSuspectWords();
+  const dataStr = JSON.stringify(suspects, null, 2);
+  const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+
+  const exportFileDefaultName = 'suspect_words_feedback.json';
+
+  const linkElement = document.createElement('a');
+  linkElement.setAttribute('href', dataUri);
+  linkElement.setAttribute('download', exportFileDefaultName);
+  linkElement.click();
+}
+
+function clearAllSuspects() {
+  if (!confirm("Tüm şüpheli kelime listesini silmek istediğine emin misin?")) return;
+  localStorage.removeItem('suspectWords');
+  document.querySelectorAll('.overlay-suspect').forEach(el => el.remove());
+  alert("Şüpheli kelime listesi temizlendi.");
+}
+
+// Eski basit mark fonksiyonları (geriye uyumluluk)
+function markWord(isKnown) {
+  const panel = document.getElementById('mark-panel');
+  if (!window.currentSelected) return;
+  const { lemma, element } = window.currentSelected;
+
+  marks[lemma] = {
+    is_known: isKnown ? 1 : 0,
+    note: marks[lemma]?.note || '',
+    marked_at: new Date().toISOString()
+  };
+  localStorage.setItem('wordMarks_v2', JSON.stringify(marks));
+
+  if (element) {
+    element.classList.remove('known', 'unknown');
+    element.classList.add(isKnown ? 'known' : 'unknown');
+  }
+  panel.style.display = 'none';
+  if (currentEpisode) updateEpisodeStats();
+}
+
+// === Satır bazlı hızlı tarama için yeni fonksiyonlar ===
+function markLineAsKnown(btnElement) {
+  // Butonun ait olduğu .dialogue-line'ı bul
+  const lineEl = btnElement.closest('.dialogue-line');
+  if (!lineEl) return;
+
+  const wordSpans = lineEl.querySelectorAll('.word');
+  if (wordSpans.length === 0) return;
+
+  const lemmasToMark = new Set();
+
+  wordSpans.forEach(span => {
+    const surface = span.dataset.lemma;
+    if (!surface) return;
+    const resolved = variantToLemma[surface];
+    const finalLemma = resolved ? resolved.lemma : surface;
+    if (finalLemma && finalLemma.length >= 2) {
+      lemmasToMark.add(finalLemma);
+    }
+  });
+
+  if (lemmasToMark.size === 0) return;
+
+  const now = new Date().toISOString();
+
+  lemmasToMark.forEach(lemma => {
+    const existing = marks[lemma];
+
+    // Önemli kural:
+    // - Hiç işaretlenmemişse → Biliyorum yap
+    // - Zaten Biliyorum ise → Biliyorum olarak bırak
+    // - Bilmiyorum (is_known: 0) olarak işaretlenmişse → ASLA dokunma
+    if (!existing || existing.is_known === 1) {
+      if (!existing) marks[lemma] = {};
+      marks[lemma].is_known = 1;
+      marks[lemma].marked_at = now;
+    }
+    // Notu her durumda olduğu gibi koru
+  });
+
+  localStorage.setItem('wordMarks_v2', JSON.stringify(marks));
+
+  // Görünürdeki tüm kelimelerin stillerini güncelle (sadece bu satır değil)
+  applyMarksToVisibleWords();
+
+  // Sağdaki istatistikleri anında güncelle
+  if (currentEpisode) updateEpisodeStats();
+
+  // Görsel feedback: satırı hafif yeşile boya
+  lineEl.style.transition = 'background 0.2s ease';
+  lineEl.style.background = '#16653433';
+  setTimeout(() => {
+    if (lineEl) lineEl.style.background = '';
+  }, 650);
+}
+
+// Tüm görünür .word span'ların stillerini mevcut marks'a göre yeniler
+// (Bulk marking sonrası çok işe yarar)
+function applyMarksToVisibleWords() {
+  const allWordSpans = document.querySelectorAll('#script-text .word');
+  allWordSpans.forEach(span => {
+    const surface = span.dataset.lemma;
+    if (!surface) return;
+
+    // Turuncu (unlinked) kelimelerde marking class'ı ekleme, renk hep turuncu kalsın
+    if (span.classList.contains('unlinked-word')) {
+      return;
+    }
+
+    const resolved = variantToLemma[surface];
+    const finalLemma = resolved ? resolved.lemma : surface;
+
+    const m = marks[finalLemma];
+    span.classList.remove('known', 'unknown');
+    if (m && typeof m.is_known !== 'undefined') {
+      span.classList.add(m.is_known ? 'known' : 'unknown');
+    }
+  });
+}
+
+// --- Init --------------------------------------------------------------------
+window.addEventListener('load', async () => {
+  // vocabularyReady zaten sayfa başında tetiklendi, burada sadece diğer verileri bekliyoruz
+  if (vocabularyReady) {
+    await vocabularyReady;
+  }
+
+  try {
+    const [friendsData, bbtData] = await Promise.all([
+      fetch('data/web/friends_episodes.json').then(r => r.ok ? r.json() : {seasons:{}}),
+      fetch('data/web/bbt_episodes.json').then(r => r.ok ? r.json() : {seasons:{}})
+    ]);
+
+    const friendsContainer = document.getElementById('friends-seasons');
+    if (Object.keys(friendsData.seasons || {}).length > 0) {
+      renderSeasons(friendsData, 'friends-seasons', 'friends');
+    } else {
+      friendsContainer.innerHTML = '<p style="color:#64748b; font-size:0.75rem; padding:4px 8px;">Friends verisi bulunamadı.</p>';
+    }
+
+    const bbtContainer = document.getElementById('bbt-seasons');
+    if (Object.keys(bbtData.seasons || {}).length > 0) {
+      renderSeasons(bbtData, 'bbt-seasons', 'bbt');
+    } else {
+      bbtContainer.innerHTML = '<p style="color:#64748b; font-size:0.75rem; padding:4px 8px;">BBT verisi bulunamadı.</p>';
+    }
+
+  } catch (e) {
+    console.error(e);
+    document.getElementById('bbt-seasons').innerHTML = '<p style="color:#f87171; font-size:0.75rem;">Veri yüklenemedi (http.server kullanıyor musun?)</p>';
+  }
+
+  // Klavye desteği: ESC ile modal kapat
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('vocab-modal');
+      if (modal && modal.classList.contains('open')) {
+        closeVocabModal();
+      }
+    }
+  });
+
+  // Çalışma Odası butonundaki sayacı güncelle
+  updateStudyFab();
+});
+</script>
+
+<!-- Sabit Hızlı Erişim Butonları (Senaryo okurken) -->
+<div style="position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; gap:8px; z-index:999; align-items:flex-end;">
+  <a href="review.html" id="fab-study" class="fab-back" style="background:#22c55e; color:#0f172a; font-weight:700;" title="Bilmediğin kelimelerle çalış">
+    📝 Çalışma Odası
+  </a>
+  <a href="index.html" class="fab-back" style="background:#3b82f6; font-size:0.85rem; padding:10px 16px;" title="Kelime Havuzuna dön">
+    📚 Kelime Havuzuna Dön
+  </a>
+</div>
+
+<!-- Zengin Kelime Kartı Modal -->
+<div id="vocab-modal" class="vocab-modal" onclick="if (event.target.id === 'vocab-modal') closeVocabModal()">
+  <div class="vocab-card" onclick="event.stopImmediatePropagation()">
+    <div class="vocab-card-header">
+      <div>
+        <div id="modal-lemma" class="vocab-lemma"></div>
+        <div id="modal-tier" style="margin-top:6px"></div>
+      </div>
+      <button onclick="closeVocabModal()" style="background:none; border:none; color:#64748b; font-size:1.6rem; line-height:1; cursor:pointer;">×</button>
+    </div>
+
+    <div class="vocab-card-body">
+      <div style="font-size:0.75rem; color:#64748b; margin-bottom:4px;">VARYASYONLAR</div>
+      <div id="modal-variants" class="variants"></div>
+
+      <div style="display:flex; gap:16px; font-size:0.85rem; color:#94a3b8;">
+        <div><strong id="modal-freq"></strong> kullanım</div>
+        <div><strong id="modal-examples-count"></strong> örnek cümle</div>
+      </div>
+
+      <div class="examples">
+        <h4>GERÇEK DİYALOGLARDAN ÖRNEKLER</h4>
+        <div id="modal-examples"></div>
+      </div>
+
+      <div style="margin-top:14px;">
+        <div style="font-size:0.75rem; color:#64748b; margin-bottom:4px;">NOTUN (isteğe bağlı)</div>
+        <textarea id="modal-note" style="width:100%; height:60px; background:#0f172a; color:white; border:1px solid #334155; border-radius:8px; padding:8px; resize:vertical;"></textarea>
+      </div>
+
+      <div class="vocab-actions">
+        <button class="btn-known-big" onclick="markFromModal(true)">✓ Biliyorum</button>
+        <button class="btn-unknown-big" onclick="markFromModal(false)">✗ Bilmiyorum</button>
+      </div>
+
+      <div style="margin-top:12px; text-align:center;">
+        <button onclick="markAsSuspicious()" 
+                style="background:#f59e0b; color:white; border:none; padding:8px 14px; border-radius:8px; font-size:0.85rem; cursor:pointer;">
+          ⚠️ Bu kelimeyi şüpheli listesine ekle
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

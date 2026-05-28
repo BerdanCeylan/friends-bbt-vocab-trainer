@@ -1,0 +1,1642 @@
+{
+  "total_episodes": 231,
+  "seasons": {
+    "1": [
+      {
+        "season": 1,
+        "episode": 1,
+        "title": "Episode 1",
+        "filename": "friends.s01e01.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e01.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 2,
+        "title": "Episode 2",
+        "filename": "friends.s01e02.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e02.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 3,
+        "title": "Episode 3",
+        "filename": "friends.s01e03.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e03.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 4,
+        "title": "Episode 4",
+        "filename": "friends.s01e04.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e04.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 5,
+        "title": "Episode 5",
+        "filename": "friends.s01e05.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e05.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 6,
+        "title": "Episode 6",
+        "filename": "friends.s01e06.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e06.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 7,
+        "title": "Episode 7",
+        "filename": "friends.s01e07.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e07.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 8,
+        "title": "Episode 8",
+        "filename": "friends.s01e08.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e08.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 9,
+        "title": "Episode 9",
+        "filename": "friends.s01e09.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e09.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 10,
+        "title": "Episode 10",
+        "filename": "friends.s01e10.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e10.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 11,
+        "title": "Episode 11",
+        "filename": "friends.s01e11.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e11.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 12,
+        "title": "Episode 12",
+        "filename": "friends.s01e12.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e12.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 13,
+        "title": "Episode 13",
+        "filename": "friends.s01e13.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e13.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 14,
+        "title": "Episode 14",
+        "filename": "friends.s01e14.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e14.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 15,
+        "title": "Episode 15",
+        "filename": "friends.s01e15.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e15.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 16,
+        "title": "Episode 16",
+        "filename": "friends.s01e16.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e16.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 17,
+        "title": "Episode 17",
+        "filename": "friends.s01e17.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e17.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 18,
+        "title": "Episode 18",
+        "filename": "friends.s01e18.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e18.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 19,
+        "title": "Episode 19",
+        "filename": "friends.s01e19.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e19.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 20,
+        "title": "Episode 20",
+        "filename": "friends.s01e20.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e20.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 21,
+        "title": "Episode 21",
+        "filename": "friends.s01e21.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e21.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 22,
+        "title": "Episode 22",
+        "filename": "friends.s01e22.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e22.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 23,
+        "title": "Episode 23",
+        "filename": "friends.s01e23.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e23.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 1,
+        "episode": 24,
+        "title": "Episode 24",
+        "filename": "friends.s01e24.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s01e24.720p.bluray.x264-psychd.srt"
+      }
+    ],
+    "2": [
+      {
+        "season": 2,
+        "episode": 1,
+        "title": "Episode 1",
+        "filename": "friends.s02e01.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e01.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 2,
+        "title": "Episode 2",
+        "filename": "friends.s02e02.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e02.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 3,
+        "title": "Episode 3",
+        "filename": "friends.s02e03.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e03.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 4,
+        "title": "Episode 4",
+        "filename": "friends.s02e04.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e04.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 5,
+        "title": "Episode 5",
+        "filename": "friends.s02e05.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e05.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 6,
+        "title": "Episode 6",
+        "filename": "friends.s02e06.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e06.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 7,
+        "title": "Episode 7",
+        "filename": "friends.s02e07.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e07.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 8,
+        "title": "Episode 8",
+        "filename": "friends.s02e08.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e08.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 9,
+        "title": "Episode 9",
+        "filename": "friends.s02e09.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e09.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 10,
+        "title": "Episode 10",
+        "filename": "friends.s02e10.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e10.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 11,
+        "title": "Episode 11",
+        "filename": "friends.s02e11.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e11.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 12,
+        "title": "Episode 12",
+        "filename": "friends.s02e12.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e12.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 13,
+        "title": "Episode 13",
+        "filename": "friends.s02e13.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e13.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 14,
+        "title": "Episode 14",
+        "filename": "friends.s02e14.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e14.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 15,
+        "title": "Episode 15",
+        "filename": "friends.s02e15.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e15.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 16,
+        "title": "Episode 16",
+        "filename": "friends.s02e16.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e16.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 17,
+        "title": "Episode 17",
+        "filename": "friends.s02e17.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e17.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 18,
+        "title": "Episode 18",
+        "filename": "friends.s02e18.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e18.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 19,
+        "title": "Episode 19",
+        "filename": "friends.s02e19.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e19.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 20,
+        "title": "Episode 20",
+        "filename": "friends.s02e20.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e20.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 21,
+        "title": "Episode 21",
+        "filename": "friends.s02e21.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e21.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 22,
+        "title": "Episode 22",
+        "filename": "friends.s02e22.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e22.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 23,
+        "title": "Episode 23",
+        "filename": "friends.s02e23.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e23.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 2,
+        "episode": 24,
+        "title": "Episode 24",
+        "filename": "friends.s02e24.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s02e24.720p.bluray.x264-psychd.srt"
+      }
+    ],
+    "3": [
+      {
+        "season": 3,
+        "episode": 1,
+        "title": "Episode 1",
+        "filename": "friends.s03e01.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e01.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 2,
+        "title": "Episode 2",
+        "filename": "friends.s03e02.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e02.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 3,
+        "title": "Episode 3",
+        "filename": "friends.s03e03.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e03.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 4,
+        "title": "Episode 4",
+        "filename": "friends.s03e04.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e04.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 5,
+        "title": "Episode 5",
+        "filename": "friends.s03e05.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e05.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 6,
+        "title": "Episode 6",
+        "filename": "friends.s03e06.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e06.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 7,
+        "title": "Episode 7",
+        "filename": "friends.s03e07.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e07.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 8,
+        "title": "Episode 8",
+        "filename": "friends.s03e08.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e08.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 9,
+        "title": "Episode 9",
+        "filename": "friends.s03e09.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e09.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 10,
+        "title": "Episode 10",
+        "filename": "friends.s03e10.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e10.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 11,
+        "title": "Episode 11",
+        "filename": "friends.s03e11.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e11.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 12,
+        "title": "Episode 12",
+        "filename": "friends.s03e12.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e12.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 13,
+        "title": "Episode 13",
+        "filename": "friends.s03e13.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e13.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 14,
+        "title": "Episode 14",
+        "filename": "friends.s03e14.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e14.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 15,
+        "title": "Episode 15",
+        "filename": "friends.s03e15.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e15.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 16,
+        "title": "Episode 16",
+        "filename": "friends.s03e16.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e16.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 17,
+        "title": "Episode 17",
+        "filename": "friends.s03e17.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e17.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 18,
+        "title": "Episode 18",
+        "filename": "friends.s03e18.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e18.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 19,
+        "title": "Episode 19",
+        "filename": "friends.s03e19.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e19.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 20,
+        "title": "Episode 20",
+        "filename": "friends.s03e20.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e20.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 21,
+        "title": "Episode 21",
+        "filename": "friends.s03e21.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e21.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 22,
+        "title": "Episode 22",
+        "filename": "friends.s03e22.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e22.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 23,
+        "title": "Episode 23",
+        "filename": "friends.s03e23.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e23.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 24,
+        "title": "Episode 24",
+        "filename": "friends.s03e24.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e24.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 3,
+        "episode": 25,
+        "title": "Episode 25",
+        "filename": "friends.s03e25.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s03e25.720p.bluray.x264-psychd.srt"
+      }
+    ],
+    "4": [
+      {
+        "season": 4,
+        "episode": 1,
+        "title": "Episode 1",
+        "filename": "friends.s04e01.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e01.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 2,
+        "title": "Episode 2",
+        "filename": "friends.s04e02.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e02.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 3,
+        "title": "Episode 3",
+        "filename": "friends.s04e03.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e03.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 4,
+        "title": "Episode 4",
+        "filename": "friends.s04e04.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e04.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 5,
+        "title": "Episode 5",
+        "filename": "friends.s04e05.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e05.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 6,
+        "title": "Episode 6",
+        "filename": "friends.s04e06.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e06.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 7,
+        "title": "Episode 7",
+        "filename": "friends.s04e07.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e07.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 8,
+        "title": "Episode 8",
+        "filename": "friends.s04e08.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e08.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 9,
+        "title": "Episode 9",
+        "filename": "friends.s04e09.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e09.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 10,
+        "title": "Episode 10",
+        "filename": "friends.s04e10.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e10.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 11,
+        "title": "Episode 11",
+        "filename": "friends.s04e11.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e11.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 12,
+        "title": "Episode 12",
+        "filename": "friends.s04e12.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e12.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 13,
+        "title": "Episode 13",
+        "filename": "friends.s04e13.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e13.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 14,
+        "title": "Episode 14",
+        "filename": "friends.s04e14.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e14.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 15,
+        "title": "Episode 15",
+        "filename": "friends.s04e15.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e15.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 16,
+        "title": "Episode 16",
+        "filename": "friends.s04e16.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e16.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 17,
+        "title": "Episode 17",
+        "filename": "friends.s04e17.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e17.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 18,
+        "title": "Episode 18",
+        "filename": "friends.s04e18.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e18.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 19,
+        "title": "Episode 19",
+        "filename": "friends.s04e19.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e19.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 20,
+        "title": "Episode 20",
+        "filename": "friends.s04e20.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e20.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 21,
+        "title": "Episode 21",
+        "filename": "friends.s04e21.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e21.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 22,
+        "title": "Episode 22",
+        "filename": "friends.s04e22.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e22.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 23,
+        "title": "Episode 23",
+        "filename": "friends.s04e23.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e23.720p.bluray.x264-psychd.srt"
+      },
+      {
+        "season": 4,
+        "episode": 24,
+        "title": "Episode 24",
+        "filename": "friends.s04e24.720p.bluray.x264-psychd.srt",
+        "filepath": "data/subtitles/friends/friends.s04e24.720p.bluray.x264-psychd.srt"
+      }
+    ],
+    "5": [
+      {
+        "season": 5,
+        "episode": 1,
+        "title": "The One After Ross Says Rachel",
+        "filename": "Friends - 5x01 - The One After Ross Says Rachel.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x01 - The One After Ross Says Rachel.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 2,
+        "title": "The One With All The Kissing",
+        "filename": "Friends - 5x02 - The One With All The Kissing.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x02 - The One With All The Kissing.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 3,
+        "title": "The One Hundredth",
+        "filename": "Friends - 5x03 - The One Hundredth.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x03 - The One Hundredth.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 4,
+        "title": "The One Where Phoebe Hates PBS",
+        "filename": "Friends - 5x04 - The One Where Phoebe Hates PBS.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x04 - The One Where Phoebe Hates PBS.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 5,
+        "title": "The One With The Kips",
+        "filename": "Friends - 5x05 - The One With The Kips.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x05 - The One With The Kips.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 6,
+        "title": "The One With The Yeti",
+        "filename": "Friends - 5x06 - The One With The Yeti.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x06 - The One With The Yeti.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 7,
+        "title": "The One Where Ross Moves In",
+        "filename": "Friends - 5x07 - The One Where Ross Moves In.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x07 - The One Where Ross Moves In.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 8,
+        "title": "The One With The Thanksgiving Flashbacks",
+        "filename": "Friends - 5x08 - The One With The Thanksgiving Flashbacks.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x08 - The One With The Thanksgiving Flashbacks.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 9,
+        "title": "The One With Ross's Sandwich",
+        "filename": "Friends - 5x09 - The One With Ross's Sandwich.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x09 - The One With Ross's Sandwich.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 10,
+        "title": "The One With The Inappropriate Sister",
+        "filename": "Friends - 5x10 - The One With The Inappropriate Sister.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x10 - The One With The Inappropriate Sister.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 11,
+        "title": "The One With All The Resolutions",
+        "filename": "Friends - 5x11 - The One With All The Resolutions.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x11 - The One With All The Resolutions.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 12,
+        "title": "The One With Chandler's Work Laugh",
+        "filename": "Friends - 5x12 - The One With Chandler's Work Laugh.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x12 - The One With Chandler's Work Laugh.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 13,
+        "title": "The One With Joey's Bag",
+        "filename": "Friends - 5x13 - The One With Joey's Bag.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x13 - The One With Joey's Bag.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 14,
+        "title": "The One Where Everybody Finds Out",
+        "filename": "Friends - 5x14 - The One Where Everybody Finds Out.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x14 - The One Where Everybody Finds Out.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 15,
+        "title": "The One With The Girl Who Hits Joey",
+        "filename": "Friends - 5x15 - The One With The Girl Who Hits Joey.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x15 - The One With The Girl Who Hits Joey.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 16,
+        "title": "The One With The Cop",
+        "filename": "Friends - 5x16 - The One With The Cop.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x16 - The One With The Cop.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 17,
+        "title": "The One With Rachel's Inadvertent Kiss",
+        "filename": "Friends - 5x17 - The One With Rachel's Inadvertent Kiss.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x17 - The One With Rachel's Inadvertent Kiss.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 18,
+        "title": "The One Where Rachel Smokes",
+        "filename": "Friends - 5x18 - The One Where Rachel Smokes.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x18 - The One Where Rachel Smokes.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 19,
+        "title": "The One Where Ross Can't Flirt",
+        "filename": "Friends - 5x19 - The One Where Ross Can't Flirt.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x19 - The One Where Ross Can't Flirt.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 20,
+        "title": "The One With The Ride Along",
+        "filename": "Friends - 5x20 - The One With The Ride Along.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x20 - The One With The Ride Along.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 21,
+        "title": "The One With The Ball",
+        "filename": "Friends - 5x21 - The One With The Ball.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x21 - The One With The Ball.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 22,
+        "title": "The One With Joey's Big Break",
+        "filename": "Friends - 5x22 - The One With Joey's Big Break.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x22 - The One With Joey's Big Break.en.srt"
+      },
+      {
+        "season": 5,
+        "episode": 23,
+        "title": "The One In Vegas (1)",
+        "filename": "Friends - 5x23 - The One In Vegas (1).en.srt",
+        "filepath": "data/subtitles/friends/Friends - 5x23 - The One In Vegas (1).en.srt"
+      }
+    ],
+    "6": [
+      {
+        "season": 6,
+        "episode": 1,
+        "title": "The One After Vegas",
+        "filename": "Friends - 6x01 - The One After Vegas.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x01 - The One After Vegas.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 2,
+        "title": "The One Where Ross Hugs Rachel",
+        "filename": "Friends - 6x02 - The One Where Ross Hugs Rachel.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x02 - The One Where Ross Hugs Rachel.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 3,
+        "title": "The One With Ross's Denial",
+        "filename": "Friends - 6x03 - The One With Ross's Denial.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x03 - The One With Ross's Denial.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 4,
+        "title": "The One Where Joey Loses His Insurance",
+        "filename": "Friends - 6x04 - The One Where Joey Loses His Insurance.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x04 - The One Where Joey Loses His Insurance.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 5,
+        "title": "The One With Joey's Porsche",
+        "filename": "Friends - 6x05 - The One With Joey's Porsche.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x05 - The One With Joey's Porsche.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 6,
+        "title": "The One On The Last Night",
+        "filename": "Friends - 6x06 - The One On The Last Night.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x06 - The One On The Last Night.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 7,
+        "title": "The One Where Phoebe Runs",
+        "filename": "Friends - 6x07 - The One Where Phoebe Runs.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x07 - The One Where Phoebe Runs.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 8,
+        "title": "The One With Ross's Teeth",
+        "filename": "Friends - 6x08 - The One With Ross's Teeth.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x08 - The One With Ross's Teeth.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 9,
+        "title": "The One Where Ross Got High",
+        "filename": "Friends - 6x09 - The One Where Ross Got High.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x09 - The One Where Ross Got High.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 10,
+        "title": "The One With The Routine",
+        "filename": "Friends - 6x10 - The One With The Routine.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x10 - The One With The Routine.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 11,
+        "title": "The One With The Apothecary Table",
+        "filename": "Friends - 6x11 - The One With The Apothecary Table.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x11 - The One With The Apothecary Table.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 12,
+        "title": "The One With The Joke",
+        "filename": "Friends - 6x12 - The One With The Joke.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x12 - The One With The Joke.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 13,
+        "title": "The One With Rachel's Sister (1)",
+        "filename": "Friends - 6x13 - The One With Rachel's Sister (1).en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x13 - The One With Rachel's Sister (1).en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 14,
+        "title": "The One Where Chandler Can't Cry (2)",
+        "filename": "Friends - 6x14 - The One Where Chandler Can't Cry (2).en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x14 - The One Where Chandler Can't Cry (2).en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 15,
+        "title": "The One That Could Have Been (1)",
+        "filename": "Friends - 6x15 - The One That Could Have Been (1).en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x15 - The One That Could Have Been (1).en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 16,
+        "title": "The One That Could Have Been (2)",
+        "filename": "Friends - 6x16 - The One That Could Have Been (2).en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x16 - The One That Could Have Been (2).en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 17,
+        "title": "The One With Unagi",
+        "filename": "Friends - 6x17 - The One With Unagi.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x17 - The One With Unagi.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 18,
+        "title": "The One Where Ross Dates A Student",
+        "filename": "Friends - 6x18 - The One Where Ross Dates A Student.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x18 - The One Where Ross Dates A Student.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 19,
+        "title": "The One With Joey's Fridge",
+        "filename": "Friends - 6x19 - The One With Joey's Fridge.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x19 - The One With Joey's Fridge.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 20,
+        "title": "The One With Mac And C.H.E.E.S.E.",
+        "filename": "Friends - 6x20 - The One With Mac And C.H.E.E.S.E..en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x20 - The One With Mac And C.H.E.E.S.E..en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 21,
+        "title": "The One Where Ross Meets Elizabeth's Dad",
+        "filename": "Friends - 6x21 - The One Where Ross Meets Elizabeth's Dad.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x21 - The One Where Ross Meets Elizabeth's Dad.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 22,
+        "title": "The One Where Paul's The Man",
+        "filename": "Friends - 6x22 - The One Where Paul's The Man.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x22 - The One Where Paul's The Man.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 23,
+        "title": "The One With The Ring",
+        "filename": "Friends - 6x23 - The One With The Ring.en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x23 - The One With The Ring.en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 24,
+        "title": "The One With The Proposal (1)",
+        "filename": "Friends - 6x24 - The One With The Proposal (1).en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x24 - The One With The Proposal (1).en.srt"
+      },
+      {
+        "season": 6,
+        "episode": 25,
+        "title": "The One With The Proposal (2)",
+        "filename": "Friends - 6x25 - The One With The Proposal (2).en.srt",
+        "filepath": "data/subtitles/friends/Friends - 6x25 - The One With The Proposal (2).en.srt"
+      }
+    ],
+    "7": [
+      {
+        "season": 7,
+        "episode": 1,
+        "title": "The One with Monica's Thunder",
+        "filename": "Friends - [7x01] - The One with Monica's Thunder.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x01] - The One with Monica's Thunder.srt"
+      },
+      {
+        "season": 7,
+        "episode": 2,
+        "title": "The One with Rachel's Book",
+        "filename": "Friends - [7x02] - The One with Rachel's Book.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x02] - The One with Rachel's Book.srt"
+      },
+      {
+        "season": 7,
+        "episode": 3,
+        "title": "The One with Phoebe's Cookies",
+        "filename": "Friends - [7x03] - The One with Phoebe's Cookies.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x03] - The One with Phoebe's Cookies.srt"
+      },
+      {
+        "season": 7,
+        "episode": 4,
+        "title": "The One with Rachel's Assistant",
+        "filename": "Friends - [7x04] - The One with Rachel's Assistant.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x04] - The One with Rachel's Assistant.srt"
+      },
+      {
+        "season": 7,
+        "episode": 5,
+        "title": "The One with the Engagement Picture",
+        "filename": "Friends - [7x05] - The One with the Engagement Picture.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x05] - The One with the Engagement Picture.srt"
+      },
+      {
+        "season": 7,
+        "episode": 6,
+        "title": "The One with the Nap Partners",
+        "filename": "Friends - [7x06] - The One with the Nap Partners.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x06] - The One with the Nap Partners.srt"
+      },
+      {
+        "season": 7,
+        "episode": 7,
+        "title": "The One with Ross' Library Book",
+        "filename": "Friends - [7x07] - The One with Ross' Library Book.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x07] - The One with Ross' Library Book.srt"
+      },
+      {
+        "season": 7,
+        "episode": 8,
+        "title": "The One Where Chandler Doesn't Like Dogs",
+        "filename": "Friends - [7x08] - The One Where Chandler Doesn't Like Dogs.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x08] - The One Where Chandler Doesn't Like Dogs.srt"
+      },
+      {
+        "season": 7,
+        "episode": 9,
+        "title": "The One with All the Candy",
+        "filename": "Friends - [7x09] - The One with All the Candy.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x09] - The One with All the Candy.srt"
+      },
+      {
+        "season": 7,
+        "episode": 10,
+        "title": "The One with the Holiday Armadillo + Audio Commentary",
+        "filename": "Friends - [7x10] - The One with the Holiday Armadillo + Audio Commentary.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x10] - The One with the Holiday Armadillo + Audio Commentary.srt"
+      },
+      {
+        "season": 7,
+        "episode": 11,
+        "title": "The One with All the Cheesecakes",
+        "filename": "Friends - [7x11] - The One with All the Cheesecakes.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x11] - The One with All the Cheesecakes.srt"
+      },
+      {
+        "season": 7,
+        "episode": 12,
+        "title": "The One Where They're Up All Night",
+        "filename": "Friends - [7x12] - The One Where They're Up All Night.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x12] - The One Where They're Up All Night.srt"
+      },
+      {
+        "season": 7,
+        "episode": 13,
+        "title": "The One Where Rosita Dies",
+        "filename": "Friends - [7x13] - The One Where Rosita Dies.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x13] - The One Where Rosita Dies.srt"
+      },
+      {
+        "season": 7,
+        "episode": 14,
+        "title": "The One Where They All Turn Thirty",
+        "filename": "Friends - [7x14] - The One Where They All Turn Thirty.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x14] - The One Where They All Turn Thirty.srt"
+      },
+      {
+        "season": 7,
+        "episode": 15,
+        "title": "The One with Joey's New Brain",
+        "filename": "Friends - [7x15] - The One with Joey's New Brain.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x15] - The One with Joey's New Brain.srt"
+      },
+      {
+        "season": 7,
+        "episode": 16,
+        "title": "The One with the Truth About London",
+        "filename": "Friends - [7x16] - The One with the Truth About London.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x16] - The One with the Truth About London.srt"
+      },
+      {
+        "season": 7,
+        "episode": 17,
+        "title": "The One with the Cheap Wedding Dress",
+        "filename": "Friends - [7x17] - The One with the Cheap Wedding Dress.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x17] - The One with the Cheap Wedding Dress.srt"
+      },
+      {
+        "season": 7,
+        "episode": 18,
+        "title": "The One with Joey's Award",
+        "filename": "Friends - [7x18] - The One with Joey's Award.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x18] - The One with Joey's Award.srt"
+      },
+      {
+        "season": 7,
+        "episode": 19,
+        "title": "The One with Ross and Monica's Cousin",
+        "filename": "Friends - [7x19] - The One with Ross and Monica's Cousin.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x19] - The One with Ross and Monica's Cousin.srt"
+      },
+      {
+        "season": 7,
+        "episode": 20,
+        "title": "The One with Rachel's Big Kiss",
+        "filename": "Friends - [7x20] - The One with Rachel's Big Kiss.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x20] - The One with Rachel's Big Kiss.srt"
+      },
+      {
+        "season": 7,
+        "episode": 21,
+        "title": "The One with the Vows",
+        "filename": "Friends - [7x21] - The One with the Vows.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x21] - The One with the Vows.srt"
+      },
+      {
+        "season": 7,
+        "episode": 22,
+        "title": "The One with Chandler's Dad",
+        "filename": "Friends - [7x22] - The One with Chandler's Dad.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x22] - The One with Chandler's Dad.srt"
+      },
+      {
+        "season": 7,
+        "episode": 23,
+        "title": "The One with Monica and Chandler's Wedding + Audio Commentary",
+        "filename": "Friends - [7x23-24] - The One with Monica and Chandler's Wedding + Audio Commentary.srt",
+        "filepath": "data/subtitles/friends/Friends - [7x23-24] - The One with Monica and Chandler's Wedding + Audio Commentary.srt"
+      }
+    ],
+    "8": [
+      {
+        "season": 8,
+        "episode": 1,
+        "title": "The One After I Do",
+        "filename": "Friends - [8x01] - The One After I Do - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x01] - The One After I Do - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 2,
+        "title": "The One With The Red Sweater",
+        "filename": "Friends - [8x02] - The One With The Red Sweater - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x02] - The One With The Red Sweater - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 3,
+        "title": "The One Where Rachel Tells",
+        "filename": "Friends - [8x03] - The One Where Rachel Tells - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x03] - The One Where Rachel Tells - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 4,
+        "title": "The One With The Videotape",
+        "filename": "Friends - [8x04] - The One With The Videotape - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x04] - The One With The Videotape - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 5,
+        "title": "The One With Rachel's Date",
+        "filename": "Friends - [8x05] - The One With Rachel's Date - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x05] - The One With Rachel's Date - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 6,
+        "title": "The One With The Halloween Party",
+        "filename": "Friends - [8x06] - The One With The Halloween Party - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x06] - The One With The Halloween Party - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 7,
+        "title": "The One With The Stain",
+        "filename": "Friends - [8x07] - The One With The Stain - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x07] - The One With The Stain - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 8,
+        "title": "The One With The Stripper",
+        "filename": "Friends - [8x08] - The One With The Stripper - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x08] - The One With The Stripper - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 9,
+        "title": "The One With The Rumor",
+        "filename": "Friends - [8x09] - The One With The Rumor - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x09] - The One With The Rumor - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 10,
+        "title": "The One With Monica's Boots",
+        "filename": "Friends - [8x10] - The One With Monica's Boots - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x10] - The One With Monica's Boots - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 11,
+        "title": "The One With The Creepy Holiday Card",
+        "filename": "Friends - [8x11] - The One With The Creepy Holiday Card - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x11] - The One With The Creepy Holiday Card - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 12,
+        "title": "The One Where Joey Dates Rachel",
+        "filename": "Friends - [8x12] - The One Where Joey Dates Rachel - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x12] - The One Where Joey Dates Rachel - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 13,
+        "title": "The One Where Chandler Takes A Bath",
+        "filename": "Friends - [8x13] - The One Where Chandler Takes A Bath - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x13] - The One Where Chandler Takes A Bath - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 14,
+        "title": "The One With The Secret Closet",
+        "filename": "Friends - [8x14] - The One With The Secret Closet - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x14] - The One With The Secret Closet - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 15,
+        "title": "The One With The Birthing Video",
+        "filename": "Friends - [8x15] - The One With The Birthing Video - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x15] - The One With The Birthing Video - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 16,
+        "title": "The One Where Joey Tells Rachel",
+        "filename": "Friends - [8x16] - The One Where Joey Tells Rachel - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x16] - The One Where Joey Tells Rachel - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 17,
+        "title": "The One With The Tea Leaves",
+        "filename": "Friends - [8x17] - The One With The Tea Leaves - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x17] - The One With The Tea Leaves - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 18,
+        "title": "The One In Massapequa",
+        "filename": "Friends - [8x18] - The One In Massapequa - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x18] - The One In Massapequa - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 19,
+        "title": "The One With Joey's Interview",
+        "filename": "Friends - [8x19] - The One With Joey's Interview - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x19] - The One With Joey's Interview - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 20,
+        "title": "The One With The Baby Shower",
+        "filename": "Friends - [8x20] - The One With The Baby Shower - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x20] - The One With The Baby Shower - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 21,
+        "title": "The One With The Cooking Class",
+        "filename": "Friends - [8x21] - The One With The Cooking Class - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x21] - The One With The Cooking Class - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 22,
+        "title": "The One Where Rachel Is Late",
+        "filename": "Friends - [8x22] - The One Where Rachel Is Late - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x22] - The One Where Rachel Is Late - [arsenaloyal].srt"
+      },
+      {
+        "season": 8,
+        "episode": 23,
+        "title": "The One Where Rachel Has A Baby",
+        "filename": "Friends - [8x23-24] - The One Where Rachel Has A Baby - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [8x23-24] - The One Where Rachel Has A Baby - [arsenaloyal].srt"
+      }
+    ],
+    "9": [
+      {
+        "season": 9,
+        "episode": 1,
+        "title": "The One Where No One Proposes",
+        "filename": "Friends - [9x01] - The One Where No One Proposes - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x01] - The One Where No One Proposes - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 2,
+        "title": "The One Where Emma Cries",
+        "filename": "Friends - [9x02] - The One Where Emma Cries - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x02] - The One Where Emma Cries - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 3,
+        "title": "The One with the Pediatrician",
+        "filename": "Friends - [9x03] - The One with the Pediatrician - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x03] - The One with the Pediatrician - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 4,
+        "title": "The One with the Sharks",
+        "filename": "Friends - [9x04] - The One with the Sharks - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x04] - The One with the Sharks - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 5,
+        "title": "The One with Phoebe's Birthday Dinner",
+        "filename": "Friends - [9x05] - The One with Phoebe's Birthday Dinner - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x05] - The One with Phoebe's Birthday Dinner - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 6,
+        "title": "The One with the Male Nanny",
+        "filename": "Friends - [9x06] - The One with the Male Nanny - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x06] - The One with the Male Nanny - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 7,
+        "title": "The One with Ross's Inappropriate Song",
+        "filename": "Friends - [9x07] - The One with Ross's Inappropriate Song - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x07] - The One with Ross's Inappropriate Song - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 8,
+        "title": "The One with Rachel's Other Sister",
+        "filename": "Friends - [9x08] - The One with Rachel's Other Sister - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x08] - The One with Rachel's Other Sister - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 9,
+        "title": "The One with Rachel's Phone Number",
+        "filename": "Friends - [9x09] - The One with Rachel's Phone Number - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x09] - The One with Rachel's Phone Number - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 10,
+        "title": "The One with Christmas in Tulsa",
+        "filename": "Friends - [9x10] - The One with Christmas in Tulsa - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x10] - The One with Christmas in Tulsa - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 11,
+        "title": "The One Where Rachel Goes Back to Work",
+        "filename": "Friends - [9x11] - The One Where Rachel Goes Back to Work - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x11] - The One Where Rachel Goes Back to Work - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 12,
+        "title": "The One with Phoebe's Rats",
+        "filename": "Friends - [9x12] - The One with Phoebe's Rats - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x12] - The One with Phoebe's Rats - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 13,
+        "title": "The One Where Monica Sings",
+        "filename": "Friends - [9x13] - The One Where Monica Sings - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x13] - The One Where Monica Sings - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 14,
+        "title": "The One with the Blind Dates",
+        "filename": "Friends - [9x14] - The One with the Blind Dates - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x14] - The One with the Blind Dates - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 15,
+        "title": "The One with the Mugging",
+        "filename": "Friends - [9x15] - The One with the Mugging - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x15] - The One with the Mugging - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 16,
+        "title": "The One with the Boob Job",
+        "filename": "Friends - [9x16] - The One with the Boob Job - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x16] - The One with the Boob Job - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 17,
+        "title": "The One with the Memorial Service",
+        "filename": "Friends - [9x17] - The One with the Memorial Service - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x17] - The One with the Memorial Service - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 18,
+        "title": "The One with the Lottery",
+        "filename": "Friends - [9x18] - The One with the Lottery - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x18] - The One with the Lottery - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 19,
+        "title": "The One with Rachel's Dream",
+        "filename": "Friends - [9x19] - The One with Rachel's Dream - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x19] - The One with Rachel's Dream - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 20,
+        "title": "The One with the Soap Opera Party",
+        "filename": "Friends - [9x20] - The One with the Soap Opera Party - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x20] - The One with the Soap Opera Party - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 21,
+        "title": "The One with the Fertility Test",
+        "filename": "Friends - [9x21] - The One with the Fertility Test - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x21] - The One with the Fertility Test - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 22,
+        "title": "The One With The Donor",
+        "filename": "Friends - [9x22] - The One With The Donor - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x22] - The One With The Donor - [arsenaloyal].srt"
+      },
+      {
+        "season": 9,
+        "episode": 23,
+        "title": "The One in Barbados",
+        "filename": "Friends - [9x23-24] - The One in Barbados - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [9x23-24] - The One in Barbados - [arsenaloyal].srt"
+      }
+    ],
+    "10": [
+      {
+        "season": 10,
+        "episode": 1,
+        "title": "The One After Joey and Rachel Kiss",
+        "filename": "Friends - [10x01] - The One After Joey and Rachel Kiss - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x01] - The One After Joey and Rachel Kiss - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 2,
+        "title": "The One Where Ross Is Fine",
+        "filename": "Friends - [10x02] - The One Where Ross Is Fine - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x02] - The One Where Ross Is Fine - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 3,
+        "title": "The One with Ross's Tan",
+        "filename": "Friends - [10x03] - The One with Ross's Tan - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x03] - The One with Ross's Tan - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 4,
+        "title": "The One with the Cake",
+        "filename": "Friends - [10x04] - The One with the Cake - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x04] - The One with the Cake - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 5,
+        "title": "The One Where Rachel's Sister Babysits",
+        "filename": "Friends - [10x05] - The One Where Rachel's Sister Babysits - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x05] - The One Where Rachel's Sister Babysits - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 6,
+        "title": "The One with Ross' Grant",
+        "filename": "Friends - [10x06] - The One with Ross' Grant - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x06] - The One with Ross' Grant - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 7,
+        "title": "The One with the Home Study",
+        "filename": "Friends - [10x07] - The One with the Home Study - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x07] - The One with the Home Study - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 8,
+        "title": "The One with the Late Thanksgiving",
+        "filename": "Friends - [10x08] - The One with the Late Thanksgiving - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x08] - The One with the Late Thanksgiving - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 9,
+        "title": "The One with the Birth Mother",
+        "filename": "Friends - [10x09] - The One with the Birth Mother - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x09] - The One with the Birth Mother - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 10,
+        "title": "The One Where Chandler Gets Caught",
+        "filename": "Friends - [10x10] - The One Where Chandler Gets Caught - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x10] - The One Where Chandler Gets Caught - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 11,
+        "title": "The One Where the Stripper Cries",
+        "filename": "Friends - [10x11] - The One Where the Stripper Cries - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x11] - The One Where the Stripper Cries - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 12,
+        "title": "The One with Phoebe's Wedding",
+        "filename": "Friends - [10x12] - The One with Phoebe's Wedding - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x12] - The One with Phoebe's Wedding - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 13,
+        "title": "The One Where Joey Speaks French",
+        "filename": "Friends - [10x13] - The One Where Joey Speaks French - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x13] - The One Where Joey Speaks French - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 14,
+        "title": "The One with Princess Consuela",
+        "filename": "Friends - [10x14] - The One with Princess Consuela - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x14] - The One with Princess Consuela - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 15,
+        "title": "The One Where Estelle Dies",
+        "filename": "Friends - [10x15] - The One Where Estelle Dies - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x15] - The One Where Estelle Dies - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 16,
+        "title": "The One with Rachel's Going Away Party",
+        "filename": "Friends - [10x16] - The One with Rachel's Going Away Party - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x16] - The One with Rachel's Going Away Party - [arsenaloyal].srt"
+      },
+      {
+        "season": 10,
+        "episode": 17,
+        "title": "The Last One",
+        "filename": "Friends - [10x17-18] - The Last One - [arsenaloyal].srt",
+        "filepath": "data/subtitles/friends/Friends - [10x17-18] - The Last One - [arsenaloyal].srt"
+      }
+    ]
+  }
+}

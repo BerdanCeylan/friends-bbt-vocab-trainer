@@ -1,0 +1,53 @@
+# === Raw copyrighted material - DO NOT COMMIT ===
+data/subtitles/
+
+# === Large generated data ===
+data/db/
+data/web/lemmas.json
+data/web/episode_samples.json
+data/web/backups/
+
+# Keep small useful data files (these make the site work out of the box)
+!data/web/function_words.json
+!data/web/character_names.json
+!data/web/junk_words.json
+!data/web/stats.json
+!data/web/episodes.json
+!data/web/friends_episodes.json
+!data/web/bbt_episodes.json
+!data/web/episodes_detailed.json
+!data/web/thematic_lemmas.json
+!data/web/thematic_words.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local user data (feedback, marks)
+*.json.bak
+suspect_words_feedback.json
+wordMarks_v2.json
+my_unknown_words.json
+
+# Backups
+data/web/backups/
+*.backup*
+
+# Temporary
+*.tmp
+*.log

@@ -1,0 +1,484 @@
+[
+  {
+    "lemma": "relationship",
+    "main_form": "relationship",
+    "total_frequency": 389,
+    "max_spread": 51,
+    "tier": 1,
+    "usefulness": 4225.2,
+    "variant_count": 2,
+    "variants": [
+      {
+        "surface": "relationship",
+        "frequency": 351,
+        "spread": 51,
+        "type": "base"
+      },
+      {
+        "surface": "relationships",
+        "frequency": 38,
+        "spread": 7,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Rest assured, that relationship ended two years ago",
+        "source": "friends",
+        "variant": "relationship"
+      },
+      {
+        "text": "Question, are you seeking a romantic relationship with me",
+        "source": "friends",
+        "variant": "relationship"
+      },
+      {
+        "text": "-it's about relationships",
+        "source": "friends",
+        "variant": "relationships"
+      },
+      {
+        "text": "I mean, i've been in relationships in general",
+        "source": "friends",
+        "variant": "relationships"
+      }
+    ]
+  },
+  {
+    "lemma": "date",
+    "main_form": "date",
+    "total_frequency": 524,
+    "max_spread": 106,
+    "tier": 1,
+    "usefulness": 9124.3,
+    "variant_count": 1,
+    "variants": [
+      {
+        "surface": "date",
+        "frequency": 524,
+        "spread": 106,
+        "type": "base"
+      }
+    ],
+    "examples": [
+      {
+        "text": "You'll have a life, you'll date-- no, i won't",
+        "source": "friends",
+        "variant": "date"
+      },
+      {
+        "text": "Have you dated anyone who's been divorced three times",
+        "source": "friends",
+        "variant": "date"
+      }
+    ]
+  },
+  {
+    "lemma": "awkward",
+    "main_form": "awkward",
+    "total_frequency": 95,
+    "max_spread": 27,
+    "tier": 2,
+    "usefulness": 775.1,
+    "variant_count": 2,
+    "variants": [
+      {
+        "surface": "awkward",
+        "frequency": 94,
+        "spread": 27,
+        "type": "base"
+      },
+      {
+        "surface": "awkwardly",
+        "frequency": 1,
+        "spread": 1,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "...this is really awkward",
+        "source": "friends",
+        "variant": "awkward"
+      },
+      {
+        "text": "Hey, sorry if last night was awkward",
+        "source": "friends",
+        "variant": "awkward"
+      }
+    ]
+  },
+  {
+    "lemma": "nervous",
+    "main_form": "nervous",
+    "total_frequency": 88,
+    "max_spread": 39,
+    "tier": 2,
+    "usefulness": 872.7,
+    "variant_count": 2,
+    "variants": [
+      {
+        "surface": "nervous",
+        "frequency": 87,
+        "spread": 39,
+        "type": "base"
+      },
+      {
+        "surface": "nervously",
+        "frequency": 1,
+        "spread": 1,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Look, i was nervous",
+        "source": "friends",
+        "variant": "nervous"
+      },
+      {
+        "text": "I was really nervous, and the accent",
+        "source": "friends",
+        "variant": "nervous"
+      },
+      {
+        "text": "I’m pacing nervously",
+        "source": "bigbang",
+        "variant": "nervously"
+      }
+    ]
+  },
+  {
+    "lemma": "brilliant",
+    "main_form": "brilliant",
+    "total_frequency": 54,
+    "max_spread": 8,
+    "tier": 3,
+    "usefulness": 239.6,
+    "variant_count": 2,
+    "variants": [
+      {
+        "surface": "brilliant",
+        "frequency": 53,
+        "spread": 8,
+        "type": "base"
+      },
+      {
+        "surface": "brilliantly",
+        "frequency": 1,
+        "spread": 1,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "God, you're brilliant",
+        "source": "friends",
+        "variant": "brilliant"
+      },
+      {
+        "text": "Gosh, this is brilliant",
+        "source": "friends",
+        "variant": "brilliant"
+      },
+      {
+        "text": "She's so brilliantly incisive..",
+        "source": "friends",
+        "variant": "brilliantly"
+      }
+    ]
+  },
+  {
+    "lemma": "genius",
+    "main_form": "genius",
+    "total_frequency": 72,
+    "max_spread": 12,
+    "tier": 2,
+    "usefulness": 374.2,
+    "variant_count": 2,
+    "variants": [
+      {
+        "surface": "genius",
+        "frequency": 65,
+        "spread": 12,
+        "type": "base"
+      },
+      {
+        "surface": "geniuses",
+        "frequency": 7,
+        "spread": 3,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Oh, you’re a genius",
+        "source": "friends",
+        "variant": "genius"
+      },
+      {
+        "text": "How's my favorite genius and his robot buddy",
+        "source": "friends",
+        "variant": "genius"
+      },
+      {
+        "text": "Hey, there’s my favorite geniuses",
+        "source": "friends",
+        "variant": "geniuses"
+      },
+      {
+        "text": "She oniy dates geniuses and nobei prize winners",
+        "source": "friends",
+        "variant": "geniuses"
+      }
+    ]
+  },
+  {
+    "lemma": "quantum",
+    "main_form": "quantum",
+    "total_frequency": 57,
+    "max_spread": 1,
+    "tier": 3,
+    "usefulness": 114.0,
+    "variant_count": 1,
+    "variants": [
+      {
+        "surface": "quantum",
+        "frequency": 57,
+        "spread": 1,
+        "type": "base"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Not ’til you tell me about your latest paper on quantum loop theory",
+        "source": "bigbang",
+        "variant": "quantum"
+      }
+    ]
+  },
+  {
+    "lemma": "roommate",
+    "main_form": "roommate",
+    "total_frequency": 182,
+    "max_spread": 38,
+    "tier": 2,
+    "usefulness": 1796.1,
+    "variant_count": 1,
+    "variants": [
+      {
+        "surface": "roommate",
+        "frequency": 182,
+        "spread": 38,
+        "type": "base"
+      }
+    ],
+    "examples": [
+      {
+        "text": "He's the best roommate",
+        "source": "friends",
+        "variant": "roommate"
+      },
+      {
+        "text": "He's a terrible roommate",
+        "source": "friends",
+        "variant": "roommate"
+      }
+    ]
+  },
+  {
+    "lemma": "wedding",
+    "main_form": "weddings",
+    "total_frequency": 18,
+    "max_spread": 12,
+    "tier": 3,
+    "usefulness": 97.9,
+    "variant_count": 1,
+    "variants": [
+      {
+        "surface": "weddings",
+        "frequency": 18,
+        "spread": 12,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Why do people cry at weddings",
+        "source": "friends",
+        "variant": "weddings"
+      },
+      {
+        "text": "Do you do a lot of weddings here",
+        "source": "friends",
+        "variant": "weddings"
+      }
+    ]
+  },
+  {
+    "lemma": "hilarious",
+    "main_form": "hilarious",
+    "total_frequency": 15,
+    "max_spread": 4,
+    "tier": 3,
+    "usefulness": 49.5,
+    "variant_count": 1,
+    "variants": [
+      {
+        "surface": "hilarious",
+        "frequency": 15,
+        "spread": 4,
+        "type": "base"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Oh, that's hilarious",
+        "source": "friends",
+        "variant": "hilarious"
+      },
+      {
+        "text": "Man, this is hilarious",
+        "source": "friends",
+        "variant": "hilarious"
+      }
+    ]
+  },
+  {
+    "lemma": "pregnant",
+    "main_form": "pregnant",
+    "total_frequency": 170,
+    "max_spread": 47,
+    "tier": 2,
+    "usefulness": 1882.8,
+    "variant_count": 1,
+    "variants": [
+      {
+        "surface": "pregnant",
+        "frequency": 170,
+        "spread": 47,
+        "type": "base"
+      }
+    ],
+    "examples": [
+      {
+        "text": "But if you were pregnant, what would you name it",
+        "source": "friends",
+        "variant": "pregnant"
+      },
+      {
+        "text": "There's a pregnant woman in ohio, and she picked us",
+        "source": "friends",
+        "variant": "pregnant"
+      }
+    ]
+  },
+  {
+    "lemma": "breakup",
+    "main_form": "breakup",
+    "total_frequency": 24,
+    "max_spread": 8,
+    "tier": 3,
+    "usefulness": 102.6,
+    "variant_count": 2,
+    "variants": [
+      {
+        "surface": "breakup",
+        "frequency": 22,
+        "spread": 8,
+        "type": "base"
+      },
+      {
+        "surface": "breakups",
+        "frequency": 2,
+        "spread": 1,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Yeah, sorry about the breakup",
+        "source": "friends",
+        "variant": "breakup"
+      },
+      {
+        "text": "I have never had such a healthy breakup",
+        "source": "friends",
+        "variant": "breakup"
+      },
+      {
+        "text": "You know first hand that breakups are hard",
+        "source": "bigbang",
+        "variant": "breakups"
+      }
+    ]
+  },
+  {
+    "lemma": "crush",
+    "main_form": "crush",
+    "total_frequency": 87,
+    "max_spread": 24,
+    "tier": 3,
+    "usefulness": 472.0,
+    "variant_count": 5,
+    "variants": [
+      {
+        "surface": "crush",
+        "frequency": 43,
+        "spread": 24,
+        "type": "base"
+      },
+      {
+        "surface": "crushed",
+        "frequency": 14,
+        "spread": 8,
+        "type": "variant"
+      },
+      {
+        "surface": "crusher",
+        "frequency": 12,
+        "spread": 1,
+        "type": "variant"
+      },
+      {
+        "surface": "crushes",
+        "frequency": 9,
+        "spread": 3,
+        "type": "variant"
+      },
+      {
+        "surface": "crushing",
+        "frequency": 9,
+        "spread": 3,
+        "type": "variant"
+      }
+    ],
+    "examples": [
+      {
+        "text": "Humongous man crush, dude",
+        "source": "friends",
+        "variant": "crush"
+      },
+      {
+        "text": "You have a crush on him, why wouid you hire him",
+        "source": "friends",
+        "variant": "crush"
+      },
+      {
+        "text": "Dad, she's gonna be crushed",
+        "source": "friends",
+        "variant": "crushed"
+      },
+      {
+        "text": "Oh, no, they're gonna be crushed",
+        "source": "friends",
+        "variant": "crushed"
+      },
+      {
+        "text": "How could you not like getting attention for playing wesley crusher",
+        "source": "bigbang",
+        "variant": "crusher"
+      }
+    ]
+  }
+]

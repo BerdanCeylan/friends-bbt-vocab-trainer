@@ -1,0 +1,465 @@
+{
+  "original_count": 132,
+  "removed_count": 24,
+  "removed_words": [
+    "alex",
+    "alicia",
+    "batman",
+    "couch",
+    "dave",
+    "david",
+    "gablehouser",
+    "hawking",
+    "india",
+    "lee",
+    "lesley",
+    "lord",
+    "mmm",
+    "moon",
+    "north",
+    "page",
+    "song",
+    "spock",
+    "steph",
+    "texas",
+    "trek",
+    "wheaton",
+    "wiii",
+    "zero"
+  ],
+  "clean_count": 108,
+  "clean_words": [
+    {
+      "word": "going",
+      "frequency": 5349
+    },
+    {
+      "word": "something",
+      "frequency": 2652
+    },
+    {
+      "word": "doing",
+      "frequency": 2522
+    },
+    {
+      "word": "kind",
+      "frequency": 1828
+    },
+    {
+      "word": "together",
+      "frequency": 1308
+    },
+    {
+      "word": "having",
+      "frequency": 1210
+    },
+    {
+      "word": "wrong",
+      "frequency": 1158
+    },
+    {
+      "word": "find",
+      "frequency": 1114
+    },
+    {
+      "word": "around",
+      "frequency": 1103
+    },
+    {
+      "word": "he's",
+      "frequency": 1044
+    },
+    {
+      "word": "trying",
+      "frequency": 950
+    },
+    {
+      "word": "saying",
+      "frequency": 909
+    },
+    {
+      "word": "she's",
+      "frequency": 886
+    },
+    {
+      "word": "coming",
+      "frequency": 872
+    },
+    {
+      "word": "mind",
+      "frequency": 856
+    },
+    {
+      "word": "what's",
+      "frequency": 839
+    },
+    {
+      "word": "making",
+      "frequency": 799
+    },
+    {
+      "word": "there's",
+      "frequency": 737
+    },
+    {
+      "word": "found",
+      "frequency": 631
+    },
+    {
+      "word": "taking",
+      "frequency": 557
+    },
+    {
+      "word": "living",
+      "frequency": 532
+    },
+    {
+      "word": "end",
+      "frequency": 523
+    },
+    {
+      "word": "they're",
+      "frequency": 481
+    },
+    {
+      "word": "moving",
+      "frequency": 454
+    },
+    {
+      "word": "dating",
+      "frequency": 375
+    },
+    {
+      "word": "ring",
+      "frequency": 370
+    },
+    {
+      "word": "seeing",
+      "frequency": 342
+    },
+    {
+      "word": "sometimes",
+      "frequency": 341
+    },
+    {
+      "word": "spend",
+      "frequency": 321
+    },
+    {
+      "word": "brain",
+      "frequency": 320
+    },
+    {
+      "word": "asking",
+      "frequency": 319
+    },
+    {
+      "word": "giving",
+      "frequency": 312
+    },
+    {
+      "word": "behind",
+      "frequency": 310
+    },
+    {
+      "word": "using",
+      "frequency": 278
+    },
+    {
+      "word": "who's",
+      "frequency": 254
+    },
+    {
+      "word": "young",
+      "frequency": 247
+    },
+    {
+      "word": "along",
+      "frequency": 242
+    },
+    {
+      "word": "lunch",
+      "frequency": 241
+    },
+    {
+      "word": "eating",
+      "frequency": 241
+    },
+    {
+      "word": "gentlemen",
+      "frequency": 212
+    },
+    {
+      "word": "catch",
+      "frequency": 206
+    },
+    {
+      "word": "hoping",
+      "frequency": 205
+    },
+    {
+      "word": "social",
+      "frequency": 200
+    },
+    {
+      "word": "weren",
+      "frequency": 195
+    },
+    {
+      "word": "universe",
+      "frequency": 193
+    },
+    {
+      "word": "soup",
+      "frequency": 189
+    },
+    {
+      "word": "yep",
+      "frequency": 188
+    },
+    {
+      "word": "touch",
+      "frequency": 187
+    },
+    {
+      "word": "con",
+      "frequency": 187
+    },
+    {
+      "word": "shouldn",
+      "frequency": 187
+    },
+    {
+      "word": "english",
+      "frequency": 186
+    },
+    {
+      "word": "agree",
+      "frequency": 185
+    },
+    {
+      "word": "uncomfortable",
+      "frequency": 184
+    },
+    {
+      "word": "nope",
+      "frequency": 183
+    },
+    {
+      "word": "favourite",
+      "frequency": 181
+    },
+    {
+      "word": "black",
+      "frequency": 180
+    },
+    {
+      "word": "giant",
+      "frequency": 179
+    },
+    {
+      "word": "online",
+      "frequency": 178
+    },
+    {
+      "word": "department",
+      "frequency": 177
+    },
+    {
+      "word": "terrific",
+      "frequency": 177
+    },
+    {
+      "word": "neither",
+      "frequency": 176
+    },
+    {
+      "word": "join",
+      "frequency": 176
+    },
+    {
+      "word": "notice",
+      "frequency": 174
+    },
+    {
+      "word": "silly",
+      "frequency": 174
+    },
+    {
+      "word": "bitch",
+      "frequency": 174
+    },
+    {
+      "word": "grown",
+      "frequency": 173
+    },
+    {
+      "word": "magic",
+      "frequency": 172
+    },
+    {
+      "word": "summer",
+      "frequency": 172
+    },
+    {
+      "word": "toilet",
+      "frequency": 172
+    },
+    {
+      "word": "saturday",
+      "frequency": 171
+    },
+    {
+      "word": "bunch",
+      "frequency": 171
+    },
+    {
+      "word": "acting",
+      "frequency": 170
+    },
+    {
+      "word": "support",
+      "frequency": 170
+    },
+    {
+      "word": "computer",
+      "frequency": 169
+    },
+    {
+      "word": "clock",
+      "frequency": 168
+    },
+    {
+      "word": "information",
+      "frequency": 168
+    },
+    {
+      "word": "possible",
+      "frequency": 168
+    },
+    {
+      "word": "tree",
+      "frequency": 168
+    },
+    {
+      "word": "field",
+      "frequency": 168
+    },
+    {
+      "word": "hungry",
+      "frequency": 166
+    },
+    {
+      "word": "simple",
+      "frequency": 165
+    },
+    {
+      "word": "rules",
+      "frequency": 165
+    },
+    {
+      "word": "station",
+      "frequency": 165
+    },
+    {
+      "word": "breakfast",
+      "frequency": 165
+    },
+    {
+      "word": "action",
+      "frequency": 164
+    },
+    {
+      "word": "force",
+      "frequency": 161
+    },
+    {
+      "word": "cousin",
+      "frequency": 161
+    },
+    {
+      "word": "string",
+      "frequency": 161
+    },
+    {
+      "word": "correct",
+      "frequency": 160
+    },
+    {
+      "word": "shall",
+      "frequency": 159
+    },
+    {
+      "word": "till",
+      "frequency": 159
+    },
+    {
+      "word": "offer",
+      "frequency": 159
+    },
+    {
+      "word": "excellent",
+      "frequency": 157
+    },
+    {
+      "word": "honest",
+      "frequency": 157
+    },
+    {
+      "word": "games",
+      "frequency": 156
+    },
+    {
+      "word": "state",
+      "frequency": 156
+    },
+    {
+      "word": "scene",
+      "frequency": 156
+    },
+    {
+      "word": "assistant",
+      "frequency": 156
+    },
+    {
+      "word": "strong",
+      "frequency": 155
+    },
+    {
+      "word": "safe",
+      "frequency": 155
+    },
+    {
+      "word": "difference",
+      "frequency": 154
+    },
+    {
+      "word": "lying",
+      "frequency": 154
+    },
+    {
+      "word": "cheesecake",
+      "frequency": 154
+    },
+    {
+      "word": "regular",
+      "frequency": 153
+    },
+    {
+      "word": "dirty",
+      "frequency": 153
+    },
+    {
+      "word": "power",
+      "frequency": 153
+    },
+    {
+      "word": "kitchen",
+      "frequency": 152
+    },
+    {
+      "word": "waste",
+      "frequency": 152
+    }
+  ]
+}

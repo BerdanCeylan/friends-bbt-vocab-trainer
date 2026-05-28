@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çalışma Odası • TV English</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #22c55e;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --warning: #f59e0b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .top-nav {
+      background: #1e293b;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid #334155;
+    }
+    .top-nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .top-nav a.active {
+      color: #22c55e;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px 16px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.8rem;
+    }
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 24px;
+    }
+    .controls {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .controls select, .controls input {
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #475569;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+    .word-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .word-card:hover {
+      border-color: #475569;
+    }
+    .word-main {
+      flex: 1;
+    }
+    .word-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .word-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: #64748b;
+      margin-bottom: 8px;
+    }
+    .tier-badge {
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .tier-1 { background: rgba(34,197,94,0.15); color: #22c55e; }
+    .tier-2 { background: rgba(59,130,246,0.15); color: #3b82f6; }
+    .tier-3 { background: rgba(245,158,11,0.15); color: #f59e0b; }
+    .tier-4 { background: rgba(100,116,139,0.15); color: #64748b; }
+    .usefulness {
+      font-weight: 600;
+      color: #86efac;
+    }
+    .note {
+      background: #0f172a;
+      border-left: 3px solid #f59e0b;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      margin: 8px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .variants {
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      min-width: 140px;
+    }
+    .btn {
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .btn-primary {
+      background: #22c55e;
+      color: #0f172a;
+    }
+    .btn-primary:hover {
+      background: #16a34a;
+    }
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: #64748b;
+    }
+    .stats {
+      background: #1e293b;
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+
+    /* Definition sections for study cards */
+    .definition-box {
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: #0f172a;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    .definition-box .label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #64748b;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .definition-box .content {
+      color: #e2e8f0;
+      line-height: 1.35;
+    }
+    .definition-box .pos {
+      color: #94a3b8;
+      font-style: italic;
+      font-size: 0.8rem;
+      margin-right: 6px;
+    }
+    .turkish-input {
+      width: 100%;
+      margin-top: 6px;
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #475569;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 0.9rem;
+    }
+    .turkish-input:focus {
+      border-color: #22c55e;
+      outline: none;
+    }
+
+    /* Küçük mod switcher için minimal stiller */
+    .top-nav .mode-btn {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 999px;
+    }
+    .top-nav .mode-btn.active {
+      background: #22c55e;
+      color: #0f172a;
+    }
+
+    /* Quiz Modal Styles */
+    .quiz-overlay {
+      position: fixed; inset: 0; background: rgba(15,23,42,0.92);
+      display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 20px;
+    }
+    .quiz-modal {
+      background: #1e293b; border: 1px solid #475569; border-radius: 16px;
+      width: 100%; max-width: 720px; max-height: 92vh; overflow: auto;
+      box-shadow: 0 25px 70px rgba(0,0,0,0.6);
+    }
+    .quiz-header {
+      padding: 16px 20px; border-bottom: 1px solid #334155; display: flex; justify-content: space-between; align-items: center;
+    }
+    .quiz-progress {
+      font-size: 0.9rem; color: #64748b;
+    }
+    .quiz-body { padding: 22px 24px; }
+    .quiz-word {
+      font-size: 2.1rem; font-weight: 800; margin-bottom: 4px; color: #f1f5f9;
+    }
+    .quiz-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; font-size: 0.9rem; }
+    .quiz-examples {
+      background: #0f172a; border-radius: 10px; padding: 14px; margin: 14px 0;
+      border-left: 4px solid #22c55e; font-size: 0.97rem; line-height: 1.45;
+    }
+    .quiz-note {
+      background: #0f172a; border-left: 3px solid #f59e0b; padding: 8px 12px; font-size: 0.9rem; color: #cbd5e1; margin: 10px 0;
+    }
+    .quiz-actions {
+      display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap;
+    }
+    .quiz-actions button {
+      flex: 1; min-width: 140px; padding: 12px 16px; font-size: 1rem; font-weight: 700; border-radius: 10px; border: none; cursor: pointer;
+    }
+    .quiz-btn-known { background: #22c55e; color: #0f172a; }
+    .quiz-btn-skip { background: #334155; color: #e2e8f0; }
+    .quiz-end {
+      text-align: center; padding: 30px 20px;
+    }
+    .quiz-end h2 { margin: 0 0 12px; }
+  </style>
+</head>
+<body>
+
+  <div class="top-nav">
+    <strong style="font-size:1.2rem;">TV English</strong>
+
+    <div style="display:flex; background:#0f172a; border-radius:999px; padding:3px; border:1px solid #334155; margin-left:12px;">
+      <a href="index.html" class="mode-btn" style="padding:6px 14px; font-size:0.85rem;">📚 Havuz</a>
+      <a href="scripts.html" class="mode-btn" style="padding:6px 14px; font-size:0.85rem;">📖 Senaryo</a>
+      <a href="review.html" class="mode-btn active" style="padding:6px 14px; font-size:0.85rem;">📝 Çalışma</a>
+    </div>
+
+    <span style="margin-left:auto; font-size:0.75rem; color:#64748b;">Bilmiyorum dediğin kelimeler burada birikir • Arşiv sekmesinden bildiğin kelimeleri görebilirsin</span>
+  </div>
+
+  <div class="container">
+    <h1>Çalışma Odası</h1>
+    <p class="subtitle">Burası senin kişisel çalışma alanın. Senaryolarda "Bilmiyorum" dediğin kelimeler burada birikir. Rastgele pratik yap, ilerledikçe "Biliyorum" diyerek arşive taşı.</p>
+
+    <!-- Sekmeler -->
+    <div style="display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 1px solid #334155;">
+      <div onclick="switchTab(0)" id="tab-0"
+           style="padding: 10px 20px; cursor: pointer; border-bottom: 3px solid #22c55e; font-weight: 600;">
+        📝 Çalışma Listesi <span id="count-unknown" style="color:#64748b; font-weight:400;">(0)</span>
+      </div>
+      <div onclick="switchTab(1)" id="tab-1"
+           style="padding: 10px 20px; cursor: pointer; color:#64748b;">
+        ✅ Arşiv (Biliyorum) <span id="count-known" style="color:#64748b; font-weight:400;">(0)</span>
+      </div>
+    </div>
+
+    <div class="stats" id="stats">
+      Yükleniyor...
+    </div>
+
+    <div class="controls">
+      <input type="text" id="search" placeholder="Kelime ara..." oninput="applyFilters()">
+      <select id="sort" onchange="applyFilters()">
+        <option value="newest">En yeni işaretlenen</option>
+        <option value="usefulness">En yararlı</option>
+        <option value="frequency">En sık geçen</option>
+      </select>
+    </div>
+
+    <div id="word-list"></div>
+
+    <div style="margin-top: 40px; text-align: center;">
+      <button onclick="startPracticeMode()" class="btn btn-primary" style="padding: 12px 24px; font-size: 1rem;">
+        🎯 Rastgele 10 Kelime ile Pratik Yap
+      </button>
+    </div>
+  </div>
+
+<script>
+let allWords = [];
+let marks = {};
+let lemmasData = [];
+
+// === Definition fetching + caching (for bilmiyorum words) ===
+const DEFINITION_CACHE_KEY = 'wordDefinitionsCache_v1';
+
+function getDefinitionCache() {
+  try {
+    return JSON.parse(localStorage.getItem(DEFINITION_CACHE_KEY) || '{}');
+  } catch (e) { return {}; }
+}
+
+function saveDefinitionCache(cache) {
+  localStorage.setItem(DEFINITION_CACHE_KEY, JSON.stringify(cache));
+}
+
+async function fetchEnglishDefinition(lemma) {
+  const cache = getDefinitionCache();
+  if (cache[lemma]) return cache[lemma];
+
+  try {
+    const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(lemma)}`);
+    if (!res.ok) return null;
+
+    const data = await res.json();
+    const entry = data[0];
+    if (!entry) return null;
+
+    const meanings = [];
+    for (const meaning of entry.meanings || []) {
+      const pos = meaning.partOfSpeech;
+      for (const def of meaning.definitions || []) {
+        meanings.push({
+          partOfSpeech: pos,
+          definition: def.definition,
+          example: def.example || null
+        });
+        if (meanings.length >= 3) break;
+      }
+      if (meanings.length >= 3) break;
+    }
+
+    const result = { definitions: meanings };
+    cache[lemma] = result;
+    saveDefinitionCache(cache);
+    return result;
+  } catch (e) {
+    console.warn('Definition fetch failed for', lemma, e);
+    return null;
+  }
+}
+
+async function loadData() {
+  try {
+    // 1. Lemmas.json oku
+    const res = await fetch('data/web/lemmas.json');
+    lemmasData = await res.json();
+
+    // 2. İşaretlemeleri oku
+    const stored = localStorage.getItem('wordMarks_v2');
+    marks = stored ? JSON.parse(stored) : {};
+
+    // 3. Sadece bilmiyorum olanları filtrele
+    const unknown = Object.entries(marks)
+      .filter(([lemma, mark]) => mark.is_known === 0)
+      .map(([lemma, mark]) => {
+        const lemmaInfo = lemmasData.find(l => l.lemma === lemma) || {};
+        return {
+          lemma,
+          ...mark,
+          ...lemmaInfo
+        };
+      });
+
+    allWords = unknown;
+    renderStats();
+    applyFilters();
+
+  } catch (e) {
+    console.error(e);
+    document.getElementById('word-list').innerHTML = `
+      <div class="empty">Veri yüklenemedi. Lütfen sayfayı yenile.</div>
+    `;
+  }
+}
+
+function renderStats() {
+  const el = document.getElementById('stats');
+  el.innerHTML = `
+    <strong>${allWords.length}</strong> kelime çalışman gerekiyor.
+  `;
+  updateTabCounts();
+}
+
+function updateTabCounts() {
+  const unknownEl = document.getElementById('count-unknown');
+  const knownEl = document.getElementById('count-known');
+  if (!unknownEl || !knownEl) return;
+
+  // Count from marks
+  let k = 0, u = 0;
+  Object.values(marks || {}).forEach(m => {
+    if (m.is_known === 1) k++; else u++;
+  });
+
+  unknownEl.textContent = `(${u})`;
+  knownEl.textContent = `(${k})`;
+}
+
+function applyFilters() {
+  const search = document.getElementById('search').value.toLowerCase().trim();
+  const sortMode = document.getElementById('sort').value;
+
+  let filtered = [...allWords];
+
+  // Arama
+  if (search) {
+    filtered = filtered.filter(w => 
+      w.lemma.toLowerCase().includes(search) ||
+      (w.note && w.note.toLowerCase().includes(search))
+    );
+  }
+
+  // Sıralama
+  if (sortMode === 'newest') {
+    filtered.sort((a, b) => new Date(b.marked_at || 0) - new Date(a.marked_at || 0));
+  } else if (sortMode === 'usefulness') {
+    filtered.sort((a, b) => (b.usefulness || 0) - (a.usefulness || 0));
+  } else if (sortMode === 'frequency') {
+    filtered.sort((a, b) => (b.total_frequency || 0) - (a.total_frequency || 0));
+  }
+
+  renderList(filtered);
+}
+
+function renderList(list) {
+  const container = document.getElementById('word-list');
+  container.innerHTML = '';
+
+  if (list.length === 0) {
+    container.innerHTML = `<div class="empty">Çalışman gereken kelime kalmadı. Tebrikler!</div>`;
+    return;
+  }
+
+  list.forEach(word => {
+    const div = document.createElement('div');
+    div.className = 'word-card';
+    div.dataset.lemma = word.lemma;
+
+    const usefulness = word.usefulness ? word.usefulness.toFixed(2) : '-';
+    const tier = word.tier || 3;
+    const note = word.note ? `<div class="note">${word.note}</div>` : '';
+
+    let variantsHtml = '';
+    if (word.variants && word.variants.length > 1) {
+      const others = word.variants.slice(0, 5).map(v => v.surface).join(', ');
+      variantsHtml = `<div class="variants">Varyasyonlar: ${others}${word.variants.length > 5 ? '...' : ''}</div>`;
+    }
+
+    div.innerHTML = `
+      <div class="word-main">
+        <div class="word-title">${word.lemma}</div>
+        <div class="word-meta">
+          <span class="tier-badge tier-${tier}">T${tier}</span>
+          <span class="usefulness">Usefulness: ${usefulness}</span>
+          <span>${word.total_frequency || 0} kez</span>
+        </div>
+
+        <!-- English Definition -->
+        <div class="definition-box" data-def-en>
+          <div class="label">English</div>
+          <div class="content" data-def-content>
+            ${getCachedDefinitionHTML(word.lemma, word)}
+          </div>
+        </div>
+
+        <!-- Turkish -->
+        <div class="definition-box" style="border-left: 3px solid #3b82f6;">
+          <div class="label">Türkçe</div>
+          <input type="text" class="turkish-input" placeholder="Türkçe anlam yaz (kaydedilir)"
+                 value="${word.turkish || ''}"
+                 onblur="saveTurkishMeaning('${word.lemma}', this.value)">
+        </div>
+
+        ${note}
+        ${variantsHtml}
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" onclick="markAsKnown('${word.lemma}', this)">✓ Biliyorum</button>
+        <button class="btn" onclick="editNote('${word.lemma}')">Not Düzenle</button>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function markAsKnown(lemma, btnElement) {
+  if (!confirm(`"${lemma}" kelimesini "Biliyorum" olarak işaretlemek istiyor musun?`)) {
+    return;
+  }
+
+  let marks = {};
+  try {
+    marks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+  } catch (e) {}
+
+  if (marks[lemma]) {
+    marks[lemma].is_known = 1;
+    marks[lemma].marked_at = new Date().toISOString();
+  } else {
+    marks[lemma] = {
+      is_known: 1,
+      note: '',
+      marked_at: new Date().toISOString()
+    };
+  }
+
+  localStorage.setItem('wordMarks_v2', JSON.stringify(marks));
+
+  // Listeden kaldır
+  allWords = allWords.filter(w => w.lemma !== lemma);
+  btnElement.closest('.word-card').remove();
+
+  renderStats();
+}
+
+function editNote(lemma) {
+  const currentMarks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+  const currentNote = currentMarks[lemma]?.note || '';
+
+  const newNote = prompt(`"${lemma}" için not:`, currentNote);
+  if (newNote === null) return;
+
+  if (!currentMarks[lemma]) currentMarks[lemma] = {};
+  currentMarks[lemma].note = newNote.trim();
+  localStorage.setItem('wordMarks_v2', JSON.stringify(currentMarks));
+
+  // Listeyi yenile
+  location.reload();
+}
+
+async function loadEnglishDefinition(lemma, btnElement) {
+  const card = btnElement.closest('.word-card');
+  const contentEl = card.querySelector('[data-def-content]');
+  if (!contentEl) return;
+
+  contentEl.innerHTML = 'Yükleniyor...';
+
+  const result = await fetchEnglishDefinition(lemma);
+
+  if (result && result.definitions && result.definitions.length > 0) {
+    let html = '';
+    result.definitions.forEach(d => {
+      html += `<div style="margin-bottom:6px;">
+        ${d.partOfSpeech ? `<span class="pos">${d.partOfSpeech}</span>` : ''}
+        ${d.definition}
+        ${d.example ? `<div style="font-size:0.8rem; color:#64748b; margin-top:3px;">“${d.example}”</div>` : ''}
+      </div>`;
+    });
+    contentEl.innerHTML = html;
+  } else {
+    contentEl.innerHTML = `<span style="color:#64748b;">Tanım bulunamadı.</span>`;
+  }
+}
+
+function saveTurkishMeaning(lemma, value) {
+  let currentMarks = {};
+  try {
+    currentMarks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+  } catch (e) {}
+
+  if (!currentMarks[lemma]) currentMarks[lemma] = {};
+  currentMarks[lemma].turkish = value.trim();
+
+  localStorage.setItem('wordMarks_v2', JSON.stringify(currentMarks));
+}
+
+function getCachedDefinitionHTML(lemma, wordData = null) {
+  // 1. Prefer pre-filled definitions from lemmas.json (if we enriched them)
+  if (wordData && wordData.definitions && wordData.definitions.length > 0) {
+    let html = '';
+    wordData.definitions.slice(0, 3).forEach(d => {
+      html += `<div style="margin-bottom:6px;">
+        ${d.partOfSpeech ? `<span class="pos">${d.partOfSpeech}</span>` : ''}
+        ${d.definition}
+        ${d.example ? `<div style="font-size:0.8rem; color:#64748b; margin-top:3px;">“${d.example}”</div>` : ''}
+      </div>`;
+    });
+    return html;
+  }
+
+  // 2. Then check browser cache (from previous on-demand fetches)
+  const cache = getDefinitionCache();
+  const cached = cache[lemma];
+  if (cached && cached.definitions && cached.definitions.length > 0) {
+    let html = '';
+    cached.definitions.forEach(d => {
+      html += `<div style="margin-bottom:6px;">
+        ${d.partOfSpeech ? `<span class="pos">${d.partOfSpeech}</span>` : ''}
+        ${d.definition}
+        ${d.example ? `<div style="font-size:0.8rem; color:#64748b; margin-top:3px;">“${d.example}”</div>` : ''}
+      </div>`;
+    });
+    return html;
+  }
+
+  // 3. Show button to fetch
+  return `<button class="btn" style="padding:4px 10px; font-size:0.8rem; background:#334155;" 
+                  onclick="loadEnglishDefinition('${lemma}', this)">Anlamı yükle</button>`;
+}
+
+function startPracticeMode() {
+  if (allWords.length === 0) {
+    alert("Çalışacak kelime kalmadı!");
+    return;
+  }
+
+  const shuffled = [...allWords].sort(() => 0.5 - Math.random());
+  const practiceList = shuffled.slice(0, 10);
+
+  openQuizModal(practiceList);
+}
+
+// ==================== YENİ: GERÇEK QUIZ MODAL (a-b-c) ====================
+let quizState = { list: [], index: 0, marked: 0, total: 0 };
+
+function openQuizModal(words) {
+  quizState = { list: words, index: 0, marked: 0, total: words.length };
+
+  const overlay = document.createElement('div');
+  overlay.className = 'quiz-overlay';
+  overlay.id = 'quiz-overlay';
+  overlay.innerHTML = `
+    <div class="quiz-modal">
+      <div class="quiz-header">
+        <div>
+          <strong>🎯 Pratik Modu</strong>
+          <span style="color:#64748b; margin-left:8px;">(Bilmiyorum kelimeleri)</span>
+        </div>
+        <div class="quiz-progress" id="quiz-progress">1 / 10</div>
+      </div>
+      <div class="quiz-body" id="quiz-body">
+        <!-- JS doldurur -->
+      </div>
+    </div>
+  `;
+  document.body.appendChild(overlay);
+
+  // Close on ESC
+  const escHandler = (e) => {
+    if (e.key === 'Escape') {
+      closeQuiz(overlay, escHandler);
+    }
+  };
+  document.addEventListener('keydown', escHandler, { once: true });
+  overlay.onclick = (e) => {
+    if (e.target === overlay) closeQuiz(overlay, escHandler);
+  };
+
+  renderQuizStep(overlay);
+}
+
+function renderQuizStep(overlay) {
+  const body = overlay.querySelector('#quiz-body');
+  const progress = overlay.querySelector('#quiz-progress');
+
+  const { list, index, total, marked } = quizState;
+  progress.textContent = `${index + 1} / ${total}`;
+
+  if (index >= list.length) {
+    showQuizEnd(overlay);
+    return;
+  }
+
+  const word = list[index];
+  const usefulness = word.usefulness ? word.usefulness.toFixed(2) : '-';
+  const tier = word.tier || 3;
+  const note = word.note ? `<div class="quiz-note">📝 ${word.note}</div>` : '';
+
+  // Örnek cümleleri al (lemmasData'dan veya word içinden)
+  let examplesHtml = '';
+  const examples = (word.examples && word.examples.length > 0) 
+    ? word.examples.slice(0, 2) 
+    : [];
+  if (examples.length > 0) {
+    examplesHtml = '<div class="quiz-examples"><strong>Örnekler:</strong><br>';
+    examples.forEach(ex => {
+      const txt = typeof ex === 'string' ? ex : (ex.text || ex.sentence || '');
+      const src = ex.source ? (ex.source === 'friends' ? 'Friends' : 'BBT') : '';
+      examplesHtml += `• “${txt}” ${src ? '<span style="opacity:.6;font-size:.8rem;">— ' + src + '</span>' : ''}<br>`;
+    });
+    examplesHtml += '</div>';
+  } else {
+    examplesHtml = '<div class="quiz-examples" style="color:#64748b;">Bu kelime için örnek cümle henüz yüklenmedi.</div>';
+  }
+
+  body.innerHTML = `
+    <div>
+      <div class="quiz-word">${word.lemma}</div>
+      <div class="quiz-meta">
+        <span class="tier-badge tier-${tier}" style="padding:3px 10px; font-size:0.8rem;">T${tier}</span>
+        <span style="color:#86efac; font-weight:600;">Usefulness ${usefulness}</span>
+        <span style="color:#94a3b8;">${word.total_frequency || 0} kez geçti</span>
+      </div>
+
+      ${note}
+      ${examplesHtml}
+
+      <div class="quiz-actions">
+        <button class="quiz-btn-known" onclick="quizMarkKnown(this)">✓ Biliyorum — Arşive Taşı</button>
+        <button class="quiz-btn-skip" onclick="quizNext(this)">Atla / Sonra Çalışırım</button>
+      </div>
+      <div style="margin-top:12px; font-size:0.8rem; color:#64748b; text-align:center;">
+        ${marked} / ${index} kelimeyi bu seansta öğrendin
+      </div>
+    </div>
+  `;
+}
+
+function quizMarkKnown(btn) {
+  const overlay = btn.closest('.quiz-overlay');
+  const word = quizState.list[quizState.index];
+
+  // Mark as known in localStorage + memory
+  let currentMarks = {};
+  try { currentMarks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}'); } catch(e){}
+
+  currentMarks[word.lemma] = {
+    is_known: 1,
+    note: word.note || currentMarks[word.lemma]?.note || '',
+    marked_at: new Date().toISOString()
+  };
+  localStorage.setItem('wordMarks_v2', JSON.stringify(currentMarks));
+
+  // Remove from allWords (review list)
+  allWords = allWords.filter(w => w.lemma !== word.lemma);
+  marks = currentMarks; // sync if needed elsewhere
+
+  quizState.marked++;
+  quizState.index++;
+
+  // Refresh main list UI
+  renderStats();
+  applyFilters();
+
+  renderQuizStep(overlay);
+}
+
+function quizNext(btn) {
+  const overlay = btn.closest('.quiz-overlay');
+  quizState.index++;
+  renderQuizStep(overlay);
+}
+
+function showQuizEnd(overlay) {
+  const body = overlay.querySelector('#quiz-body');
+  const { marked, total } = quizState;
+
+  body.innerHTML = `
+    <div class="quiz-end">
+      <h2>🎉 Pratik tamamlandı!</h2>
+      <p style="font-size:1.1rem; margin:12px 0;">
+        Bu seansta <strong style="color:#22c55e;">${marked} / ${total}</strong> kelimeyi "Biliyorum" olarak işaretledin.
+      </p>
+      <p style="color:#64748b; font-size:0.95rem;">Harika ilerleme! Kalan kelimeler çalışma listende duruyor.</p>
+
+      <div style="margin-top:22px; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+        <button onclick="restartQuizFromEnd(this)" class="btn btn-primary" style="padding:11px 20px; font-size:1rem;">
+          🔁 Aynı listeden tekrar pratik yap
+        </button>
+        <button onclick="closeQuizAndReload(this)" class="btn" style="background:#334155; color:#e2e8f0; padding:11px 20px; font-size:1rem;">
+          📋 Listeye dön
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function restartQuizFromEnd(btn) {
+  const overlay = btn.closest('.quiz-overlay');
+  // Re-shuffle from remaining allWords
+  if (allWords.length === 0) {
+    closeQuizAndReload(btn);
+    return;
+  }
+  const shuffled = [...allWords].sort(() => 0.5 - Math.random());
+  const newList = shuffled.slice(0, Math.min(10, allWords.length));
+  quizState = { list: newList, index: 0, marked: 0, total: newList.length };
+  renderQuizStep(overlay);
+}
+
+function closeQuizAndReload(el) {
+  const overlay = el.closest('.quiz-overlay');
+  overlay.remove();
+  location.reload(); // clean refresh of counts + list
+}
+
+function closeQuiz(overlay, escHandler) {
+  if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
+  // no need to remove listener since {once:true}
+}
+
+// ==================== TAB SWITCHING (Arşiv görünümü) ====================
+let currentTab = 0;
+let knownWordsCache = [];
+
+function switchTab(tab) {
+  currentTab = tab;
+  // UI aktiflik
+  document.getElementById('tab-0').style.borderBottom = tab === 0 ? '3px solid #22c55e' : '3px solid transparent';
+  document.getElementById('tab-0').style.fontWeight = tab === 0 ? '600' : '400';
+  document.getElementById('tab-0').style.color = tab === 0 ? '#e2e8f0' : '#64748b';
+
+  document.getElementById('tab-1').style.borderBottom = tab === 1 ? '3px solid #22c55e' : '3px solid transparent';
+  document.getElementById('tab-1').style.fontWeight = tab === 1 ? '600' : '400';
+  document.getElementById('tab-1').style.color = tab === 1 ? '#e2e8f0' : '#64748b';
+
+  const container = document.getElementById('word-list');
+  const search = document.getElementById('search');
+  const sortSel = document.getElementById('sort');
+
+  if (tab === 0) {
+    // Çalışma listesi (bilmiyorum)
+    search.disabled = false;
+    sortSel.disabled = false;
+    applyFilters(); // mevcut unknown list
+  } else {
+    // Arşiv (biliyorum)
+    search.disabled = true;
+    sortSel.disabled = true;
+    loadAndRenderKnown(container);
+  }
+}
+
+function loadAndRenderKnown(container) {
+  container.innerHTML = '<div style="color:#64748b; padding:12px;">Yükleniyor...</div>';
+
+  const currentMarks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+  const knownEntries = Object.entries(currentMarks).filter(([_, m]) => m.is_known === 1);
+
+  if (knownEntries.length === 0) {
+    container.innerHTML = `<div class="empty">Henüz "Biliyorum" olarak işaretlediğin kelime yok.<br>Çalışma listesinde kelimeleri işaretledikçe burada birikecek.</div>`;
+    return;
+  }
+
+  // Enrich with lemma data
+  knownWordsCache = knownEntries.map(([lemma, mark]) => {
+    const info = lemmasData.find(l => l.lemma === lemma) || {};
+    return { lemma, ...mark, ...info };
+  });
+
+  // Sort by usefulness desc by default for arşiv
+  knownWordsCache.sort((a, b) => (b.usefulness || 0) - (a.usefulness || 0));
+
+  renderKnownList(container, knownWordsCache);
+}
+
+function renderKnownList(container, list) {
+  container.innerHTML = '';
+
+  list.forEach(word => {
+    const div = document.createElement('div');
+    div.className = 'word-card';
+
+    const usefulness = word.usefulness ? word.usefulness.toFixed(2) : '-';
+    const tier = word.tier || 3;
+    const note = word.note ? `<div class="note">${word.note}</div>` : '';
+
+    div.innerHTML = `
+      <div class="word-main">
+        <div class="word-title">${word.lemma}</div>
+        <div class="word-meta">
+          <span class="tier-badge tier-${tier}">T${tier}</span>
+          <span class="usefulness">Usefulness: ${usefulness}</span>
+          <span>${word.total_frequency || 0} kez</span>
+        </div>
+        ${note}
+      </div>
+      <div class="actions">
+        <button class="btn" style="background:#ef4444; color:white;" onclick="unmarkFromArchive('${word.lemma}', this)">↩️ Arşivden Çıkar</button>
+      </div>
+    `;
+    container.appendChild(div);
+  });
+}
+
+function unmarkFromArchive(lemma, btn) {
+  if (!confirm(`"${lemma}" kelimesini arşivden çıkarıp tekrar "Bilmiyorum" listesine mi alalım?`)) return;
+
+  const currentMarks = JSON.parse(localStorage.getItem('wordMarks_v2') || '{}');
+  if (currentMarks[lemma]) {
+    currentMarks[lemma].is_known = 0;
+    currentMarks[lemma].marked_at = new Date().toISOString();
+  }
+  localStorage.setItem('wordMarks_v2', JSON.stringify(currentMarks));
+
+  // Refresh both views
+  btn.closest('.word-card').remove();
+  loadData(); // reloads unknown + counts
+}
+
+// Sayfa yüklendiğinde
+window.onload = loadData;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "total_unique_lemmas": 19629,
+  "tier_counts": {
+    "1": 2355,
+    "2": 2552,
+    "3": 4907,
+    "4": 9815
+  },
+  "sources": [
+    "Friends (~208 episodes)",
+    "The Big Bang Theory (~232 episodes)"
+  ],
+  "note": "Full vocabulary export with automatic usefulness scores and data-driven tiers (recomputed).",
+  "usefulness_formula": "log2(total_frequency + 1)",
+  "tier_method": "Quantile-based on usefulness (12% / 25% / 50%)"
+}

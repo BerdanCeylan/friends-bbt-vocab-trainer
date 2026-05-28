@@ -1,0 +1,2 @@
+requests
+# Add other dependencies here when needed

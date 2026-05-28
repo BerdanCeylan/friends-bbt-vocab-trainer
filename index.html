@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV English • Vocabulary Explorer</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #22c55e;
+      --accent2: #3b82f6;
+      --text: #e2e8f0;
+      --muted: #64748b;
+      --tier1: #22c55e;
+      --tier2: #3b82f6;
+      --tier3: #f59e0b;
+      --tier4: #64748b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* === YENİ: Kolay Mod Geçişi için Global Nav === */
+    .global-nav {
+      background: #1e293b;
+      padding: 9px 20px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      border-bottom: 1px solid #334155;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .global-nav .nav-brand {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      line-height: 1.05;
+    }
+    .global-nav .nav-brand strong {
+      font-size: 1.2rem;
+      color: #f1f5f9;
+    }
+    .global-nav .nav-brand .nav-subtitle {
+      font-size: 0.68rem;
+      color: #64748b;
+    }
+    .global-nav .mode-switcher {
+      display: flex;
+      background: #0f172a;
+      border-radius: 999px;
+      padding: 3px;
+      border: 1px solid #334155;
+      margin-left: auto;
+    }
+    .global-nav .mode-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 7px 16px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #94a3b8;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+    .global-nav .mode-btn:hover {
+      background: #1e293b;
+      color: #e2e8f0;
+    }
+    .global-nav .mode-btn.active {
+      background: #22c55e;
+      color: #0f172a;
+      box-shadow: 0 2px 8px rgba(34, 197, 94, 0.35);
+    }
+    .global-nav .nav-hint {
+      font-size: 0.7rem;
+      color: #64748b;
+      margin-left: 8px;
+      opacity: 0.8;
+    }
+    header {
+      background: linear-gradient(90deg, #1e293b, #0f172a);
+      padding: 1.25rem 2rem;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .header-left h1 {
+      margin: 0;
+      font-size: 1.85rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .tag {
+      background: var(--accent);
+      color: #0f172a;
+      font-size: 0.75rem;
+      padding: 3px 11px;
+      border-radius: 999px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    main {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* Stats */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+    .stat-card {
+      background: var(--card);
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1rem 1.25rem;
+    }
+    .stat-card .label { font-size: 0.8rem; color: var(--muted); margin-bottom: 4px; }
+    .stat-card .value { font-size: 1.65rem; font-weight: 700; line-height: 1; }
+    .stat-card .sub { font-size: 0.75rem; color: var(--muted); }
+
+    /* Controls */
+    .controls {
+      background: var(--card);
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+    .search-box {
+      flex: 1;
+      min-width: 240px;
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      background: #0f172a;
+      border: 1px solid #475569;
+      color: var(--text);
+      padding: 10px 16px 10px 42px;
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+    }
+    .search-box input:focus { border-color: var(--accent); }
+    .search-box::before {
+      content: "🔍";
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      opacity: 0.6;
+    }
+
+    .tier-filters {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+    .tier-btn {
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid #475569;
+      background: transparent;
+      color: var(--text);
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+    .tier-btn.active {
+      background: var(--accent);
+      color: #0f172a;
+      border-color: var(--accent);
+      font-weight: 600;
+    }
+    .tier-btn.t1 { border-color: var(--tier1); }
+    .tier-btn.t2 { border-color: var(--tier2); }
+    .tier-btn.t3 { border-color: var(--tier3); }
+    .tier-btn.t4 { border-color: var(--tier4); }
+
+    .status-btn {
+      padding: 5px 11px;
+      border-radius: 999px;
+      border: 1px solid #475569;
+      background: transparent;
+      color: var(--text);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.1s;
+    }
+    .status-btn.active {
+      background: #334155;
+      color: #e2e8f0;
+      border-color: #64748b;
+      font-weight: 600;
+    }
+
+    .sort-select {
+      background: #0f172a;
+      color: var(--text);
+      border: 1px solid #475569;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    /* Table */
+    .results {
+      background: var(--card);
+      border: 1px solid #334155;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    th {
+      background: #0f172a;
+      text-align: left;
+      padding: 12px 16px;
+      font-weight: 600;
+      color: var(--muted);
+      border-bottom: 1px solid #334155;
+      position: sticky;
+      top: 0;
+    }
+    td {
+      padding: 11px 16px;
+      border-bottom: 1px solid #334155;
+    }
+    tr:hover {
+      background: #1e293b;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    .word {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .word:hover { color: var(--accent); }
+
+    .tier-badge {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+    .tier-1 { background: rgba(34,197,94,0.15); color: var(--tier1); }
+    .tier-2 { background: rgba(59,130,246,0.15); color: var(--tier2); }
+    .tier-3 { background: rgba(245,158,11,0.15); color: var(--tier3); }
+    .tier-4 { background: rgba(100,116,139,0.15); color: var(--tier4); }
+
+    .num { font-variant-numeric: tabular-nums; color: #cbd5e1; }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.85);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal.active { display: flex; }
+    .modal-content {
+      background: var(--card);
+      border: 1px solid #475569;
+      border-radius: 16px;
+      width: 100%;
+      max-width: 620px;
+      max-height: 85vh;
+      overflow: auto;
+    }
+    .modal-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-header h2 { margin: 0; font-size: 1.5rem; }
+    .close-btn {
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-size: 1.6rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .modal-body { padding: 20px; }
+    .example {
+      background: #0f172a;
+      padding: 12px 16px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-size: 0.95rem;
+      border-left: 3px solid var(--accent);
+    }
+    .example-source {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* Thematic section */
+    .thematic {
+      margin-top: 2rem;
+    }
+    .thematic h3 { margin: 0 0 12px; }
+    .thematic-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 12px;
+    }
+    .thematic-card {
+      background: var(--card);
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+    }
+    .thematic-card:hover { border-color: var(--accent); }
+    .thematic-card .word { font-size: 1.1rem; }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .pagination button {
+      background: #1e293b;
+      border: 1px solid #475569;
+      color: var(--text);
+      padding: 6px 13px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .pagination button.active {
+      background: var(--accent);
+      color: #0f172a;
+      border-color: var(--accent);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .info-box {
+      background: #1e293b;
+      border-left: 4px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    /* === Floating Action Buttons Container (multi) === */
+    .fab-switch {
+      background: #22c55e;
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 18px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      z-index: 999;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      white-space: nowrap;
+    }
+    .fab-switch:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(34, 197, 94, 0.35);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Güçlü ve Tutarlı Üst Navigasyon - Modlar Arası Geçiş Artık Çok Kolay -->
+<div class="global-nav">
+  <div class="nav-brand" onclick="location.href='index.html'">
+    <strong>TV English</strong>
+    <span class="nav-subtitle">Friends + Big Bang Theory</span>
+  </div>
+
+  <div class="mode-switcher">
+    <a href="index.html" class="mode-btn active">
+      📚 <span>Kelime Havuzu</span>
+    </a>
+    <a href="scripts.html" class="mode-btn">
+      📖 <span>Senaryoları İncele</span>
+    </a>
+    <a href="review.html" class="mode-btn">
+      📝 <span>Çalışma Odası</span>
+    </a>
+  </div>
+
+  <div class="nav-hint">Gerçek dizi diyaloglarından kelime öğren • Hızlı geçiş yap</div>
+
+  <button onclick="showSuspectWordsPanel()" 
+          style="margin-left:auto; background:#f59e0b; color:white; border:none; padding:6px 12px; border-radius:6px; font-size:0.85rem; cursor:pointer; white-space:nowrap;">
+    ⚠️ Şüpheli Kelimeler
+  </button>
+</div>
+
+<header>
+  <div class="header-left">
+    <h1>📺 TV English <span class="tag">VOCAB</span></h1>
+    <p style="margin:4px 0 0; opacity:0.75;">Friends &amp; The Big Bang Theory • Native-level kelime havuzu</p>
+  </div>
+  <div>
+    <button onclick="location.reload()" style="background:#334155; color:white; padding:8px 16px; border:none; border-radius:8px; cursor:pointer;">Yenile</button>
+  </div>
+</header>
+
+<main>
+  <!-- Stats -->
+  <div class="stats-grid" id="stats-grid">
+    <!-- filled by JS -->
+  </div>
+
+  <!-- Canlı işaret durumu (arşiv özeti) -->
+  <div id="mark-summary" style="background:#1e293b; border:1px solid #334155; border-radius:10px; padding:8px 14px; margin-bottom:1rem; font-size:0.9rem; display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
+    <span style="color:#64748b;">İşaretleme:</span>
+    <span id="mark-todo">🔴 0 bilmiyorum</span>
+    <span id="mark-known">🟢 0 biliyorum (arşiv)</span>
+    <span id="mark-unmarked" style="color:#94a3b8;">⚪ 0 işaretlenmemiş</span>
+    <button onclick="document.querySelector('.status-btn[data-status=known]').click()" style="margin-left:auto; background:#334155; color:#e2e8f0; border:none; padding:4px 10px; border-radius:6px; font-size:0.8rem; cursor:pointer;">Arşivi Göster →</button>
+  </div>
+
+  <div class="info-box">
+    <strong>Ne elde ettik?</strong> 400+ bölüm gerçek dizi diyalogundan (Friends + Big Bang Theory) akıllı filtrelerle 
+    <strong>26.000+</strong> kelime çıkardık. Frekans + kaç bölümde geçtiğine göre sıraladık. 
+    Bu, klasik ders kitabı listelerinden çok daha doğal ve kullanışlı bir havuz.
+  </div>
+
+  <div style="background:#1e293b; border:1px solid #475569; border-radius:10px; padding:10px 16px; margin-bottom:1rem; font-size:0.9rem;">
+    <strong>💡 İpucu:</strong> Bu sayfayı doğrudan açınca (çift tıklama) bazı tarayıcılarda veri yüklenmeyebilir. 
+    En sorunsuz yöntem: Terminalde şu komutu çalıştır → <code>http://localhost:8000</code> adresini aç.
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="search" placeholder="Kelime ara (örnek: awkward, relationship, quantum...)">
+    </div>
+
+    <div class="tier-filters">
+      <button class="tier-btn active" data-tier="all">Tümü</button>
+      <button class="tier-btn t1" data-tier="1">Tier 1 - En Yararlı</button>
+      <button class="tier-btn t2" data-tier="2">Tier 2 - Yüksek</button>
+      <button class="tier-btn t3" data-tier="3">Tier 3 - Orta</button>
+      <button class="tier-btn t4" data-tier="4">Tier 4 - Düşük</button>
+    </div>
+
+    <!-- Durum / Arşiv filtreleri (Biliyorum / Bilmiyorum) -->
+    <div class="status-filters" style="display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-left:8px;">
+      <span style="font-size:0.75rem; color:#64748b; margin-right:2px;">Durum:</span>
+      <button class="status-btn active" data-status="all">Tümü</button>
+      <button class="status-btn" data-status="todo">🔴 Bilmiyorum</button>
+      <button class="status-btn" data-status="known">🟢 Biliyorum (arşiv)</button>
+      <button class="status-btn" data-status="unmarked">⚪ İşaretlenmemiş</button>
+    </div>
+
+    <select class="sort-select" id="sort">
+      <option value="usefulness">En yararlı (önerilen)</option>
+      <option value="frequency">En sık kullanılan</option>
+      <option value="spread">En yaygın (çok bölümde)</option>
+      <option value="word">Alfabetik</option>
+    </select>
+  </div>
+
+  <!-- Results Table -->
+  <div class="results">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:26%">Kelime</th>
+          <th style="width:9%">Tier</th>
+          <th style="width:11%" title="Usefulness = log₂(frekans + 1). Ne kadar yüksekse kelime o kadar temel ve yaygın.">Usefulness</th>
+          <th style="width:13%">Frekans</th>
+          <th style="width:13%">Cümle</th>
+          <th>Varyasyon</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- JS fills rows -->
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination" id="pagination"></div>
+
+  <!-- Thematic Gold -->
+  <div class="thematic">
+    <h3>✨ Thematic Gold — İlginç &amp; Değerli Kelimeler</h3>
+    <div class="thematic-grid" id="thematic-grid">
+      <!-- JS fills -->
+    </div>
+  </div>
+
+  <!-- YENİ: Senaryoları İncele + Kelime İşaretleme -->
+  <div style="margin-top: 2.5rem; background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 1.25rem;">
+    <h3 style="margin-top:0;">📖 Senaryoları İncele (Kelime İşaretleme)</h3>
+    <p style="font-size:0.9rem; color:#94a3b8; margin-bottom:12px;">
+      Arkadaşlar ve Teori bölümlerini bölüm bölüm incele. Bilmediğin kelimeleri işaretle, öğrenme havuzuna eklensin.
+    </p>
+
+    <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:12px;">
+      <button onclick="showScriptBrowser('friends')" style="background:#334155; color:white; border:none; padding:8px 16px; border-radius:8px; cursor:pointer;">
+        Friends Bölümleri
+      </button>
+      <button onclick="showScriptBrowser('bigbang')" style="background:#334155; color:white; border:none; padding:8px 16px; border-radius:8px; cursor:pointer;">
+        Big Bang Theory Bölümleri
+      </button>
+      <span style="align-self:center; font-size:0.8rem; color:#64748b;">↑ Yukarıdaki yeşil buton veya sağ alttaki “Senaryolara Geç” ile hızlıca gidebilirsin</span>
+    </div>
+
+    <div id="script-browser" style="display:none; background:#0f172a; border-radius:10px; padding:12px; max-height:420px; overflow:auto;">
+      <!-- JS ile doldurulacak -->
+    </div>
+  </div>
+
+</main>
+
+<!-- Sabit Hızlı Geçiş Butonları -->
+<div style="position:fixed; bottom:28px; right:28px; display:flex; flex-direction:column; gap:10px; z-index:999; align-items:flex-end;">
+  <a href="review.html" class="fab-switch" style="background:#3b82f6; bottom:auto; position:relative; right:auto;" title="Bilmediğin kelimelerle çalış (Review / Çalışma Odası)">
+    📝 Çalışma Odama Git
+  </a>
+  <a href="scripts.html" class="fab-switch" style="background:#22c55e; bottom:auto; position:relative; right:auto;" title="Senaryoları İncele sayfasına geç (kelimeleri işaretleyebilirsin)">
+    📖 Senaryolara Geç →
+  </a>
+</div>
+
+<footer>
+  Bu arayüz, 208 Friends + ~200+ Big Bang Theory bölümünden çıkarılan gerçek verilerle çalışır.<br>
+  Tüm işlemler yerel (tarayıcıda) çalışır. Veriler <code>data/web/</code> klasöründen yüklenir.
+</footer>
+
+<!-- Word Detail Modal -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 id="modal-word"></h2>
+      <button class="close-btn" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div style="display:flex; gap:12px; margin-bottom:16px; flex-wrap:wrap;">
+        <div><strong>Tier:</strong> <span id="modal-tier" class="tier-badge"></span></div>
+        <div><strong>Usefulness:</strong> <span id="modal-usefulness" style="font-weight:600; color:#cbd5e1;"></span></div>
+        <div><strong>Frekans:</strong> <span id="modal-freq" class="num"></span></div>
+        <div><strong>Yaygınlık:</strong> <span id="modal-spread" class="num"></span> bölüm</div>
+      </div>
+
+      <div style="margin-bottom:14px; font-size:0.72rem; color:#64748b; line-height:1.3;">
+        Usefulness = log₂(frekans + 1) → Ne kadar yüksekse kelime o kadar temel ve yaygın kullanılır.
+      </div>
+
+      <h4 style="margin:12px 0 8px;">Gerçek Dizi Örnekleri:</h4>
+      <div id="modal-examples"></div>
+
+      <div style="margin-top:20px; font-size:0.8rem; color:#64748b;">
+        Bu cümleler Friends ve The Big Bang Theory altyazılarından doğrudan alınmıştır.
+      </div>
+
+      <div style="margin-top:16px; text-align:center; display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+        <button onclick="markWordFromModal(1)" 
+                style="background:#22c55e; color:#0f172a; border:none; padding:8px 14px; border-radius:8px; font-size:0.85rem; cursor:pointer; font-weight:600;">
+          ✓ Biliyorum (arşive taşı)
+        </button>
+        <button onclick="markWordFromModal(0)" 
+                style="background:#ef4444; color:white; border:none; padding:8px 14px; border-radius:8px; font-size:0.85rem; cursor:pointer; font-weight:600;">
+          ✗ Bilmiyorum (çalış)
+        </button>
+        <button onclick="markAsSuspicious()" 
+                style="background:#f59e0b; color:white; border:none; padding:8px 14px; border-radius:8px; font-size:0.85rem; cursor:pointer;">
+          ⚠️ Şüpheli
+        </button>
+      </div>
+      <div id="modal-mark-status" style="margin-top:8px; text-align:center; font-size:0.8rem; color:#64748b;"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ==================== CONFIG ====================
+const PAGE_SIZE = 50;
+let allWords = [];
+let currentPage = 1;
+let currentFilter = 'all';
+let currentSort = 'usefulness';
+let currentModalItem = null;   // Modal'da açık olan kelime (şüpheli işaretleme için)
+let currentStatusFilter = 'all';
+let marks = {};  // localStorage wordMarks_v2 (is_known 0/1 + note)
+
+// ==================== LOAD DATA ====================
+async function loadData() {
+  try {
+    // Load from the new clean pipeline (vocabulary_v2)
+    const [statsRes, vocabRes] = await Promise.all([
+      fetch('data/web/stats.json'),
+      fetch('data/web/lemmas.json')
+    ]);
+
+    const stats = await statsRes.json();
+    allWords = await vocabRes.json();
+
+    // Load user marks (biliyorum / bilmiyorum)
+    try {
+      const stored = localStorage.getItem('wordMarks_v2');
+      marks = stored ? JSON.parse(stored) : {};
+    } catch (e) { marks = {}; }
+
+    renderStats(stats);
+
+    // Thematic section is optional and can be disabled for now
+    // (we can add it back later with better data)
+    const thematicContainer = document.getElementById('thematic-grid');
+    if (thematicContainer) {
+      thematicContainer.innerHTML = 
+        '<p style="color:#64748b; padding:10px; font-size:0.9rem;">Thematic örnekler yakında eklenecek.</p>';
+    }
+
+    // Initial render of main table
+    applyFiltersAndRender();
+
+    // Event listeners
+    setupListeners();
+
+    // Senaryo tarayıcısı için basit veri (ileride veritabanından çekilecek)
+    window.scriptData = {
+      friends: [
+        { file: "Friends - [10x17-18] - The Last One - [arsenaloyal].srt", label: "S10E17-18 - The Last One" },
+        { file: "Friends - [9x23-24] - The One in Barbados - [arsenaloyal].srt", label: "S9E23-24 - The One in Barbados" },
+        { file: "Friends - [8x23-24] - The One Where Rachel Has A Baby - [arsenaloyal].srt", label: "S8E23-24 - Rachel Has A Baby" }
+      ],
+      bigbang: [
+        { file: "transcripts.txt", label: "Tüm Bölümler (Transkript)" }
+      ]
+    };
+
+  } catch (e) {
+    console.error("Veri yükleme hatası (detay için console'a bak):", e);
+
+    const isFileProtocol = window.location.protocol === 'file:';
+    const tbody = document.getElementById('table-body');
+
+    let errorHTML = '';
+
+    if (isFileProtocol) {
+      // Classic case - opened by double click
+      errorHTML = `
+        <div style="background:#3f1f1f; color:#fca5a5; padding: 24px 20px; border-radius: 8px; margin: 12px;">
+          <h3 style="margin-top:0; color:#f87171;">⚠️ Veri yüklenemedi</h3>
+          <p><strong>Bu sayfayı doğrudan dosya olarak (file://) açtığın için tarayıcı JSON dosyalarını okuyamıyor.</strong></p>
+          <p><strong>Doğru yöntem:</strong></p>
+          <pre style="background:#1f2937; padding:12px; border-radius:6px; font-size:0.9rem;"><code>cd /home/duffyduck/ingilizce-sitem && python3 -m http.server 8000</code></pre>
+          <p>Sonra şunu aç: <a href="http://localhost:8000/index.html" style="color:#67e8f9;">http://localhost:8000/index.html</a></p>
+        </div>`;
+    } else {
+      // Running on http://localhost but still failing
+      errorHTML = `
+        <div style="background:#3f1f1f; color:#fca5a5; padding: 24px 20px; border-radius: 8px; margin: 12px;">
+          <h3 style="margin-top:0; color:#f87171;">⚠️ JSON dosyaları yüklenemedi</h3>
+          <p>Sunucuyu çalıştırdığın görülüyor ama veri dosyaları okunamadı.</p>
+          <p><strong>Olası nedenler:</strong></p>
+          <ul style="margin:8px 0 0 20px;">
+            <li>JSON dosyalarından biri bozuk (sözdizimi hatası)</li>
+            <li>Tarayıcı önbelleği eski dosyayı tutuyor</li>
+            <li>Dosya yolları yanlış</li>
+          </ul>
+          <p style="margin-top:12px;"><strong>Ne yapmalısın:</strong></p>
+          <ol style="margin:4px 0 0 20px;">
+            <li>Tarayıcıda <strong>Hard Refresh</strong> yap: <kbd>Ctrl + Shift + R</kbd> (Windows/Linux) veya <kbd>Cmd + Shift + R</kbd> (Mac)</li>
+            <li>Browser Console'u aç (F12) ve kırmızı hatalara bak, buraya screenshot at</li>
+            <li>Terminaldeki python sunucusunu durdurup tekrar başlat</li>
+          </ol>
+          <p style="margin-top:12px; font-size:0.85rem; opacity:0.8;">Hata detayı tarayıcı konsolunda yazıyor. Oradaki mesajı buraya yapıştırırsan daha hızlı çözeriz.</p>
+        </div>`;
+    }
+
+    tbody.innerHTML = `<tr><td colspan="5" style="padding:0;">${errorHTML}</td></tr>`;
+  }
+}
+
+// ==================== STATS ====================
+function renderStats(stats) {
+  const container = document.getElementById('stats-grid');
+  const totalDisplay = stats.total_unique_lemmas 
+    ? `${stats.total_unique_lemmas.toLocaleString('tr-TR')}`
+    : (stats.total_words || '?').toLocaleString('tr-TR');
+
+  container.innerHTML = `
+    <div class="stat-card">
+      <div class="label">Benzersiz Lemma</div>
+      <div class="value">${totalDisplay}</div>
+      <div class="sub">Temiz pipeline'dan</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Tier 1 - En Yararlı</div>
+      <div class="value" style="color:var(--tier1)">${(stats.tier_counts?.["1"] || 0).toLocaleString('tr-TR')}</div>
+      <div class="sub">Core kelimeler</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Tier 2 - Yüksek</div>
+      <div class="value" style="color:var(--tier2)">${(stats.tier_counts?.["2"] || 0).toLocaleString('tr-TR')}</div>
+      <div class="sub">Çok kullanılan</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Örnek Cümle</div>
+      <div class="value">${(stats.total_sentences || stats.total_examples || 0).toLocaleString('tr-TR')}</div>
+      <div class="sub">Gerçek diyaloglardan</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Kaynak</div>
+      <div class="value" style="font-size:1.1rem">400+ bölüm</div>
+      <div class="sub">${stats.sources?.join(' + ') || ''}</div>
+    </div>
+  `;
+
+  // Canlı işaret özeti (arşiv)
+  renderMarkSummary();
+}
+
+function renderMarkSummary() {
+  const elTodo = document.getElementById('mark-todo');
+  const elKnown = document.getElementById('mark-known');
+  const elUn = document.getElementById('mark-unmarked');
+  if (!elTodo || !elKnown) return;
+
+  let todo = 0, known = 0, unmarked = 0;
+  allWords.forEach(w => {
+    const m = marks[w.lemma];
+    if (!m) unmarked++;
+    else if (m.is_known === 1) known++;
+    else todo++;
+  });
+
+  elTodo.textContent = `🔴 ${todo} bilmiyorum`;
+  elKnown.textContent = `🟢 ${known} biliyorum (arşiv)`;
+  if (elUn) elUn.textContent = `⚪ ${unmarked} işaretlenmemiş`;
+}
+
+// ==================== THEMATIC SECTION ====================
+function renderThematic(thematic) {
+  const container = document.getElementById('thematic-grid');
+  container.innerHTML = '';
+
+  if (!Array.isArray(thematic)) {
+    console.warn("thematic data is not an array");
+    return;
+  }
+
+  thematic.forEach(item => {
+    // Support both old format and new clean lemma format
+    const displayWord = item.lemma || item.word || item.main_form || 'unknown';
+    const tier = item.tier || 3;
+
+    // Safely get first example text (handle string or object {text: "..."})
+    let preview = '';
+    if (item.examples && item.examples.length > 0) {
+      const first = item.examples[0];
+      const text = (typeof first === 'string') ? first : (first.text || first.sentence || '');
+      preview = text.slice(0, 85) + (text.length > 85 ? '...' : '');
+    }
+
+    const div = document.createElement('div');
+    div.className = 'thematic-card';
+    div.innerHTML = `
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div class="word">${displayWord}</div>
+        <span class="tier-badge tier-${tier}">T${tier}</span>
+      </div>
+      <div style="margin-top:8px; font-size:0.85rem; color:#94a3b8; min-height: 2.2em;">
+        ${preview || '<em>Örnek yok</em>'}
+      </div>
+    `;
+
+    div.onclick = () => {
+      // Try to find the full lemma object in the main data
+      const full = allWords.find(w => (w.lemma || w.word || w.main_form) === displayWord);
+      if (full) {
+        openModal(full);
+      } else {
+        // Fallback: create a minimal object for the modal
+        openModal({
+          lemma: displayWord,
+          tier: tier,
+          total_frequency: item.total_frequency || item.frequency || 0,
+          max_spread: item.max_spread || item.spread || 0,
+          variants: item.variants || [],
+          examples: item.examples || []
+        });
+      }
+    };
+
+    container.appendChild(div);
+  });
+}
+
+// ==================== FILTER + SORT + RENDER ====================
+function applyFiltersAndRender() {
+  let filtered = [...allWords];
+
+  // Tier filter
+  if (currentFilter !== 'all') {
+    filtered = filtered.filter(w => w.tier == currentFilter);
+  }
+
+  // Status / Arşiv filtre (Bilmiyorum, Biliyorum, İşaretlenmemiş)
+  if (currentStatusFilter !== 'all') {
+    filtered = filtered.filter(w => {
+      const m = marks[w.lemma];
+      const st = !m ? 'unmarked' : (m.is_known === 1 ? 'known' : 'todo');
+      if (currentStatusFilter === 'todo') return st === 'todo';
+      if (currentStatusFilter === 'known') return st === 'known';
+      if (currentStatusFilter === 'unmarked') return st === 'unmarked';
+      return true;
+    });
+  }
+
+  // Search
+  const searchVal = document.getElementById('search').value.trim().toLowerCase();
+  if (searchVal.length > 0) {
+    filtered = filtered.filter(w => {
+      const searchable = (w.lemma || '').toLowerCase();
+      return searchable.includes(searchVal);
+    });
+  }
+
+  // Sort (adapted to v2 structure)
+  const sortMode = document.getElementById('sort').value;
+  if (sortMode === 'usefulness') {
+    filtered.sort((a, b) => (b.usefulness || b.total_frequency || 0) - (a.usefulness || a.total_frequency || 0));
+  } else if (sortMode === 'frequency') {
+    filtered.sort((a, b) => (b.total_frequency || 0) - (a.total_frequency || 0));
+  } else if (sortMode === 'spread') {
+    filtered.sort((a, b) => (b.sentence_count || 0) - (a.sentence_count || 0));
+  } else if (sortMode === 'word') {
+    filtered.sort((a, b) => (a.lemma || '').localeCompare(b.lemma || ''));
+  }
+
+  // Render table with pagination
+  renderTable(filtered);
+  renderPagination(filtered.length);
+}
+
+function renderTable(words) {
+  const tbody = document.getElementById('table-body');
+  tbody.innerHTML = '';
+
+  const start = (currentPage - 1) * PAGE_SIZE;
+  const pageItems = words.slice(start, start + PAGE_SIZE);
+
+  if (pageItems.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="5" style="padding:40px; text-align:center; color:#64748b;">Sonuç bulunamadı.</td></tr>`;
+    return;
+  }
+
+  pageItems.forEach(item => {
+    const displayWord = item.lemma;
+    const freq = item.total_frequency || 0;
+    const sentenceCount = item.sentence_count || 0;
+    const variantCount = (item.variants && item.variants.length) || 1;
+
+    const usefulness = item.usefulness ? item.usefulness : null;
+    const usefulnessDisplay = usefulness ? usefulness.toFixed(2) : '-';
+    const usefulnessPct = usefulness ? Math.min(100, (usefulness / 15.5) * 100) : 0;
+
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>
+        <span class="word">${displayWord}</span>
+        ${variantCount > 1 ? `<span style="font-size:0.7rem; color:#64748b; margin-left:6px;">(+${variantCount-1})</span>` : ''}
+      </td>
+      <td><span class="tier-badge tier-${item.tier}">T${item.tier}</span></td>
+      <td>
+        <div style="display:flex; align-items:center; gap:6px; min-width:92px;">
+          <span style="font-weight:600; color:#cbd5e1; font-size:0.9rem; width:38px; text-align:right;">${usefulnessDisplay}</span>
+          <div style="flex:1; height:5px; background:#334155; border-radius:999px; overflow:hidden; min-width:40px;">
+            <div style="width:${usefulnessPct}%; height:100%; background: linear-gradient(to right, #22c55e, #86efac);"></div>
+          </div>
+        </div>
+      </td>
+      <td class="num">${freq.toLocaleString('tr-TR')}</td>
+      <td class="num">${sentenceCount} cümle</td>
+      <td style="font-size:0.85rem; color:#94a3b8;">
+        ${variantCount > 1 ? `${variantCount} varyasyon` : 'tek form'}
+      </td>
+    `;
+
+    tr.querySelector('.word').onclick = () => openModal(item);
+    tbody.appendChild(tr);
+  });
+}
+
+function renderPagination(totalItems) {
+  const container = document.getElementById('pagination');
+  container.innerHTML = '';
+
+  const totalPages = Math.ceil(totalItems / PAGE_SIZE);
+  if (totalPages <= 1) return;
+
+  // Prev
+  const prev = document.createElement('button');
+  prev.textContent = '← Önceki';
+  prev.disabled = currentPage === 1;
+  prev.onclick = () => { currentPage--; applyFiltersAndRender(); };
+  container.appendChild(prev);
+
+  // Page numbers (simplified)
+  const maxButtons = 7;
+  let startPage = Math.max(1, currentPage - 3);
+  let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+  if (endPage - startPage < maxButtons - 1) {
+    startPage = Math.max(1, endPage - maxButtons + 1);
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
+    const btn = document.createElement('button');
+    btn.textContent = i;
+    if (i === currentPage) btn.classList.add('active');
+    btn.onclick = () => { currentPage = i; applyFiltersAndRender(); };
+    container.appendChild(btn);
+  }
+
+  // Next
+  const next = document.createElement('button');
+  next.textContent = 'Sonraki →';
+  next.disabled = currentPage === totalPages;
+  next.onclick = () => { currentPage++; applyFiltersAndRender(); };
+  container.appendChild(next);
+}
+
+// ==================== MODAL ====================
+function openModal(item) {
+  currentModalItem = item;   // Global'e ata (şüpheli butonu için)
+
+  const lemma = item.lemma || item.word || item.main_form;
+  const variants = item.variants || [];
+  const examples = item.examples || [];
+
+  document.getElementById('modal-word').textContent = lemma;
+
+  const tierEl = document.getElementById('modal-tier');
+  tierEl.textContent = `Tier ${item.tier}`;
+  tierEl.className = `tier-badge tier-${item.tier}`;
+
+  const freq = item.total_frequency || item.frequency || 0;
+  const spread = item.max_spread || item.spread || 0;
+  const usefulness = item.usefulness ? item.usefulness.toFixed(2) : '-';
+
+  document.getElementById('modal-freq').textContent = freq.toLocaleString('tr-TR');
+  document.getElementById('modal-spread').textContent = spread;
+
+  // Usefulness skorunu daha güzel göster + kısa açıklama
+  const usefulnessEl = document.getElementById('modal-usefulness');
+  if (usefulnessEl) {
+    usefulnessEl.innerHTML = `
+      <span style="font-weight:700; color:#86efac;">${usefulness}</span>
+      <span style="font-size:0.7rem; color:#64748b; margin-left:4px;">(log₂(frekans+1))</span>
+    `;
+  }
+
+  const exContainer = document.getElementById('modal-examples');
+  exContainer.innerHTML = '';
+
+  // === Varyasyonlar (şimdi tıklanabilir) ===
+  let currentItem = item; // modal state için
+  let currentVariantFilter = null;
+
+  if (variants.length > 1) {
+    const varDiv = document.createElement('div');
+    varDiv.style.marginBottom = '18px';
+    varDiv.id = 'modal-variants';
+
+    const renderVariants = (activeVariant = null) => {
+      let html = `<strong style="display:block; margin-bottom:6px; color:#cbd5e1;">Varyasyonlar (tıklayarak filtrele):</strong><div style="display:flex; flex-wrap:wrap; gap:6px;">`;
+
+      variants.forEach(v => {
+        const isBase = v.surface === lemma;
+        const isActive = activeVariant === v.surface;
+        html += `
+          <span class="variant-pill ${isActive ? 'active' : ''}" data-surface="${v.surface}" style="
+            background: ${isActive ? '#22c55e' : (isBase ? '#22c55e22' : '#1e293b')};
+            color: ${isActive ? 'white' : (isBase ? '#22c55e' : '#e2e8f0')};
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            border: 1px solid ${isActive ? '#16a34a' : (isBase ? '#22c55e55' : '#334155')};
+            cursor: pointer;
+            transition: all 0.1s;
+          ">
+            ${v.surface} <span style="opacity:0.7;">(${v.frequency})</span>
+          </span>`;
+      });
+      html += `</div>`;
+      varDiv.innerHTML = html;
+
+      // Tıklama event'leri
+      varDiv.querySelectorAll('.variant-pill').forEach(pill => {
+        pill.onclick = () => {
+          const surface = pill.getAttribute('data-surface');
+          filterExamplesByVariant(surface, currentItem, exContainer, varDiv, renderVariants);
+        };
+      });
+    };
+
+    renderVariants();
+    exContainer.appendChild(varDiv);
+  }
+
+  // Examples container (filtreleme için referans tutuyoruz)
+  const exTitle = document.createElement('h4');
+  exTitle.id = 'modal-examples-title';
+  exTitle.style.margin = '12px 0 8px';
+  exTitle.textContent = 'Gerçek Dizi Örnekleri:';
+  exContainer.appendChild(exTitle);
+
+  const examplesList = document.createElement('div');
+  examplesList.id = 'modal-examples-list';
+  exContainer.appendChild(examplesList);
+
+  // İlk render
+  renderFilteredExamples(examples, null, examplesList);
+
+  // Yardımcı fonksiyon: varyasyona göre filtreleme (şimdi matched_variants kullanıyor)
+  window.filterExamplesByVariant = function(surface, itemData, container, varContainer, reRenderVariants) {
+    const filtered = (itemData.examples || []).filter(ex => {
+      const mvs = ex.matched_variants || [];
+      return mvs.some(mv => mv.toLowerCase() === surface.toLowerCase());
+    });
+
+    // Varyasyon listesini güncelle
+    if (reRenderVariants) reRenderVariants(surface);
+
+    // Örnekleri yeniden render et
+    const title = document.getElementById('modal-examples-title');
+    if (title) {
+      title.textContent = filtered.length > 0 
+        ? `Gerçek Dizi Örnekleri — sadece "${surface}" varyasyonu` 
+        : `Gerçek Dizi Örnekleri (bu varyasyonda örnek yok)`;
+    }
+
+    renderFilteredExamples(filtered.length > 0 ? filtered : itemData.examples || [], surface, examplesList);
+
+    // "Tümünü göster" butonu
+    if (filtered.length > 0 && itemData.examples && itemData.examples.length > filtered.length) {
+      const resetBtn = document.createElement('button');
+      resetBtn.textContent = '← Tüm varyasyonların örneklerini göster';
+      resetBtn.style.cssText = 'margin-top:12px; font-size:0.8rem; background:#334155; color:#e2e8f0; border:none; padding:6px 12px; border-radius:6px; cursor:pointer;';
+      resetBtn.onclick = () => {
+        if (title) title.textContent = 'Gerçek Dizi Örnekleri:';
+        renderFilteredExamples(itemData.examples, null, examplesList);
+        if (reRenderVariants) reRenderVariants(null);
+      };
+      examplesList.appendChild(resetBtn);
+    }
+  };
+
+  function renderFilteredExamples(list, activeVariant, targetContainer) {
+    targetContainer.innerHTML = '';
+    if (!list || list.length === 0) {
+      const p = document.createElement('p');
+      p.style.color = '#64748b';
+      p.textContent = activeVariant ? 'Bu varyasyonda örnek bulunamadı.' : 'Bu kelime için örnek cümle bulunamadı.';
+      targetContainer.appendChild(p);
+      return;
+    }
+    list.forEach(ex => {
+      const div = document.createElement('div');
+      div.className = 'example';
+
+      // matched_variants varsa onları göster
+      let variantNote = '';
+      const mvs = ex.matched_variants || [];
+      if (activeVariant) {
+        variantNote = ` <span style="color:#64748b;">[${activeVariant}]</span>`;
+      } else if (mvs.length > 0) {
+        variantNote = ` <span style="color:#64748b;">[${mvs.join(', ')}]</span>`;
+      }
+
+      div.innerHTML = `
+        “${ex.text}”${variantNote}
+        <div class="example-source">— ${ex.source === 'friends' ? 'Friends' : 'Big Bang Theory'}</div>
+      `;
+      targetContainer.appendChild(div);
+    });
+  }
+
+  // Show current mark status if any
+  const statusEl = document.getElementById('modal-mark-status');
+  if (statusEl) {
+    const m = marks[lemma];
+    if (m) {
+      statusEl.innerHTML = m.is_known === 1 
+        ? `<span style="color:#22c55e;">🟢 Bu kelimeyi "Biliyorum" olarak işaretlemişsin.</span>`
+        : `<span style="color:#f87171;">🔴 "Bilmiyorum" olarak işaretli (çalışma listesinde).</span>`;
+    } else {
+      statusEl.textContent = 'Henüz işaretlenmedi.';
+    }
+  }
+
+  document.getElementById('modal').classList.add('active');
+}
+
+function closeModal() {
+  document.getElementById('modal').classList.remove('active');
+}
+
+// --- Şüpheli Kelimeler Yönetimi (Index.html - Geliştirilmiş) ---
+
+function getSuspectWords() {
+  try {
+    const data = localStorage.getItem('suspectWords');
+    if (!data) return {};
+    const parsed = JSON.parse(data);
+    if (Array.isArray(parsed)) {
+      const obj = {};
+      parsed.forEach(w => obj[w] = "");
+      return obj;
+    }
+    return parsed || {};
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveSuspectWords(obj) {
+  localStorage.setItem('suspectWords', JSON.stringify(obj));
+}
+
+function markAsSuspicious() {
+  if (!currentModalItem) {
+    alert("Kelime bilgisi alınamadı.");
+    return;
+  }
+
+  const lemma = currentModalItem.lemma || currentModalItem.word;
+  if (!lemma) {
+    alert("Kelime adı bulunamadı.");
+    return;
+  }
+
+  // Modal'daki not alanını bul (farklı id'ler olabilir)
+  const noteEl = document.getElementById('modal-note') || document.querySelector('#modal textarea');
+  const noteText = noteEl ? noteEl.value.trim() : "";
+
+  const suspects = getSuspectWords();
+
+  if (suspects[lemma] !== undefined) {
+    if (noteText) {
+      suspects[lemma] = noteText;
+      saveSuspectWords(suspects);
+      alert(`"${lemma}" zaten listede. Not güncellendi.`);
+    } else {
+      alert(`"${lemma}" zaten şüpheli listesinde.`);
+    }
+  } else {
+    suspects[lemma] = noteText;
+    saveSuspectWords(suspects);
+    const msg = noteText 
+      ? `"${lemma}" şüpheli listesine notuyla birlikte eklendi.`
+      : `"${lemma}" şüpheli listesine eklendi.`;
+    alert(msg);
+  }
+}
+
+// Mark from index modal (a-b-c: index'ten direkt biliyorum/bilmiyorum)
+function markWordFromModal(isKnown) {
+  if (!currentModalItem) return;
+  const lemma = currentModalItem.lemma || currentModalItem.word || currentModalItem.main_form;
+  if (!lemma) return;
+
+  // Update or create mark
+  if (!marks[lemma]) marks[lemma] = {};
+  marks[lemma].is_known = isKnown ? 1 : 0;
+  marks[lemma].marked_at = new Date().toISOString();
+  if (!marks[lemma].note) marks[lemma].note = '';
+
+  localStorage.setItem('wordMarks_v2', JSON.stringify(marks));
+
+  // Update status text in modal
+  const statusEl = document.getElementById('modal-mark-status');
+  if (statusEl) {
+    statusEl.innerHTML = isKnown 
+      ? `<span style="color:#22c55e;">✅ "Biliyorum" olarak kaydedildi. Arşivde görünecek.</span>`
+      : `<span style="color:#f87171;">📝 "Bilmiyorum" olarak kaydedildi. Çalışma Odası'nda listelenecek.</span>`;
+  }
+
+  // Re-render table with new filter state (so it may disappear from current view if filtering)
+  applyFiltersAndRender();
+  renderMarkSummary();
+
+  // Optional: close after short delay if marked known and in "todo" view
+  if (isKnown && currentStatusFilter === 'todo') {
+    setTimeout(() => {
+      if (document.getElementById('modal').classList.contains('active')) {
+        closeModal();
+      }
+    }, 650);
+  }
+}
+
+function showSuspectWordsPanel() {
+  const suspects = getSuspectWords();
+  const entries = Object.entries(suspects);
+
+  if (entries.length === 0) {
+    alert("Şüpheli kelime listesi boş.");
+    return;
+  }
+
+  let html = `<div style="max-height:68vh; overflow:auto; padding-right:4px;">`;
+  html += `<h3 style="margin-top:0; margin-bottom:4px;">Şüpheli Kelimeler <span style="color:#f59e0b;">(${entries.length})</span></h3>`;
+  html += `<p style="font-size:0.82rem; color:#64748b; margin-bottom:12px;">Bu kelimeleri inceledikten sonra notlarla birlikte JSON olarak indirebilirsin.</p>`;
+
+  entries.forEach(([word, note]) => {
+    html += `
+      <div style="border:1px solid #334155; border-radius:8px; padding:10px; margin-bottom:8px; background:#0f172a;">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
+          <strong style="color:#f1f5f9; font-size:1.02rem; word-break:break-word;">${word}</strong>
+          <button onclick="removeSuspectWord('${word}', this)" 
+                  style="background:#ef4444; color:white; border:none; padding:3px 7px; border-radius:4px; font-size:0.72rem; cursor:pointer; flex-shrink:0;">
+            Sil
+          </button>
+        </div>
+        <textarea data-word="${word}" style="width:100%; margin-top:6px; background:#1e293b; color:#e2e8f0; border:1px solid #475569; border-radius:6px; padding:6px; font-size:0.9rem; min-height:48px; resize:vertical; line-height:1.35;">${note || ""}</textarea>
+      </div>
+    `;
+  });
+
+  html += `
+    <div style="margin-top:10px; display:flex; gap:8px; flex-wrap:wrap;">
+      <button onclick="saveAllSuspectNotes(this)" 
+              style="background:#22c55e; color:#0f172a; border:none; padding:7px 13px; border-radius:6px; font-weight:600; cursor:pointer; font-size:0.88rem;">
+        Notları Kaydet
+      </button>
+      <button onclick="exportSuspectWords()" 
+              style="background:#3b82f6; color:white; border:none; padding:7px 13px; border-radius:6px; font-weight:600; cursor:pointer; font-size:0.88rem;">
+        JSON İndir
+      </button>
+      <button onclick="copySuspectAsGitHubIssue(this)" 
+              style="background:#6b7280; color:white; border:none; padding:7px 13px; border-radius:6px; font-weight:600; cursor:pointer; font-size:0.88rem;">
+        GitHub Issue için Kopyala
+      </button>
+      <button onclick="clearAllSuspects()" 
+              style="background:#64748b; color:white; border:none; padding:7px 13px; border-radius:6px; font-weight:600; cursor:pointer; font-size:0.88rem;">
+        Hepsini Temizle
+      </button>
+    </div>
+  `;
+  html += `</div>`;
+
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed; inset:0; background:rgba(15,23,42,0.88); z-index:2000; display:flex; align-items:center; justify-content:center; padding:16px;';
+  overlay.innerHTML = `
+    <div style="background:#1e293b; color:#e2e8f0; max-width:680px; width:100%; border-radius:14px; padding:18px 20px; box-shadow:0 25px 70px rgba(0,0,0,0.55);">
+      ${html}
+      <div style="text-align:right; margin-top:10px;">
+        <button onclick="this.closest('.overlay-suspect').remove()" 
+                style="background:#334155; color:#cbd5e1; border:none; padding:7px 15px; border-radius:6px; font-size:0.9rem; cursor:pointer;">
+          Kapat
+        </button>
+      </div>
+    </div>
+  `;
+  overlay.className = 'overlay-suspect';
+  document.body.appendChild(overlay);
+}
+
+function removeSuspectWord(word, btnElement) {
+  if (!confirm(`"${word}" şüpheli listeden silinsin mi?`)) return;
+  const suspects = getSuspectWords();
+  delete suspects[word];
+  saveSuspectWords(suspects);
+  btnElement.closest('.overlay-suspect')?.remove();
+  showSuspectWordsPanel();
+}
+
+function saveAllSuspectNotes(btnElement) {
+  const overlay = btnElement.closest('.overlay-suspect');
+  if (!overlay) return;
+
+  const suspects = getSuspectWords();
+  let updated = false;
+
+  overlay.querySelectorAll('textarea[data-word]').forEach(ta => {
+    const word = ta.dataset.word;
+    if (suspects[word] !== undefined) {
+      suspects[word] = ta.value.trim();
+      updated = true;
+    }
+  });
+
+  if (updated) {
+    saveSuspectWords(suspects);
+    alert("Notlar kaydedildi.");
+  }
+}
+
+function exportSuspectWords() {
+  const suspects = getSuspectWords();
+  const dataStr = JSON.stringify(suspects, null, 2);
+  const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
+  const link = document.createElement('a');
+  link.href = dataUri;
+  link.download = 'suspect_words_feedback.json';
+  link.click();
+}
+
+function clearAllSuspects() {
+  if (!confirm("Tüm şüpheli kelime listesini silmek istediğine emin misin?")) return;
+  localStorage.removeItem('suspectWords');
+  document.querySelectorAll('.overlay-suspect').forEach(el => el.remove());
+  alert("Liste temizlendi.");
+}
+
+function copySuspectAsGitHubIssue(btnElement) {
+  const suspects = getSuspectWords();
+  if (Object.keys(suspects).length === 0) {
+    alert("Liste boş.");
+    return;
+  }
+
+  let body = `## Şüpheli Kelime Geri Bildirimi\n\n`;
+  body += `**Kaynak:** Friends + Big Bang Theory\n`;
+  body += `**Tarih:** ${new Date().toISOString().slice(0,10)}\n\n`;
+  body += `| Kelime | Not |\n`;
+  body += `|--------|-----|\n`;
+
+  Object.entries(suspects).forEach(([word, note]) => {
+    const cleanNote = (note || '').replace(/\|/g, '\\|').replace(/\n/g, ' ');
+    body += `| \`${word}\` | ${cleanNote || '_no note_'} |\n`;
+  });
+
+  body += `\n\n**Önerilen aksiyon:**\n- [ ] character_names.json'e ekle\n- [ ] junk_words.json'e ekle\n- [ ] function_words.json'e ekle\n- [ ] Lemmatizer kuralı ekle\n- [ ] Başka: ...\n`;
+
+  navigator.clipboard.writeText(body).then(() => {
+    const originalText = btnElement.textContent;
+    btnElement.textContent = 'Kopyalandı!';
+    setTimeout(() => {
+      btnElement.textContent = originalText;
+    }, 1800);
+  }).catch(() => {
+    // Fallback
+    prompt("Aşağıdaki metni kopyala ve GitHub issue olarak aç:", body);
+  });
+}
+
+// Close modal on outside click
+document.getElementById('modal').addEventListener('click', function(e) {
+  if (e.target.id === 'modal') closeModal();
+});
+
+// ==================== EVENT LISTENERS ====================
+function setupListeners() {
+  // Search
+  const search = document.getElementById('search');
+  search.addEventListener('input', () => {
+    currentPage = 1;
+    applyFiltersAndRender();
+  });
+
+  // Tier buttons
+  document.querySelectorAll('.tier-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tier-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.tier;
+      currentPage = 1;
+      applyFiltersAndRender();
+    });
+  });
+
+  // Status / Arşiv filtre butonları (Biliyorum arşivi için)
+  document.querySelectorAll('.status-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.status-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentStatusFilter = btn.dataset.status;
+      currentPage = 1;
+      applyFiltersAndRender();
+    });
+  });
+
+  // Sort
+  document.getElementById('sort').addEventListener('change', () => {
+    currentPage = 1;
+    applyFiltersAndRender();
+  });
+
+  // Keyboard shortcut
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement.tagName === 'BODY') {
+      e.preventDefault();
+      document.getElementById('search').focus();
+    }
+    if (e.key === 'Escape') {
+      const modal = document.getElementById('modal');
+      if (modal.classList.contains('active')) closeModal();
+    }
+  });
+}
+
+// ==================== YENİ: Senaryo Tarayıcısı (Gerçek Veri ile) ====================
+window.showScriptBrowser = async function(showType) {
+  const container = document.getElementById('script-browser');
+  container.style.display = 'block';
+  container.innerHTML = '<p style="color:#64748b;">Yükleniyor...</p>';
+
+  try {
+    const res = await fetch('data/web/episodes.json');
+    const episodes = await res.json();
+
+    const filtered = episodes.filter(e => e.source === showType);
+
+    let html = `<h4 style="margin-top:0;">${showType === 'friends' ? 'Friends' : 'Big Bang Theory'} Bölümleri</h4>`;
+    html += '<div style="display:flex; flex-direction:column; gap:6px;">';
+
+    filtered.slice(0, 12).forEach(ep => {
+      const shortName = ep.file.replace('.srt', '').substring(0, 55) + (ep.file.length > 55 ? '...' : '');
+      html += `
+        <div onclick="loadScript('${ep.source}', '${ep.file}', '${shortName}')" 
+             style="background:#1e293b; padding:8px 12px; border-radius:8px; cursor:pointer; border:1px solid #334155; font-size:0.9rem;">
+          ${shortName} <span style="color:#64748b; font-size:0.75rem;">(${ep.sentence_count} cümle)</span>
+        </div>`;
+    });
+
+    if (filtered.length > 12) {
+      html += `<div style="color:#64748b; font-size:0.8rem; margin-top:4px;">... ve ${filtered.length - 12} bölüm daha</div>`;
+    }
+
+    html += '</div>';
+    container.innerHTML = html;
+
+  } catch (e) {
+    container.innerHTML = '<p style="color:#f87171;">Bölüm listesi yüklenemedi.</p>';
+    console.error(e);
+  }
+};
+
+window.loadScript = async function(source, file, label) {
+  const container = document.getElementById('script-browser');
+  container.innerHTML = `<h4>${label}</h4><p style="color:#64748b;">Cümleler yükleniyor...</p>`;
+
+  try {
+    const res = await fetch('data/web/episode_samples.json');
+    const samples = await res.json();
+
+    const sentences = samples[file] || [];
+
+    let html = `<h4>${label}</h4>`;
+    html += `<div style="font-size:0.85rem; color:#64748b; margin-bottom:8px;">Bu bölümden örnek cümleler (tam metin desteği yakında):</div>`;
+    html += '<div style="display:flex; flex-direction:column; gap:8px;">';
+
+    sentences.forEach((text, idx) => {
+      // Basit kelime tıklama için her kelimeyi span içine al
+      const words = text.split(/(\s+)/);
+      let formatted = words.map(w => {
+        const clean = w.replace(/[^a-zA-ZçğıöşüÇĞİÖŞÜ]/g, '').toLowerCase();
+        if (clean.length > 2) {
+          return `<span class="script-word" data-lemma="${clean}" onclick="markWordFromScript('${clean}', this)">${w}</span>`;
+        }
+        return w;
+      }).join('');
+
+      html += `<div style="padding:6px 8px; background:#1e293b; border-radius:6px; line-height:1.35;">${formatted}</div>`;
+    });
+
+    html += `</div>`;
+    html += `<div style="margin-top:10px; font-size:0.8rem; color:#64748b;">Kelimeye tıklayarak işaretleyebilirsin (ileride öğrenme havuzuna eklenecek).</div>`;
+
+    container.innerHTML = html;
+
+  } catch (e) {
+    container.innerHTML = '<p style="color:#f87171;">Bölüm yüklenemedi.</p>';
+    console.error(e);
+  }
+};
+
+// Kelimeyi script'ten işaretleme (şimdilik basit alert + console)
+window.markWordFromScript = function(lemma, element) {
+  element.style.background = '#22c55e33';
+  element.style.color = '#22c55e';
+  element.style.padding = '0 3px';
+  element.style.borderRadius = '3px';
+
+  // Gerçek veritabanına kaydetmek için ileride fetch yapacağız
+  console.log('Kelime işaretlendi:', lemma);
+  alert(`"${lemma}" kelimesini işaretledin! (İleride öğrenme havuzuna eklenecek ve kelime kartında görünecek)`);
+};
+
+// ==================== INIT ====================
+loadData();
+</script>
+</body>
+</html>

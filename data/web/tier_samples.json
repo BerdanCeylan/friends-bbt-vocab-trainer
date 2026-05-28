@@ -1,0 +1,206 @@
+{
+  "1": [],
+  "2": [],
+  "3": [
+    {
+      "lemma": "you",
+      "total_freq": 46303,
+      "sentence_count": 38265
+    },
+    {
+      "lemma": "be",
+      "total_freq": 24590,
+      "sentence_count": 21550
+    },
+    {
+      "lemma": "that",
+      "total_freq": 15274,
+      "sentence_count": 14019
+    },
+    {
+      "lemma": "have",
+      "total_freq": 12305,
+      "sentence_count": 11580
+    },
+    {
+      "lemma": "do",
+      "total_freq": 11672,
+      "sentence_count": 10366
+    },
+    {
+      "lemma": "what",
+      "total_freq": 10010,
+      "sentence_count": 8494
+    },
+    {
+      "lemma": "me",
+      "total_freq": 9760,
+      "sentence_count": 9155
+    },
+    {
+      "lemma": "my",
+      "total_freq": 9602,
+      "sentence_count": 8878
+    },
+    {
+      "lemma": "we",
+      "total_freq": 9517,
+      "sentence_count": 8563
+    },
+    {
+      "lemma": "this",
+      "total_freq": 9324,
+      "sentence_count": 8856
+    },
+    {
+      "lemma": "get",
+      "total_freq": 9111,
+      "sentence_count": 8586
+    },
+    {
+      "lemma": "know",
+      "total_freq": 8965,
+      "sentence_count": 8117
+    },
+    {
+      "lemma": "go",
+      "total_freq": 8439,
+      "sentence_count": 7620
+    },
+    {
+      "lemma": "so",
+      "total_freq": 7601,
+      "sentence_count": 7181
+    },
+    {
+      "lemma": "just",
+      "total_freq": 7544,
+      "sentence_count": 7365
+    },
+    {
+      "lemma": "with",
+      "total_freq": 7435,
+      "sentence_count": 7140
+    },
+    {
+      "lemma": "not",
+      "total_freq": 7369,
+      "sentence_count": 6893
+    },
+    {
+      "lemma": "oh",
+      "total_freq": 7266,
+      "sentence_count": 6627
+    },
+    {
+      "lemma": "no",
+      "total_freq": 7238,
+      "sentence_count": 5642
+    },
+    {
+      "lemma": "your",
+      "total_freq": 6968,
+      "sentence_count": 6545
+    },
+    {
+      "lemma": "okay",
+      "total_freq": 5673,
+      "sentence_count": 5057
+    },
+    {
+      "lemma": "think",
+      "total_freq": 5383,
+      "sentence_count": 5151
+    },
+    {
+      "lemma": "can",
+      "total_freq": 5223,
+      "sentence_count": 4969
+    },
+    {
+      "lemma": "want",
+      "total_freq": 5064,
+      "sentence_count": 4822
+    },
+    {
+      "lemma": "he",
+      "total_freq": 5056,
+      "sentence_count": 4434
+    },
+    {
+      "lemma": "i'm",
+      "total_freq": 5038,
+      "sentence_count": 4620
+    },
+    {
+      "lemma": "well",
+      "total_freq": 5012,
+      "sentence_count": 4851
+    },
+    {
+      "lemma": "like",
+      "total_freq": 4871,
+      "sentence_count": 4696
+    },
+    {
+      "lemma": "about",
+      "total_freq": 4797,
+      "sentence_count": 4548
+    },
+    {
+      "lemma": "all",
+      "total_freq": 4647,
+      "sentence_count": 4425
+    },
+    {
+      "lemma": "yeah",
+      "total_freq": 4579,
+      "sentence_count": 4132
+    },
+    {
+      "lemma": "if",
+      "total_freq": 4543,
+      "sentence_count": 4455
+    },
+    {
+      "lemma": "right",
+      "total_freq": 4541,
+      "sentence_count": 4102
+    },
+    {
+      "lemma": "re",
+      "total_freq": 4351,
+      "sentence_count": 3917
+    },
+    {
+      "lemma": "out",
+      "total_freq": 4301,
+      "sentence_count": 4166
+    },
+    {
+      "lemma": "how",
+      "total_freq": 4060,
+      "sentence_count": 3847
+    },
+    {
+      "lemma": "good",
+      "total_freq": 4040,
+      "sentence_count": 3740
+    },
+    {
+      "lemma": "she",
+      "total_freq": 4026,
+      "sentence_count": 3598
+    },
+    {
+      "lemma": "say",
+      "total_freq": 3960,
+      "sentence_count": 3739
+    },
+    {
+      "lemma": "here",
+      "total_freq": 3921,
+      "sentence_count": 3646
+    }
+  ]
+}
